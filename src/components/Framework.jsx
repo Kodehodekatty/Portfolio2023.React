@@ -49,8 +49,6 @@ export default function Framework({
       {!showBody && (
         <Button className={style2.btn2} onClick={ClickHandler2}>
           {body}
-
-          {showFace}
         </Button>
       )}
       {!showFooter && (
