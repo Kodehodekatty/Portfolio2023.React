@@ -1,0 +1,82 @@
+.shadowmain {
+
+
+
+
+
+    margin-left: 120px;
+    width: 50vh;
+    margin-top: -340px;
+
+}
+
+
+.faceimg {
+
+
+
+    margin-left: 120px;
+    width: 50vh;
+    margin-top: -760px;
+    display: inline;
+
+}
+
+.bodyimg {
+
+    margin-left: 120px;
+    width: 50vh;
+    margin-top: -340px;
+
+
+}
+
+.footerimg {
+
+    margin-left: 120px;
+    width: 50vh;
+    margin-top: -340px;
+
+
+
+}
+
+
+.btn1 {
+    min-width: 70px;
+    min-height: 20px;
+    position: absolute;
+
+    display: inline;
+    top: 40%;
+    left: 16%;
+    z-index: 2;
+}
+
+
+.btn2 {
+    min-width: 70px;
+
+    position: absolute;
+    display: incline;
+    min-height: 20px;
+    top: 62%;
+    left: 16%;
+    margin: auto;
+    z-index: 2;
+}
+
+
+.btn3 {
+
+    left: 16%;
+    min-width: 70px;
+    height: 20px;
+    position: absolute;
+    min-height: 20px;
+    margin: auto;
+    display: inline;
+    z-index: 2;
+    top: 90%;
+
+}
