@@ -8,11 +8,13 @@ import {
   NavLink,
   Outlet,
   Navigate,
+  HashRouter,
 } from "react-router-dom";
 
 import Background from "./components/Background";
 import Framework from "./components/Framework";
 import React, { useState } from "react";
+import AboutMe from "./Pages/AboutMe";
 
 //imports styles
 import styles from "./components/BackgroundStyles.module.css";
@@ -20,29 +22,19 @@ import styles2 from "./components/frameworkStyles.module.css";
 import "./styles/App.css";
 
 function App() {
-  const [showFace, setShowFace] = useState(false);
-  const [showBody, setShowBody] = useState(false);
-  const [showFooter, setShowFooter] = useState(false);
+  const [partShowing, setPartShowing] = useState("none");
+  const [inSequence, setInSequence] = useState(false);
 
   return (
     <div className="mainWallpaper">
       <div>
-        <Background
-          showFace={showFace}
-          setShowBody={setShowBody}
-          showBody={showBody}
-          setShowFace={setShowFace}
-          showFooter={showFooter}
-          setShowFooter={setShowFooter}
-        />
+        <Background partShowing={partShowing} inSequence={inSequence} />
 
         <Framework
-          showFace={showFace}
-          setShowBody={setShowBody}
-          showBody={showBody}
-          setShowFace={setShowFace}
-          showFooter={showFooter}
-          setShowFooter={setShowFooter}
+          partShowing={partShowing}
+          setPartShowing={setPartShowing}
+          inSequence={inSequence}
+          setInSequence={setInSequence}
         />
       </div>
     </div>

@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import shadowme from "../images/Frame 13.png";
 import shadowbody from "../images/secondshadowbody.png";
 import shadowfooter from "../images/shadowfooter.png";
 import fullshadow from "../images/fullshadow.png";
-
+import { useEffect } from "react";
 import styled from "styled-components";
 import codeGraphicImg from "../images/image116.png";
 import styles from "../components/BackgroundStyles.module.css";
 import style2 from "../components/FrameworkStyles.module.css";
 import faceandbody from "../images/VSC/faceandbodyCODE.png";
+import faceandbodyCODE from "../images/VSC/faceandbodyCODE.png";
+import AboutMe from "../Pages/AboutMe";
+import { render } from "react-dom";
+import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
 
 const face = "<face>";
 const body = "<body>";
@@ -31,55 +35,82 @@ export function ShowImage() {
 // the different looking me's, my face, body and footer
 
 export default function Framework({
-  showFace,
-  setShowFace,
-  showBody,
-  setShowBody,
-  showFooter,
-  setShowFooter,
+  partShowing,
+  setPartShowing,
+  inSequence,
+  setInSequence,
 }) {
   return (
     <>
       {" "}
-      {!showFace && (
-        <Button className={style2.btn1} onClick={ClickHandler}>
-          {face};
-        </Button>
+      <div className={style2.btnGroup}>
+        {partShowing != "face" && (
+          <Button className={style2.btn1} onClick={ClickHandler}>
+            {face}
+          </Button>
+        )}
+
+        {!partShowing != "body" && (
+          <Button className={style2.btn2} onClick={ClickHandler2}>
+            {body}
+          </Button>
+        )}
+        {!partShowing != "footer" && (
+          <Button className={style2.btn3} onClick={ClickHandler3}>
+            {footer}
+          </Button>
+        )}
+      </div>{" "}
+      {partShowing == "face" && (
+        <img className={style2.faceimg} src={shadowme} />
       )}
-      {!showBody && (
-        <Button className={style2.btn2} onClick={ClickHandler2}>
-          {body}
-        </Button>
+      {partShowing == "body" && (
+        <img className={style2.bodyimg} src={shadowbody} />
       )}
-      {!showFooter && (
-        <Button className={style2.btn3} onClick={ClickHandler3}>
-          {footer}
-        </Button>
-      )}{" "}
-      {showFace && <img className={style2.faceimg} src={shadowme} />}
-      {showBody && <img className={style2.bodyimg} src={shadowbody} />}
-      {showFooter && <img className={style2.footerimg} src={shadowfooter} />}
-      {!showFace && !showBody && !showFooter && <ShowImage />}
+      {partShowing == "footer" && (
+        <img className={style2.footerimg} src={shadowfooter} />
+      )}
+      {(partShowing == "body" || (partShowing == "footer" && inSequence)) && (
+        <AboutMe />
+      )}
+      {partShowing == "none" && <ShowImage />}
     </>
   );
 
   // the buttons showing the different images
 
   function ClickHandler() {
-    setShowFace(true);
-    setShowBody(false);
-    setShowFooter(false);
-  }
-  function ClickHandler2() {
-    setShowBody(true);
-    setShowFace(false);
-    setShowFooter(false);
+    setInSequence(false);
+    setPartShowing("face");
   }
 
-  function handleChange() {}
-  function ClickHandler3() {
-    setShowBody(false);
-    setShowFace(false);
-    setShowFooter(true);
+  function ClickHandler2() {
+    setInSequence(false);
+    if (partShowing == "face") {
+      setInSequence(true);
+    }
+    setPartShowing("body");
   }
+
+  function ClickHandler3() {
+    setInSequence(false);
+
+    if (partShowing == "body" && inSequence) {
+      setInSequence(true);
+    }
+
+    setPartShowing("footer");
+  }
+
+  // function usePrevious(value) {
+  //   const ref = useRef();
+
+  //   // Store current value in ref
+  //   useEffect(() => {
+  //     ref.current = value;
+  //   }, [value]); // Only re-run if value changes
+
+  //   // Return previous value (happens before update in useEffect above)
+  //   return ref.current;
+  // }
 }

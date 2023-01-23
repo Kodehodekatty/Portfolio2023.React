@@ -6,7 +6,7 @@
 
     margin-left: 120px;
     width: 50vh;
-    margin-top: -340px;
+    margin-top: -490px;
 
 }
 
@@ -17,16 +17,17 @@
 
     margin-left: 120px;
     width: 50vh;
-    margin-top: -760px;
-    display: inline;
+    margin-top: -500px;
+    position: relative;
+    margin-bottom: 120px;
 
 }
 
 .bodyimg {
 
     margin-left: 120px;
-    min-width: 50vh;
-    margin-top: -340px;
+    width: 50vh;
+    margin-top: -400px;
 
 
 }
@@ -35,7 +36,7 @@
 
     margin-left: 120px;
     width: 50vh;
-    margin-top: -340px;
+    margin-top: -390px;
 
 
 
@@ -43,40 +44,68 @@
 
 
 .btn1 {
-    min-width: 70px;
-    min-height: 20px;
-    position: absolute;
+    width: auto;
+    height: auto;
+
 
     display: inline;
-    top: 40%;
+    top: -5%;
     left: 16%;
-    z-index: 2;
+
 }
 
 
 .btn2 {
-    min-width: 70px;
+    width: auto;
 
-    position: absolute;
-    display: incline;
-    min-height: 20px;
-    top: 62%;
-    left: 16%;
-    margin: auto;
-    z-index: 2;
+    position: relative;
+    display: inline;
+    height: auto;
+
+    top: 27%;
+    margin: 0;
+
 }
 
 
 .btn3 {
 
-    left: 16%;
-    min-width: 70px;
-    height: 20px;
-    position: absolute;
-    min-height: 20px;
-    margin: auto;
+
+    width: auto;
+
+    position: relative;
+    height: auto;
+
+    top: 70%;
     display: inline;
+
+
+
+}
+
+.btnGroup {
+
+    position: absolute;
+    display: inline;
+    width: 100px;
+    height: 300px;
+
+    margin: 10px auto;
+    left: 16%;
+    top: 42%;
     z-index: 2;
-    top: 90%;
+
+}
+
+.faceandbody {
+
+    margin-left: 320px;
+    width: 135vh;
+    position: relative;
+    height: 100vh;
+    margin-top: 0;
+
+
+
 
 }

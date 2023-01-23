@@ -1,0 +1,23 @@
+.aboutMe {
+    width: 600px;
+    height: 300px;
+    float: right;
+    overflow-y: scroll;
+    color: black;
+    margin: -500px auto;
+    margin-right: 170px;
+
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+
+
+
+
+}
+
+.abouth1 {
+
+    margin-bottom: -5px;
+
+}
