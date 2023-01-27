@@ -1,43 +1,37 @@
 // imports
-// have not set up routes yet but will.
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Link,
-  NavLink,
-  Outlet,
-  Navigate,
-  HashRouter,
-} from "react-router-dom";
 
 import Background from "./components/Background";
 import Framework from "./components/Framework";
+import Navbar from "./components/Navbar";
+
 import React, { useState } from "react";
-import AboutMe from "./Pages/AboutMe";
 
 //imports styles
-import styles from "./components/BackgroundStyles.module.css";
-import styles2 from "./components/frameworkStyles.module.css";
+
 import "./styles/App.css";
+import MenuStyles from "./components/MenuStyles.module.css";
 
 function App() {
   const [partShowing, setPartShowing] = useState("none");
   const [inSequence, setInSequence] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   return (
-    <div className="mainWallpaper">
-      <div>
-        <Background partShowing={partShowing} inSequence={inSequence} />
-
+    <>
+      <div className={MenuStyles.DropdownElement}>
+        <Navbar />
+      </div>
+      <div className="container">
         <Framework
           partShowing={partShowing}
           setPartShowing={setPartShowing}
           inSequence={inSequence}
           setInSequence={setInSequence}
         />
+
+        <Background partShowing={partShowing} inSequence={inSequence} />
       </div>
-    </div>
+    </>
   );
 }
 

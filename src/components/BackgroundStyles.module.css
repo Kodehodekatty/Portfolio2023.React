@@ -1,52 +1,19 @@
 .codebackground {
 
+    right: 5%;
 
-    margin-left: 320px;
-    width: 135vh;
-    position: relative;
-    height: 100vh;
+    width: max(145vh, 500px);
+    height: max(95vh, 500px);
+    position: absolute;
+    height: 95vh;
     margin-top: 0;
-
-
-
-
-}
-
-.bodyWallpaper {
-
-    margin-left: 320px;
-    width: 130vh;
-    position: relative;
-    height: 100vh;
-    margin-top: 0;
-
+    box-shadow: rgba(50, 50, 105, 0.307) 10px 6px 5px 5px, rgba(0, 0, 0, 0.192) 5px 3px 2px 5px;
 
 
 }
 
-.footerwallpaper {
-
-    margin-left: 320px;
-    width: 140vh;
-    position: relative;
-    height: 90vh;
-}
 
 
-.Headwallpaper {
-
-    margin-left: 320px;
-    width: 135vh;
-    margin-left: auto;
-    position: relative;
-    display: inline;
-    height: 100vh;
-    margin-top: 0;
-    margin-left: 350px;
-
-
-
-}
 
 .welcome {
 
@@ -54,7 +21,7 @@
     width: 100px;
     height: 20px;
     left: 40%;
-    top: -53px 0px;
+    top: -530px;
     white-space: nowrap;
 
     /* 
@@ -123,3 +90,15 @@
 } */
 
 }
+
+
+/* @media screen and (max-width: 800px) {
+    .codebackground {
+        display: block;
+        right: 0;
+        flex-basis: auto;
+        z-index: -2;
+        margin: auto;
+
+    }
+} */

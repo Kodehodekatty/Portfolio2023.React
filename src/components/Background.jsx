@@ -15,6 +15,8 @@ import bodyandface from "../images/VSC/faceandbodyCODE.png";
 import footercode from "../images/VSC/footer.png";
 import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
 import entirebody from "../images/VSC/entirebody.png";
+import AboutMe from "../Pages/AboutMe";
+import FaceNav from "../Pages/FaceNav";
 
 export default function Background({
   // the coding background and the different coding images connected to the image of me with the buttons
@@ -22,29 +24,40 @@ export default function Background({
   partShowing,
   inSequence,
 }) {
+  const [textSelector, setTextSelector] = useState("landing page");
+
   return (
-    <div className={styles.test}>
+    // <div className={styles.test}>
+    <section>
       {partShowing == "none" && (
         <img src={codeGraphicImg} className={styles.codebackground} />
       )}
       {partShowing == "face" && (
-        <img src={facecode} className={styles.Headwallpaper} />
+        <>
+          <img src={facecode} className={styles.codebackground} />
+          <FaceNav />
+        </>
       )}{" "}
-      {partShowing == "face" && (
-        <h1 className={styles.welcome}>Hi, I'm a frontend developer</h1>
-      )}
       {partShowing == "body" && (
-        <img
-          src={inSequence ? bodyandface : bodycode}
-          className={styles.bodyWallpaper}
-        />
-      )}
+        <>
+          <img
+            src={inSequence ? bodyandface : bodycode}
+            className={styles.codebackground}
+          />
+          {inSequence && <FaceNav setTextSelector={setTextSelector} />}
+          <AboutMe textSelector={textSelector} />
+        </>
+      )}{" "}
       {partShowing == "footer" && (
-        <img
-          src={inSequence ? entirebody : footercode}
-          className={styles.footerwallpaper}
-        />
-      )}
-    </div>
+        <>
+          <img
+            src={inSequence ? entirebody : footercode}
+            className={styles.codebackground}
+          />
+          {inSequence && <FaceNav setTextSelector={setTextSelector} />}
+          {inSequence && <AboutMe textSelector={textSelector} />}
+        </>
+      )}{" "}
+    </section>
   );
 }

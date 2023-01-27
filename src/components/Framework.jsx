@@ -9,11 +9,12 @@ import styled from "styled-components";
 import codeGraphicImg from "../images/image116.png";
 import styles from "../components/BackgroundStyles.module.css";
 import style2 from "../components/FrameworkStyles.module.css";
-import faceandbody from "../images/VSC/faceandbodyCODE.png";
+import faceandbody from "../images/faceandbody.png";
 import faceandbodyCODE from "../images/VSC/faceandbodyCODE.png";
 import AboutMe from "../Pages/AboutMe";
 import { render } from "react-dom";
 import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
+import fullkatty from "../images/VSC/fullkatty.png";
 
 const face = "<face>";
 const body = "<body>";
@@ -28,8 +29,20 @@ const Button = styled.button`
 
 // main shadow me starter image
 
-export function ShowImage() {
-  return <img src={fullshadow} className={style2.shadowmain} />;
+export function ShowImage(props) {
+  return (
+    <img
+      src={
+        {
+          none: fullshadow,
+          face: shadowme,
+          body: props.inSequence ? faceandbody : shadowbody,
+          footer: props.inSequence ? fullkatty : shadowfooter,
+        }[props.partShowing]
+      }
+      className={style2.shadowmain}
+    />
+  );
 }
 
 // the different looking me's, my face, body and footer
@@ -43,37 +56,28 @@ export default function Framework({
   return (
     <>
       {" "}
-      <div className={style2.btnGroup}>
-        {partShowing != "face" && (
-          <Button className={style2.btn1} onClick={ClickHandler}>
-            {face}
-          </Button>
-        )}
+      <div className={style2.something}>
+        <ShowImage partShowing={partShowing} inSequence={inSequence} />
+        <div className={style2.btnGroup}>
+          {partShowing != "face" && (
+            <Button className={style2.btn1} onClick={ClickHandler}>
+              {face}
+            </Button>
+          )}
 
-        {!partShowing != "body" && (
-          <Button className={style2.btn2} onClick={ClickHandler2}>
-            {body}
-          </Button>
-        )}
-        {!partShowing != "footer" && (
-          <Button className={style2.btn3} onClick={ClickHandler3}>
-            {footer}
-          </Button>
-        )}
+          {!partShowing != "body" && (
+            <Button className={style2.btn2} onClick={ClickHandler2}>
+              {body}
+            </Button>
+          )}
+          {!partShowing != "footer" && (
+            <Button className={style2.btn3} onClick={ClickHandler3}>
+              {footer}
+            </Button>
+          )}
+        </div>{" "}
       </div>{" "}
-      {partShowing == "face" && (
-        <img className={style2.faceimg} src={shadowme} />
-      )}
-      {partShowing == "body" && (
-        <img className={style2.bodyimg} src={shadowbody} />
-      )}
-      {partShowing == "footer" && (
-        <img className={style2.footerimg} src={shadowfooter} />
-      )}
-      {(partShowing == "body" || (partShowing == "footer" && inSequence)) && (
-        <AboutMe />
-      )}
-      {partShowing == "none" && <ShowImage />}
+      {partShowing == "body" || (partShowing == "footer" && inSequence)}
     </>
   );
 

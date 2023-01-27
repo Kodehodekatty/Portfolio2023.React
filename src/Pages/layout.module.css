@@ -1,23 +1,382 @@
+@font-face {
+    font-family: aboutme;
+    src: url(/src/fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: aboutme2;
+    src: url(/src/fonts/Comfortaa-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: aboutme3;
+    src: url(/src/fonts/Comfortaa-Bold.ttf);
+}
+
+
+
+
+
+
+
+
 .aboutMe {
-    width: 600px;
-    height: 300px;
+    width: 620px;
+    height: 360px;
     float: right;
     overflow-y: scroll;
-    color: black;
-    margin: -500px auto;
-    margin-right: 170px;
 
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
+    box-sizing: border-box;
+
+    color: black;
+    left: 44%;
+    top: 19%;
+
+    margin: 0 auto;
+    display: flex;
+
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
 
 
 
 
 }
+
+
+
+
+.aboutMe p {
+
+
+    font-family: aboutme;
+}
+
+.aboutMe h3 {
+
+
+    font-family: aboutme2;
+}
+
+
+.aboutMe h2 {
+
+
+    font-family: aboutme2;
+}
+
+.aboutMe h1 {
+
+
+
+
+    font-family: aboutme3;
+}
+
+
+
+
 
 .abouth1 {
 
-    margin-bottom: -5px;
+    width: 400px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline;
+    left: 40%;
+    top: 20%;
+
 
 }
+
+
+
+
+.skillbox {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1.5px solid rgb(0, 0, 0);
+
+
+
+}
+
+.skills {
+    text-align: right;
+
+    padding-top: 10px;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+}
+
+.html {
+    width: 90%;
+    background-color: rgb(248, 107, 56);
+}
+
+
+.css {
+    width: 90%;
+    background-color: #1527b4;
+}
+
+
+.js {
+    width: 65%;
+    background-color: yellow;
+}
+
+
+.react {
+    width: 60%;
+    background-color: #7bc0e5;
+}
+
+.skillp {
+
+
+    font-weight: 600;
+    margin: 8px;
+
+
+
+}
+
+
+.projectGallery {
+
+
+    min-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    border: 0.2em solid black;
+    font-size: 0.6em;
+    text-align: center;
+
+}
+
+.projectGallery>h1 {
+
+    background-color: rgb(204, 53, 169);
+}
+
+
+
+
+
+.card {
+    width: 90%;
+
+    margin: 1rem;
+    padding-bottom: 1rem;
+    background-image: url(/src/images/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: solid 2px #5d88b0;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.cardscontainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.card {
+
+    flex-basis: calc(50% - 3rem);
+}
+
+.card>h1 {
+
+    color: white;
+    text-shadow: 0.7px 0.2px 1.5px #000000;
+    font-size: 1em;
+}
+
+.label {
+    color: white;
+    width: 100px;
+
+    margin: 1.5em auto;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: rgb(106, 104, 240);
+    padding: 0.5rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px #000000;
+
+    font-size: 0.9em;
+
+}
+
+.label:hover {
+
+
+    scale: 110%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.bars {
+
+
+    margin: 0;
+    padding-top: 30px;
+
+
+
+}
+
+
+.kontaktboks {
+    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
+
+
+
+}
+
+.infobox {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.pinfo>p {
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    color: white;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+
+
+    background-color: rgb(106, 104, 240);
+    padding: 0.5rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px #000000;
+
+
+}
+
+.pinfo {
+
+    background-image: url(/src/images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+
+.pinfo>h1 {
+
+    font-size: 1em;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pinfo a {
+
+    color: white;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    margin: 20px auto;
+    width: 100px;
+    background-color: rgb(106, 104, 240);
+    padding: 0.5rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px #000000;
+
+
+}
+
+.grafisk {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 0;
+    width: 100%;
+    height: 100%;
+
+
+
+
+
+}
+
+.kompetanse {
+
+    margin: 20px auto;
+    width: 300px;
+    height: 130px;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+}
+
+.kompetanse p {
+    background-color: #7bc0e5;
+    width: 300px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+
+/* @media screen and (max-width: 800px) {
+    .aboutMe {
+        flex-basis: auto;
+        display: block;
+        left: 1%;
+
+
+    }
+} */

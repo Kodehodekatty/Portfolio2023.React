@@ -1,13 +1,17 @@
+@font-face {
+    font-family: codetext;
+    src: url(/src/fonts/CascadiaCode-jEZzj.ttf);
+}
+
+
+
+
 .shadowmain {
-
-
-
-
-
-    margin-left: 120px;
+    width: auto;
+    margin-left: 130px;
+    margin-right: 0;
     width: 50vh;
-    margin-top: -490px;
-
+    position: absolute;
 }
 
 
@@ -16,7 +20,7 @@
 
 
     margin-left: 120px;
-    width: 50vh;
+    width: 80vh;
     margin-top: -500px;
     position: relative;
     margin-bottom: 120px;
@@ -44,40 +48,22 @@
 
 
 .btn1 {
-    width: auto;
-    height: auto;
-
-
-    display: inline;
-    top: -5%;
-    left: 16%;
-
+    position: absolute;
+    top: -30%;
 }
 
 
 .btn2 {
-    width: auto;
-
-    position: relative;
-    display: inline;
-    height: auto;
-
-    top: 27%;
-    margin: 0;
+    position: absolute;
+    top: 30%;
 
 }
 
 
 .btn3 {
+    position: absolute;
 
-
-    width: auto;
-
-    position: relative;
-    height: auto;
-
-    top: 70%;
-    display: inline;
+    top: 100%;
 
 
 
@@ -85,17 +71,45 @@
 
 .btnGroup {
 
-    position: absolute;
-    display: inline;
-    width: 100px;
-    height: 300px;
-
-    margin: 10px auto;
-    left: 16%;
-    top: 42%;
-    z-index: 2;
+    position: relative;
+    margin-left: 82%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+
+.btnGroup>button:hover {
+    scale: 160%;
+}
+
+
+
+.btnGroup>button {
+
+    font-family: codetext;
+    animation: bounce .4s ease infinite alternate;
+
+}
+
+
+
+@keyframes bounce {
+    0% {
+        text-shadow:
+
+            0 1px 3px rgb(79, 79, 79);
+    }
+
+    100% {
+        transform: translateY(-3px);
+        text-shadow: 0 3px 0 rgba(81, 81, 81, 0.8),
+            0 0px 3px rgba(0, 0, 0, .8);
+    }
+}
+
+
 
 .faceandbody {
 
@@ -109,3 +123,46 @@
 
 
 }
+
+.something {
+    position: relative;
+    display: flex;
+    margin-top: 20%;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    z-index: 2;
+
+}
+
+
+/* @media screen and (max-width: 800px) {
+    .shadowmain {
+        position: relative;
+        z-index: 2;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    button {
+        
+        display: block;
+        z-index: 2;
+        margin: 0;
+
+    }
+} */
+/* 
+@media screen and (max-width: 800px) {
+    .something {
+        right: 20%;
+        margin-top: 130px;
+        display: block;
+        z-index: 2;
+
+
+    }
+
+
+} */
