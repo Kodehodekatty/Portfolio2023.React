@@ -45,7 +45,7 @@
 
 .container {
     position: absolute;
-    right: 53.4%;
+    right: auto;
     top: 38.1%;
     width: 272px;
 
