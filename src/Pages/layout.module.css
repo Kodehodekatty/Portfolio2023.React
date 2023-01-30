@@ -18,26 +18,34 @@
 
 
 
+::-webkit-scrollbar {
+    width: 20px;
+}
 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
 
-
+::-webkit-scrollbar-thumb {
+    background: rgb(204, 53, 169);
+    border-radius: 10px;
+}
 
 .aboutMe {
-    width: 620px;
-    height: 360px;
-    float: right;
+    height: 340px;
+    width: 680px;
+    flex-basis: auto;
     overflow-y: scroll;
-
+    overflow-x: hidden;
     box-sizing: border-box;
-
+    position: relative;
     color: black;
-    left: 44%;
-    top: 19%;
 
-    margin: 0 auto;
+    margin-left: -80px;
     display: flex;
+    margin-top: 40px;
 
-    position: absolute;
     text-align: center;
     padding-top: 10px;
 
@@ -47,12 +55,38 @@
 }
 
 
+.myname {
+    margin: 20px;
+    line-height: 30px;
+
+}
+
+.opening {
+
+    margin-left: 20px;
+}
+
+
 
 
 .aboutMe p {
 
-
+    width: 550px;
+    font-size: 0.9em;
+    height: 70px;
+    margin: 20px 60px auto;
     font-family: aboutme;
+
+}
+
+.paraskill p {
+    margin-top: 20px;
+
+    height: 20px;
+    display: inline-block;
+    width: auto;
+
+
 }
 
 .aboutMe h3 {
@@ -64,7 +98,7 @@
 
 .aboutMe h2 {
 
-
+    font-size: 1em;
     font-family: aboutme2;
 }
 
@@ -79,7 +113,6 @@
 
 
 
-
 .abouth1 {
 
     width: 400px;
@@ -88,23 +121,46 @@
     margin-right: auto;
     position: relative;
     display: inline;
-    left: 40%;
-    top: 20%;
+    left: 25%;
+    animation: text-focus-in 2s cubic-bezier(.55, .085, .68, .53) both;
+    top: 15%;
 
 
+
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(10px);
+        opacity: 0
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
 }
 
 
 
 
 .skillbox {
-    width: 300px;
+
+    width: 400px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 10px auto;
+
     border: 1.5px solid rgb(0, 0, 0);
 
 
 
+}
+
+.grafisktittel {
+
+    margin: 40px 30px;
+    width: 300px;
+    height: 40px;
 }
 
 .skills {
@@ -119,25 +175,25 @@
 }
 
 .html {
-    width: 90%;
+    width: 100%;
     background-color: rgb(248, 107, 56);
 }
 
 
 .css {
-    width: 90%;
+    width: 95%;
     background-color: #1527b4;
 }
 
 
 .js {
-    width: 65%;
+    width: 90%;
     background-color: yellow;
 }
 
 
 .react {
-    width: 60%;
+    width: 80%;
     background-color: #7bc0e5;
 }
 
@@ -145,18 +201,33 @@
 
 
     font-weight: 600;
-    margin: 8px;
+    margin: 10px;
+
 
 
 
 }
 
+.figma {
+    width: 75%;
+    background-color: #686868;
+}
+
+.adobe {
+    width: 89%;
+    background-color: #ff0000;
+}
+
+.wordpress {
+    width: 90%;
+    background-color: #00959d;
+}
 
 .projectGallery {
 
 
     min-width: 300px;
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -178,13 +249,13 @@
 
 .card {
     width: 90%;
-
-    margin: 1rem;
+    text-align: center;
+    margin: 10px -100px 40px;
     padding-bottom: 1rem;
     background-image: url(/src/images/Rectangle.png);
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
+
     border: solid 2px #5d88b0;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -194,11 +265,15 @@
 
 
 .cardscontainer {
-
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    width: 60%;
+    height: 70%;
+    align-items: flex-end;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    margin: 10px;
 }
 
 
@@ -206,7 +281,8 @@
 
 .card {
 
-    flex-basis: calc(50% - 3rem);
+    text-align: center;
+    flex-basis: calc(30% - 3rem);
 }
 
 .card>h1 {
@@ -218,13 +294,13 @@
 
 .label {
     color: white;
-    width: 100px;
 
-    margin: 1.5em auto;
+    text-align: center;
+
     font-size: 1.2rem;
     text-decoration: none;
     background-color: rgb(106, 104, 240);
-    padding: 0.5rem;
+
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
 
@@ -232,11 +308,25 @@
 
 }
 
+.card p {
+
+    width: 300px;
+    margin: 10px auto;
+    line-height: 60px;
+    text-align: center;
+}
+
 .label:hover {
 
 
-    scale: 110%;
+    scale: 90%;
+
     cursor: pointer;
+}
+
+.label:active {
+
+    background-color: rgb(50, 49, 148);
 }
 
 a {
@@ -246,12 +336,24 @@ a {
 
 
 .bars {
-
-
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     margin: 0;
-    padding-top: 30px;
+    position: relative;
+
+    padding-top: 10px;
 
 
+
+}
+
+.bigwrap {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 20%;
 
 }
 
@@ -259,7 +361,8 @@ a {
 .kontaktboks {
     margin: 0 auto;
     width: 70%;
-    height: fit-content;
+    line-height: 60px;
+
 
 
 
@@ -267,23 +370,24 @@ a {
 
 .infobox {
     padding-bottom: 30px;
-    margin: 0 auto;
+    margin: 10px 0;
     justify-content: center;
     display: flex;
     flex-direction: column;
+
 
 
 }
 
 .pinfo>p {
     padding: 10px;
-    width: 50%;
+    width: fit-content;
     margin: 20px auto;
     color: white;
 
     font-size: 1.2rem;
     text-decoration: none;
-
+    font-size: 0.9em;
 
 
     background-color: rgb(106, 104, 240);
@@ -301,6 +405,7 @@ a {
     background-size: cover;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
+
 
 }
 
@@ -337,7 +442,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 40px 0;
+    margin: auto;
     width: 100%;
     height: 100%;
 
@@ -349,9 +454,9 @@ a {
 
 .kompetanse {
 
-    margin: 20px auto;
-    width: 300px;
-    height: 130px;
+
+    width: 350px;
+    height: 200px;
     border: 1px solid black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
@@ -359,9 +464,9 @@ a {
 }
 
 .kompetanse p {
-    background-color: #7bc0e5;
-    width: 300px;
-    height: 20px;
+
+    width: 250px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,13 +475,99 @@ a {
 
 }
 
+.mma p {
 
-/* @media screen and (max-width: 800px) {
-    .aboutMe {
-        flex-basis: auto;
-        display: block;
-        left: 1%;
+    display: inline;
+    margin-left: 150px;
+}
+
+.linefix2 p {
+
+    margin-left: -80px;
+    margin-bottom: -50px;
+
+}
+
+.annet {
+    background-image: url(/src/images/skills.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+
+    background-position: 90%;
+    justify-items: center;
+    padding: 10px;
+    flex-direction: column;
+
+    margin: 0;
+    width: 90vh;
+    height: 200px;
+
+    font-size: 0.6em;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.cardfix {
+
+    margin-right: 15px;
+}
+
+.annet li {
+
+    width: 130px;
+    height: 10px;
+    font-family: aboutme3;
+    border-collapse: collapse;
+    list-style-type: none;
+    text-overflow: clip;
+
+    margin: 20px 150px;
+    padding: 5px;
 
 
-    }
-} */
+
+
+
+}
+
+.secondlist {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: -220px;
+    margin-left: 50px;
+
+
+}
+
+.secondlist li {
+    font-size: 0.6em;
+    width: 200px;
+    height: 5px;
+    font-family: aboutme3;
+    border-collapse: collapse;
+    list-style-type: none;
+    text-overflow: clip;
+
+    margin: 27px 240px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+
+.mecard {
+    padding: 30px;
+    margin-top: 50px;
+    margin-right: 100px;
+
+
+}
+
+.cardbox {
+    padding-bottom: 100px;
+    margin-left: -90px;
+}

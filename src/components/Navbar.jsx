@@ -46,7 +46,10 @@ export default function Navbar() {
   return (
     <div className={MenuStyles.container}>
       <nav className={MenuStyles.MenuNav}>
-        <button onClick={() => setOpen(!open)}> Social Media</button>
+        <button onClick={() => setOpen(!open)} className={MenuStyles.topButton}>
+          {" "}
+          Social Media
+        </button>
         {open && <List />}
 
         {open ? (

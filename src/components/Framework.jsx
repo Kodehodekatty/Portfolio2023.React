@@ -1,19 +1,11 @@
 import React, { useState, useRef } from "react";
-
 import shadowme from "../images/Frame 13.png";
 import shadowbody from "../images/secondshadowbody.png";
 import shadowfooter from "../images/shadowfooter.png";
 import fullshadow from "../images/fullshadow.png";
-import { useEffect } from "react";
 import styled from "styled-components";
-import codeGraphicImg from "../images/image116.png";
-import styles from "../components/BackgroundStyles.module.css";
 import style2 from "../components/FrameworkStyles.module.css";
 import faceandbody from "../images/faceandbody.png";
-import faceandbodyCODE from "../images/VSC/faceandbodyCODE.png";
-import AboutMe from "../Pages/AboutMe";
-import { render } from "react-dom";
-import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
 import fullkatty from "../images/VSC/fullkatty.png";
 
 const face = "<face>";
@@ -27,7 +19,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-// main shadow me starter image
+// main shadow me, starter image;
 
 export function ShowImage(props) {
   return (
@@ -45,7 +37,7 @@ export function ShowImage(props) {
   );
 }
 
-// the different looking me's, my face, body and footer
+// the different looking me images; my face, body and footer
 
 export default function Framework({
   partShowing,
@@ -105,16 +97,4 @@ export default function Framework({
 
     setPartShowing("footer");
   }
-
-  // function usePrevious(value) {
-  //   const ref = useRef();
-
-  //   // Store current value in ref
-  //   useEffect(() => {
-  //     ref.current = value;
-  //   }, [value]); // Only re-run if value changes
-
-  //   // Return previous value (happens before update in useEffect above)
-  //   return ref.current;
-  // }
 }

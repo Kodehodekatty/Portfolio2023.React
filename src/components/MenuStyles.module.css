@@ -4,7 +4,7 @@
 
     min-width: 80px;
     min-height: 10px;
-    margin: 0 auto;
+    margin: 0;
     padding: 3px;
 
 
@@ -14,22 +14,6 @@
 
 
 }
-
-@media screen and (max-width: 600px) {
-    .DropdownElement {
-        position: relative;
-        display: block;
-    }
-
-
-
-
-
-
-}
-
-
-
 
 
 .iconNames {
@@ -59,20 +43,18 @@
 
 }
 
+.container {
+    position: absolute;
+    right: 53.4%;
+    top: 38.1%;
+    width: 272px;
+
+}
 
 
 .container>.MenuNav {
-
-
-    background-color: rgb(6, 55, 103);
     margin: 0;
-
     font-size: 0.7em;
-    left: 20%;
-    max-width: 100px;
-    max-height: 5px;
-
-
 
 }
 
@@ -109,18 +91,19 @@
 
 }
 
+.topButton {
+    background-color: rgb(6, 55, 103);
+
+}
 
 .MenuNav>button {
 
-    width: 100%;
-
-    height: 100%;
+    width: 50%;
+    height: 3vh;
     text-align: left;
     position: relative;
-    background: none;
     color: inherit;
     border: none;
-    padding-bottom: 10px;
     color: whitesmoke;
     margin: 0;
 
@@ -139,8 +122,8 @@
     list-style-type: none;
     color: whitesmoke;
     padding: 0;
-    margin-top: -10px;
-    margin-left: -15px;
+    margin-top: 1px;
+    margin-left: 3px;
 
 
 
@@ -155,19 +138,10 @@
 
     position: relative;
     margin: 0;
-    left: 19%;
-    top: 10px;
+    left: 6%;
+    top: 5px;
 
     color: greenyellow;
 
-
-}
-
-.DropdownElement {
-    z-index: 1;
-    position: absolute;
-    top: 222px;
-    left: 28.5%;
-    margin: 0 auto;
 
 }

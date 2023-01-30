@@ -1,5 +1,4 @@
 import layout from "./layout.module.css";
-import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
 
 export default function AboutMe({ textSelector }) {
   return (
@@ -13,9 +12,9 @@ export default function AboutMe({ textSelector }) {
         <div>
           <h3>Litt kort om hvem jeg er</h3>
 
-          <h2>
-            Navnet er Kathrine, 28 år, og er deltaker i Kodehode, JoobLoop i
-            Stavanger.
+          <h2 className={layout.myname}>
+            Navnet mitt er Kathrine, 29 år, og er deltaker i Kodehode, JoobLoop
+            i Stavanger.
           </h2>
           <p>
             Som de aller fleste i min krets, så vokste jeg opp når den digitale
@@ -27,14 +26,13 @@ export default function AboutMe({ textSelector }) {
           <p>
             Min historie startet utgangspunktet innforbi den kreative bransjen.
             Jeg fullførte høyere studier innenfor litteratur film og teater i
-            kristiansand, med et utvekslingsår i Japan. Etterfulgt av, en
-            bachelor i PR/Kommunikasjon fra Deakin University, Australia.
+            Kristiansand, med et utvekslingsår i Japan. Etterfulgt av en
+            bachelor i PR/Kommunikasjon, fra Deakin University, Australia.
           </p>
 
           <p>
-            {" "}
             Men i 2022 fikk jeg endelig muligheten igjennom Kodehode å lære
-            programmering!{" "}
+            programmering!
           </p>
 
           <p>
@@ -44,10 +42,6 @@ export default function AboutMe({ textSelector }) {
               men fordi jeg også kan ta i bruk mine kreative talenter og
               kompentanse!
             </b>
-          </p>
-
-          <p>
-            <b> </b>
           </p>
 
           <p>
@@ -67,13 +61,13 @@ export default function AboutMe({ textSelector }) {
       )}
 
       {textSelector === "mitt arbeid" && (
-        <div>
-          <p>
+        <div className={layout.opening}>
+          <p className={layout.paraskill}>
             På Github siden min, finner du mange eksempler på oppgaver og
             prosjekter jeg har jobbet med på Kodehode, og utenom i den siste
             tiden.
           </p>
-          <p>
+          <p className={layout.paraskill}>
             Her skal jeg laget en mer oversiktlig liste over hva slags koding
             jeg har drevet med, mine programmeringsferdigheter, og andre
             erfaringer.
@@ -113,73 +107,80 @@ export default function AboutMe({ textSelector }) {
               </div>
             </div>
           </section>
-          <section className={layout.bars}>
-            <h2>Programmerings Nivå</h2>
-            <p className={layout.skillp}>HTML</p>
-            <div className={layout.skillbox}>
-              <div className={layout.html}>100%</div>
-            </div>
-
-            <p className={layout.skillp}>CSS</p>
-            <div className={layout.skillbox}>
-              <div className={layout.css}>95%</div>
-            </div>
-
-            <p className={layout.skillp}>JavaScript</p>
-            <div className={layout.skillbox}>
-              <div className={layout.js}>90%</div>
-            </div>
-
-            <p className={layout.skillp}>REACT</p>
-            <div className={layout.skillbox}>
-              <div className={layout.react}>80%</div>
-            </div>
-          </section>
-
-          <section className={layout.bars}>
-            <h1>andre ferdigheter</h1>
-            <p className={layout.skillp}>Figma</p>
-            <div className={layout.skillbox}>
-              <div className={layout.html}>75%</div>
-            </div>
-
-            <p className={layout.skillp}>Adobe Creative Suite</p>
-            <div className={layout.skillbox}>
-              <div className={layout.css}>89%</div>
-            </div>
-
-            <p className={layout.skillp}>Wordpress</p>
-            <div className={layout.skillbox}>
-              <div className={layout.js}>90%</div>
-            </div>
-            <section className={layout.grafisk}>
-              <p className={layout.skillp}>Andre Grafisk kompetanser</p>
-              <div className={layout.kompetanse}>
-                <p>Filmproduksjon</p>
-                <p>Video Redigering</p>
-                <p>Bilde redigering</p>
-              </div>
+          <div className={layout.bigwrap}>
+            <section className={layout.bars}>
+              <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
+              <span className={layout.mma}>
+                <p className={layout.skillp}>HTML</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.html}>100%</div>
+                </div>
+                <p className={layout.skillp}>CSS</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.css}>95%</div>
+                </div>
+                <p className={layout.skillp}>JavaScript</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.js}>90%</div>
+                </div>
+                <p className={layout.skillp}>REACT</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.react}>80%</div>
+                </div>{" "}
+              </span>
             </section>
 
-            <p className={layout.skillp}>Annet</p>
-            <ul className={layout.annet}>
-              <li>Public Relations</li>
-              <li>1-linje IT Support</li>
-              <li>Kundeservice/telefonsupport</li>
-              <li>Kommunikasjonsstrategier</li>
-              <li>Digital markedsføring</li>
-              <li>
-                administrasjon av sosiale medie kanaler og publisering av
-                innhold for klienter/bedrifter
-              </li>
-              <li>
-                Utvikling og gjennomføring av strategier og kampanjer i sosiale
-                medier
-              </li>
-              <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
-              <li>Teknisk engelsk og konversasjon</li>
-            </ul>
-          </section>
+            <section className={layout.bars}>
+              <h1 className={layout.grafisktittel}>
+                Annet programmvare kunnskaper
+              </h1>
+              <span className={layout.linefix2}>
+                <p className={layout.skillp}>Figma</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.figma}>75%</div>
+                </div>
+
+                <p className={layout.skillp}>Adobe Creative Suite</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.adobe}>89%</div>
+                </div>
+
+                <p className={layout.skillp}>Wordpress</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.wordpress}>90%</div>
+                </div>
+              </span>
+
+              <section className={layout.grafisk}>
+                <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
+                <div className={layout.kompetanse}>
+                  <p>Filmproduksjon</p>
+                  <p>Video Redigering</p>
+                  <p>Bilde redigering</p>
+                </div>
+              </section>
+            </section>
+            <div className={layout.cardbox}>
+              <h1 className={layout.mecard}>Annet</h1>
+
+              <span className={layout.cardfix}>
+                <ul className={layout.annet}>
+                  <li>Public Relations</li>
+                  <li>1-linje IT Support</li>
+
+                  <li>Kundeservice/telefonsupport</li>
+                </ul>
+                <ul className={layout.secondlist}>
+                  <li>Digital markedsføring</li>
+                  <li>
+                    administrasjon av sosiale medie kanaler og publisering av
+                    innhold for klienter.
+                  </li>
+                  <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
+                </ul>
+              </span>
+            </div>
+          </div>
         </div>
       )}
 
