@@ -1,12 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import codeGraphicImg from "../images/VSC/image16.png";
 import styles from "../components/BackgroundStyles.module.css";
-import facecode from "../images/VSC/faceCODE.png";
-import bodycode from "../images/VSC/onlybody.png";
-import bodyandface from "../images/VSC/faceandbodyCODE.png";
-import footercode from "../images/VSC/footer.png";
-import entirebody from "../images/VSC/entirebody.png";
+
 import AboutMe from "../Pages/AboutMe";
 import FaceNav from "../Pages/FaceNav";
 import Navbar from "./Navbar";
@@ -20,44 +15,50 @@ export default function Background({
   const [textSelector, setTextSelector] = useState("landing page");
 
   return (
-    // <div className={styles.test}>
     <div className={styles.backgroundContainer}>
-      {partShowing == "none" && (
-        <img src={codeGraphicImg} className={styles.codebackground} />
-      )}
+      <Navbar />
+      {partShowing == "none" && <div className={styles.codebackground}> </div>}
       {partShowing == "face" && (
         <>
-          <div className={styles.both}>
-            <FaceNav setTextSelector={setTextSelector} />
+          <div className={styles.facecodebackgrounddiv}>
+            <div className={styles.both}>
+              <FaceNav setTextSelector={setTextSelector} />
+            </div>
           </div>
-          <img src={facecode} className={styles.codebackground} />
         </>
       )}{" "}
       {partShowing == "body" && (
         <>
-          <div className={styles.both}>
-            {inSequence && <FaceNav setTextSelector={setTextSelector} />}
-            <AboutMe textSelector={textSelector} />
+          <div
+            className={
+              inSequence
+                ? styles.faceandbodybackgrounddiv
+                : styles.bodybackgrounddiv
+            }
+          >
+            <div className={styles.both}>
+              {inSequence && <FaceNav setTextSelector={setTextSelector} />}
+              <AboutMe textSelector={textSelector} />
+            </div>
           </div>
-          <img
-            src={inSequence ? bodyandface : bodycode}
-            className={styles.codebackground}
-          />
         </>
       )}{" "}
       {partShowing == "footer" && (
         <>
-          <div className={styles.both}>
-            {inSequence && <FaceNav setTextSelector={setTextSelector} />}
-            {inSequence && <AboutMe textSelector={textSelector} />}
+          <div
+            className={
+              inSequence
+                ? styles.entirebodybackgrounddiv
+                : styles.footerbackgrounddiv
+            }
+          >
+            <div className={styles.both}>
+              {inSequence && <FaceNav setTextSelector={setTextSelector} />}
+              {inSequence && <AboutMe textSelector={textSelector} />}
+            </div>
           </div>
-          <img
-            src={inSequence ? entirebody : footercode}
-            className={styles.codebackground}
-          />
         </>
       )}{" "}
-      <Navbar />
     </div>
   );
 }

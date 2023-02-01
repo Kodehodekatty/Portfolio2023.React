@@ -17,11 +17,10 @@
 
 
 .iconNames {
-    font-size: 1.5em;
-    width: 4px;
-    height: 5px;
-    left: 55px;
-    top: 10px;
+    font-size: 1.8vh;
+    min-width: 4px;
+    min-height: 5px;
+
     margin: 0;
     position: relative;
     display: inline;
@@ -98,7 +97,7 @@
 
 .MenuNav>button {
 
-    width: 50%;
+    min-width: 200px;
     height: 3vh;
     text-align: left;
     position: relative;

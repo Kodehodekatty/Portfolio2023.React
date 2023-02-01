@@ -1,16 +1,20 @@
 .codebackground {
+    margin: 20px 10px;
 
-    margin: 30px auto;
-    height: 90vh;
-    box-shadow: rgba(50, 50, 105, 0.307) 10px 6px 5px 5px, rgba(0, 0, 0, 0.192) 5px 3px 2px 5px;
-
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/image16.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 
 .backgroundContainer {
-    width: 100%;
-    height: 80%;
-    margin: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
 
 }
 
@@ -21,7 +25,7 @@
 
 
     width: 100px;
-    height: 200px;
+    height: 300px;
     left: 40%;
 
 
@@ -37,12 +41,81 @@
     justify-content: space-between;
     flex-direction: column;
 
-    width: 800px;
-    position: absolute;
-    flex-basis: auto;
-    margin: 40px 240px auto;
 
 
+    margin: 2% auto;
+    margin-left: 15%;
+
+
+
+
+
+
+}
+
+.bodybackgrounddiv {
+
+    margin: 20px auto;
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/onlybody.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.faceandbodybackgrounddiv {
+
+    margin: 20px 10px;
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/faceandbodyCODE.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.facecodebackgrounddiv {
+    margin: 20px 10px;
+
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/faceCODE.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.footerbackgrounddiv {
+
+    margin: 20px 10px;
+
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/footer.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+
+}
+
+
+
+.entirebodybackgrounddiv {
+
+    margin: 20px 10px;
+
+    min-height: 900px;
+    min-width: 900px;
+    background-image: url("../images/VSC/entirebody.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
 
 

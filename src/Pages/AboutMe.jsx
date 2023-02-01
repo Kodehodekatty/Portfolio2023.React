@@ -163,14 +163,13 @@ export default function AboutMe({ textSelector }) {
             <div className={layout.cardbox}>
               <h1 className={layout.mecard}>Annet</h1>
 
-              <span className={layout.cardfix}>
-                <ul className={layout.annet}>
+              <div className={layout.annet}>
+                <ul>
                   <li>Public Relations</li>
                   <li>1-linje IT Support</li>
 
                   <li>Kundeservice/telefonsupport</li>
-                </ul>
-                <ul className={layout.secondlist}>
+
                   <li>Digital markedsføring</li>
                   <li>
                     administrasjon av sosiale medie kanaler og publisering av
@@ -178,7 +177,7 @@ export default function AboutMe({ textSelector }) {
                   </li>
                   <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
                 </ul>
-              </span>
+              </div>
             </div>
           </div>
         </div>

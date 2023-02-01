@@ -33,18 +33,18 @@
 }
 
 .aboutMe {
-    height: 340px;
-    width: 680px;
-    flex-basis: auto;
+    flex-basis: 350px;
+
     overflow-y: scroll;
     overflow-x: hidden;
     box-sizing: border-box;
     position: relative;
     color: black;
 
-    margin-left: -80px;
-    display: flex;
-    margin-top: 40px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 2% 3% 0;
 
     text-align: center;
     padding-top: 10px;
@@ -115,15 +115,14 @@
 
 .abouth1 {
 
-    width: 400px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 750px;
+    height: 400px;
+
     position: relative;
-    display: inline;
-    left: 25%;
+
+
     animation: text-focus-in 2s cubic-bezier(.55, .085, .68, .53) both;
-    top: 15%;
+
 
 
 
@@ -493,16 +492,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 
+
     display: flex;
 
-    background-position: 90%;
     justify-items: center;
     padding: 10px;
-    flex-direction: column;
+    flex-direction: row;
 
     margin: 0;
-    width: 90vh;
-    height: 200px;
+    width: 40vw;
+    height: 14vw;
+
 
     font-size: 0.6em;
     border: 1px solid black;
@@ -515,22 +515,30 @@ a {
     margin-right: 15px;
 }
 
-.annet li {
+.annet ul {
 
-    width: 130px;
-    height: 10px;
+
     font-family: aboutme3;
-    border-collapse: collapse;
+
     list-style-type: none;
-    text-overflow: clip;
 
-    margin: 20px 150px;
-    padding: 5px;
+    flex-flow: wrap;
+    flex-shrink: 2;
+
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
 
 
 
 
 
+
+}
+
+.annet li {
+    width: 250px;
+    margin: 3% auto;
 }
 
 .secondlist {
