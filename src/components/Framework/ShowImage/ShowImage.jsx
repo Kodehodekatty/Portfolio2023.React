@@ -12,7 +12,7 @@ import style2 from "../../FrameworkStyles.module.css";
 
 export function ShowImage({ showHeader, showBody, showFooter }) {
   return (
-    <>
+    <div>
       {/* showing shadow me at the start*/}
       {!showHeader && !showBody && !showFooter && (
         <img className={style2.shadowmain} src={fullshadow} />
@@ -38,6 +38,6 @@ export function ShowImage({ showHeader, showBody, showFooter }) {
       {showHeader && showBody && showFooter && (
         <img className={style2.shadowmain} src={fullkatty} />
       )}
-    </>
+    </div>
   );
 }

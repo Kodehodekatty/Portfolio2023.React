@@ -7,73 +7,44 @@
 
 
 .shadowmain {
-
-    width: 50vh;
-}
-
-
-.faceimg {
-
-
-
-    margin-left: 120px;
-    width: 80vh;
-    margin-top: -500px;
     position: relative;
-    margin-bottom: 120px;
-
-}
-
-.bodyimg {
-
-    margin-left: 120px;
-    width: 50vh;
-    margin-top: -400px;
-
-
-}
-
-.footerimg {
-
-    margin-left: 120px;
-    width: 50vh;
-    margin-top: -390px;
-
-
+    width: 300px;
 
 }
 
 
-.btn1 {
-    position: absolute;
-    top: -30%;
-}
 
 
-.btn2 {
-    position: absolute;
-    top: 30%;
 
-}
+.btn1 {}
 
 
-.btn3 {
-    position: absolute;
+.btn2 {}
 
-    top: 100%;
 
+.btn3 {}
+
+
+.container {
+
+
+    margin-top: -370px;
+    padding: 50px;
 
 
 }
 
 .btnGroup {
 
-    position: absolute;
-    left: 22%;
-    height: 200px;
+
+
+    min-height: 280px;
+    width: fit-content;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 
 }
 
@@ -84,7 +55,9 @@
 
 
 .btnGroup>button {
-
+    width: 100px;
+    height: 20px;
+    border: 2px dotted white;
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
 
@@ -123,8 +96,20 @@
 
 .something {
     position: relative;
-    display: flex;
-    align-items: center;
-    z-index: 2;
+
+    width: 50px;
+    height: 100px;
+    margin-top: -20px;
+
+
+
+
+}
+
+.kattywrap {
+    width: 200px;
+    height: 50px;
+    position: relative;
+
 
 }

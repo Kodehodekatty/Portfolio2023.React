@@ -48,15 +48,9 @@ export default function Navbar() {
       <nav className={MenuStyles.MenuNav}>
         <button onClick={() => setOpen(!open)} className={MenuStyles.topButton}>
           {" "}
-          Social Media
+          <div className={MenuStyles.btnText}>Social Media</div>
         </button>
         {open && <List />}
-
-        {open ? (
-          <div className={MenuStyles.textlist}>My social media links</div>
-        ) : (
-          <div className={MenuStyles.textlist}>click here</div>
-        )}
       </nav>
     </div>
   );

@@ -1,22 +1,20 @@
 .codebackground {
-    margin: 20px 10px;
 
-    height: 900px;
-    width: 900px;
+
+    background-position: center;
+    position: relative;
+
+
+    flex-grow: 1;
+
+    /* margin-left: 200px; */
     background-image: url("../images/VSC/image16.png");
     background-repeat: no-repeat;
     background-size: contain;
 
 }
 
-.backgroundContainer {
 
-    display: flex;
-
-    justify-content: space-between;
-
-
-}
 
 
 
@@ -43,8 +41,6 @@
 
 
 
-    margin: 2% auto;
-    margin-left: 15%;
 
 
 
@@ -55,7 +51,7 @@
 
 .bodybackgrounddiv {
 
-    margin: 20px auto;
+    margin: auto;
     height: 900px;
     width: 900px;
     background-image: url("../images/VSC/onlybody.png");
@@ -67,7 +63,7 @@
 
 .faceandbodybackgrounddiv {
 
-    margin: 20px 10px;
+    margin: auto;
     height: 900px;
     width: 900px;
     background-image: url("../images/VSC/faceandbodyCODE.png");
@@ -78,8 +74,31 @@
 
 }
 
+.faceandfooter {
+    margin: auto;
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/faceandfooter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.whatever {
+
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+
+}
+
 .facecodebackgrounddiv {
-    margin: 20px 10px;
+    margin: auto;
 
     height: 900px;
     width: 900px;
@@ -92,7 +111,7 @@
 
 .footerbackgrounddiv {
 
-    margin: 20px 10px;
+    margin: auto;
 
     height: 900px;
     width: 900px;
@@ -105,18 +124,42 @@
 
 }
 
+.socialmediabar {
+
+    position: relative;
+
+    margin-top: 190px;
+    margin-left: -160px;
+
+}
+
 
 
 .entirebodybackgrounddiv {
 
-    margin: 20px 10px;
+    margin: auto;
 
-    min-height: 900px;
-    min-width: 900px;
+    height: 900px;
+    width: 900px;
     background-image: url("../images/VSC/entirebody.png");
     background-repeat: no-repeat;
     background-size: contain;
 
+
+
+
+}
+
+.bodyandfooterbackgrounddiv {
+
+
+    margin: auto;
+
+    height: 900px;
+    width: 900px;
+    background-image: url("../images/VSC/bodyandfooterbackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
 
 

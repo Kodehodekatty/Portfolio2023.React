@@ -3,7 +3,7 @@
 import Background from "./components/Background";
 import Framework from "./components/Framework/Framework";
 import Navbar from "./components/Navbar";
-
+import style2 from "./components/FrameworkStyles.module.css";
 import React, { useState } from "react";
 
 //imports styles
@@ -18,14 +18,16 @@ function App() {
   return (
     <>
       <div className="container">
-        <Framework
-          showHeader={showHeader}
-          showBody={showBody}
-          showFooter={showFooter}
-          setShowHeader={setShowHeader}
-          setShowBody={setShowBody}
-          setShowFooter={setShowFooter}
-        />
+        <div className={style2.kattywrap}>
+          <Framework
+            showHeader={showHeader}
+            showBody={showBody}
+            showFooter={showFooter}
+            setShowHeader={setShowHeader}
+            setShowBody={setShowBody}
+            setShowFooter={setShowFooter}
+          />
+        </div>
 
         <Background
           showHeader={showHeader}
