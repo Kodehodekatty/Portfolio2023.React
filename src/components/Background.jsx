@@ -5,6 +5,7 @@ import styles from "../components/BackgroundStyles.module.css";
 import AboutMe from "../Pages/AboutMe";
 import FaceNav from "../Pages/FaceNav";
 import Navbar from "./Navbar";
+import MenuStyles from "../components/MenuStyles.module.css";
 
 export default function Background({ showHeader, showBody, showFooter }) {
   const [textSelector, setTextSelector] = useState("landing page");
@@ -22,19 +23,17 @@ export default function Background({ showHeader, showBody, showFooter }) {
       {showHeader && showBody && !showFooter && (
         <div className={styles.faceandbodybackgrounddiv}>
           <FaceNav setTextSelector={setTextSelector} />
-
-          <div className={styles.socialmediabar}>
-            <Navbar />
-
-            <AboutMe textSelector={textSelector} />
-          </div>
+          <AboutMe textSelector={textSelector} />
         </div>
       )}
+
       {!showHeader && showBody && showFooter && (
-        <div className={styles.bodyandfooterbackgrounddiv}>
-          <AboutMe textSelector={textSelector} />
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+        <div className={styles.whatever}>
+          <div className={styles.bodyandfooterbackgrounddiv}>
+            <AboutMe textSelector={textSelector} />
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
           </div>
         </div>
       )}
@@ -46,9 +45,11 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {!showHeader && !showBody && showFooter && (
-        <div className={styles.footerbackgrounddiv}>
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+        <div className={styles.whatever}>
+          <div className={styles.footerbackgrounddiv}>
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
           </div>
         </div>
       )}
@@ -63,18 +64,22 @@ export default function Background({ showHeader, showBody, showFooter }) {
       )}
 
       {showHeader && showBody && showFooter && (
-        <div className={styles.entirebodybackgrounddiv}>
-          <FaceNav setTextSelector={setTextSelector} />
-          <AboutMe textSelector={textSelector} />{" "}
-          <div className={styles.socialmediabar}>
-            <Navbar />
+        <div className={styles.whatever}>
+          <div className={styles.entirebodybackgrounddiv}>
+            <div className={styles.socialmediabar}>
+              <Navbar />
+            </div>
+            <FaceNav setTextSelector={setTextSelector} />
+            <AboutMe textSelector={textSelector} />{" "}
           </div>
         </div>
       )}
       {!showHeader && !showBody && !showFooter && (
-        <div className={styles.codebackground}>
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+        <div className={styles.whatever}>
+          <div className={styles.codebackground}>
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
           </div>
         </div>
       )}
