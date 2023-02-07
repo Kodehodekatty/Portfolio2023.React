@@ -110,24 +110,22 @@ export default function AboutMe({ textSelector }) {
           <div className={layout.bigwrap}>
             <section className={layout.bars}>
               <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
-              <span className={layout.mma}>
-                <p className={layout.skillp}>HTML</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.html}>100%</div>
-                </div>
-                <p className={layout.skillp}>CSS</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.css}>95%</div>
-                </div>
-                <p className={layout.skillp}>JavaScript</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.js}>90%</div>
-                </div>
-                <p className={layout.skillp}>REACT</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.react}>80%</div>
-                </div>{" "}
-              </span>
+              <p className={layout.skillp}>HTML</p>
+              <div className={layout.skillbox}>
+                <div className={layout.html}>100%</div>
+              </div>
+              <p className={layout.skillp}>CSS</p>
+              <div className={layout.skillbox}>
+                <div className={layout.css}>95%</div>
+              </div>
+              <p className={layout.skillp}>JavaScript</p>
+              <div className={layout.skillbox}>
+                <div className={layout.js}>90%</div>
+              </div>
+              <p className={layout.skillp}>REACT</p>
+              <div className={layout.skillbox}>
+                <div className={layout.react}>80%</div>
+              </div>{" "}
             </section>
 
             <section className={layout.bars}>
@@ -153,11 +151,10 @@ export default function AboutMe({ textSelector }) {
 
               <section className={layout.grafisk}>
                 <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
-                <div className={layout.kompetanse}>
-                  <p>Filmproduksjon</p>
-                  <p>Video Redigering</p>
-                  <p>Bilde redigering</p>
-                </div>
+
+                <p>Filmproduksjon</p>
+                <p>Video Redigering</p>
+                <p>Bilde redigering</p>
               </section>
             </section>
             <div className={layout.cardbox}>

@@ -27,7 +27,7 @@ export default function Framework({
   setShowFooter,
 }) {
   return (
-    <div>
+    <div className={style2.wraptest}>
       {" "}
       <span className={style2.something}>
         <ShowImage

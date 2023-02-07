@@ -5,46 +5,52 @@ import styles from "../components/BackgroundStyles.module.css";
 import AboutMe from "../Pages/AboutMe";
 import FaceNav from "../Pages/FaceNav";
 import Navbar from "./Navbar";
-import MenuStyles from "../components/MenuStyles.module.css";
+
+import Footer from "../Pages/Footer";
 
 export default function Background({ showHeader, showBody, showFooter }) {
   const [textSelector, setTextSelector] = useState("landing page");
 
   return (
-    <div className={styles.whatever}>
-      {showHeader && !showBody && !showFooter && (
-        <div className={styles.facecodebackgrounddiv}>
-          <FaceNav setTextSelector={setTextSelector} />{" "}
+    <div className={styles.wrapping}>
+      {/* {showHeader && !showBody && !showFooter && (
+        <div className={styles.whatever}>
           <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+            {" "}
+            <Navbar />
+          </div>{" "}
+          <div className={styles.codeimage}>
+            <div className={styles.facewrap}>
+              <FaceNav setTextSelector={setTextSelector} />{" "}
+            </div>
           </div>
         </div>
-      )}
-      {showHeader && showBody && !showFooter && (
-        <div className={styles.faceandbodybackgrounddiv}>
+      )} */}
+      {/* {showHeader && showBody && !showFooter && (
+       
           <FaceNav setTextSelector={setTextSelector} />
           <AboutMe textSelector={textSelector} />
         </div>
-      )}
+      )} */}
 
-      {!showHeader && showBody && showFooter && (
+      {/* {!showHeader && showBody && showFooter && (
         <div className={styles.whatever}>
-          <div className={styles.bodyandfooterbackgrounddiv}>
+       
             <AboutMe textSelector={textSelector} />
             <div className={styles.socialmediabar}>
               <Navbar />{" "}
             </div>
           </div>
-        </div>
-      )}
-      {!showHeader && showBody && !showFooter && (
-        <div className={styles.bodybackgrounddiv}>
+        
+      )} */}
+      {/* {!showHeader && showBody && !showFooter && (
+        
           <div className={styles.socialmediabar}>
             <Navbar /> <AboutMe textSelector={textSelector} />
           </div>
-        </div>
-      )}
-      {!showHeader && !showBody && showFooter && (
+       
+      )} */}
+      {/* {!showHeader && !showBody && showFooter && (
         <div className={styles.whatever}>
           <div className={styles.footerbackgrounddiv}>
             <div className={styles.socialmediabar}>
@@ -52,37 +58,43 @@ export default function Background({ showHeader, showBody, showFooter }) {
             </div>
           </div>
         </div>
-      )}
-      {showHeader && !showBody && showFooter && (
-        <div className={styles.faceandfooter}>
+      )} */}
+      {/* {showHeader && !showBody && showFooter && (
+        
           <FaceNav setTextSelector={setTextSelector} />
 
           <div className={styles.socialmediabar}>
             <Navbar />{" "}
           </div>
-        </div>
-      )}
+        
+      )} */}
 
       {showHeader && showBody && showFooter && (
         <div className={styles.whatever}>
-          <div className={styles.entirebodybackgrounddiv}>
-            <div className={styles.socialmediabar}>
-              <Navbar />
-            </div>
+          <div className={styles.headerwrapper}>
             <FaceNav setTextSelector={setTextSelector} />
+          </div>
+          <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
+          </div>
+          <div className={styles.socialmediabar}>
+            <Navbar />
+          </div>
+          <div className={styles.footerbox}>
+            <Footer />
           </div>
         </div>
       )}
-      {!showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.codebackground}>
+      {/* {!showHeader && !showBody && !showFooter && (
+       
             <div className={styles.socialmediabar}>
               <Navbar />{" "}
             </div>
-          </div>
-        </div>
+       
       )}
+    </div>
+  );
+} */}
     </div>
   );
 }

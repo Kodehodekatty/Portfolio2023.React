@@ -8,7 +8,10 @@
 
 .shadowmain {
     position: relative;
-    width: 300px;
+    width: 60vh;
+    height: auto;
+
+
 
 }
 
@@ -25,25 +28,21 @@
 .btn3 {}
 
 
-.container {
+.container {}
 
-
-    margin-top: -370px;
-    padding: 50px;
-
-
-}
 
 .btnGroup {
-
-
-
-    min-height: 280px;
-    width: fit-content;
-
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: left;
+
+    margin-left: 80px;
+    margin-top: -460px;
+
+
+
+
 
 
 }
@@ -55,11 +54,15 @@
 
 
 .btnGroup>button {
-    width: 100px;
-    height: 20px;
-    border: 2px dotted white;
+    min-width: 7vw;
+    font-size: 1vw;
+    min-height: 5vh;
+    border: 5px dotted white;
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
+    margin-top: 100px;
+
+
 
 }
 
@@ -81,25 +84,14 @@
 
 
 
-.faceandbody {
-
-    margin-left: 320px;
-    width: 135vh;
-    position: relative;
-    height: 100vh;
-    margin-top: 0;
-
-
-
-
-}
-
 .something {
     position: relative;
+    top: 70vh;
 
-    width: 50px;
-    height: 100px;
-    margin-top: -20px;
+    min-width: 10vh;
+    min-height: 2vh;
+    margin: 0;
+
 
 
 
@@ -107,9 +99,12 @@
 }
 
 .kattywrap {
-    width: 200px;
-    height: 50px;
+
     position: relative;
+    width: 10px;
+    height: auto;
+
+
 
 
 }

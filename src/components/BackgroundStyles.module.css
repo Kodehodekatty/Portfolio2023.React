@@ -1,22 +1,22 @@
 .codebackground {
 
 
-    background-position: center;
+
     position: relative;
 
-
-    flex-grow: 1;
+    height: auto;
 
     /* margin-left: 200px; */
     background-image: url("../images/VSC/image16.png");
     background-repeat: no-repeat;
     background-size: contain;
 
+
 }
 
 
 
-
+/* 
 
 
 .welcome {
@@ -51,9 +51,9 @@
 
 .bodybackgrounddiv {
 
-    margin: auto;
-    height: 900px;
-    width: 900px;
+    height: auto;
+    width: 100%;
+    flex-grow: 1;
     background-image: url("../images/VSC/onlybody.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -62,12 +62,11 @@
 }
 
 .faceandbodybackgrounddiv {
+    height: auto;
+    width: 100%;
 
-    margin: auto;
-    height: 900px;
-    width: 900px;
     background-image: url("../images/VSC/faceandbodyCODE.png");
-
+    flex-grow: 1;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -75,33 +74,32 @@
 }
 
 .faceandfooter {
-    margin: auto;
-    height: 900px;
-    width: 900px;
+
+    height: auto;
+    width: 100%;
     background-image: url("../images/VSC/faceandfooter.png");
     background-repeat: no-repeat;
     background-size: contain;
 
 
-}
+} */
 
-.whatever {
 
+
+
+
+
+
+
+
+.wrapping {}
+
+/* .facecodebackgrounddiv {
+
+
+
+    height: auto;
     width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-
-
-}
-
-.facecodebackgrounddiv {
-    margin: auto;
-
-    height: 900px;
-    width: 900px;
     background-image: url("../images/VSC/faceCODE.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,10 +109,9 @@
 
 .footerbackgrounddiv {
 
-    margin: auto;
 
-    height: 900px;
-    width: 900px;
+    height: auto;
+    width: 100%;
     background-image: url("../images/VSC/footer.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -122,25 +119,17 @@
 
 
 
-}
-
-.socialmediabar {
-
-    position: relative;
-
-    margin-top: 190px;
-    margin-left: -160px;
-
-}
+} */
 
 
 
+
+/* 
 .entirebodybackgrounddiv {
 
-    margin: auto;
 
-    height: 900px;
-    width: 900px;
+    height: auto;
+    width: 100%;
     background-image: url("../images/VSC/entirebody.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -153,13 +142,76 @@
 .bodyandfooterbackgrounddiv {
 
 
-    margin: auto;
-
-    height: 900px;
-    width: 900px;
+    height: auto;
+    width: 100%;
     background-image: url("../images/VSC/bodyandfooterbackground.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+
+
+} */
+
+.codeimage {
+
+
+    width: 100%;
+    height: auto;
+
+
+
+
+}
+
+.facewrap {
+    grid-column: 2 / -3;
+
+
+}
+
+.socialmediabar {
+    grid-row: 1/-1
+}
+
+
+.aboutmewrapper {
+    grid-column: 2 / -3;
+
+
+
+}
+
+.footerbox {
+
+
+    margin-top: -10px;
+    margin-right: 15px;
+    grid-column: 2 / -3;
+}
+
+.VSHwrap {
+    grid-column: 2 / -3;
+
+}
+
+.whatever {
+
+    height: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: 20vh 85vh 20vh;
+    justify-items: stretch;
+
+    background-image: url("../images/VSC/vscbackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: min-content;
+    height: auto;
+
+    margin-top: -300px;
+
 
 
 

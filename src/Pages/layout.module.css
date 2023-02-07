@@ -37,17 +37,21 @@
 
     overflow-y: scroll;
     overflow-x: hidden;
-    box-sizing: content-box;
-    position: relative;
+    box-sizing: border-box;
+
     color: black;
 
-    width: 600px;
-    height: 300px;
 
-    margin-left: 350px;
-    margin-top: -140px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+
     text-align: center;
-    padding-top: 10px;
+
+    background-image: url("../images/VSC/aboutmebackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
 
 
@@ -62,8 +66,8 @@
 }
 
 .opening {
-
-    margin-left: 20px;
+    margin: 0;
+    margin-top: 40px;
 }
 
 
@@ -71,10 +75,12 @@
 
 .aboutMe p {
 
-    width: 550px;
-    font-size: 0.9em;
-    height: 70px;
-    margin: 20px 60px auto;
+    width: fit-content;
+
+    font-size: 1vw;
+    width: 40vw;
+    height: 2vw;
+    margin: 50px auto;
     font-family: aboutme;
 
 }
@@ -91,14 +97,15 @@
 
 .aboutMe h3 {
 
-
+    font-size: 3vw;
     font-family: aboutme2;
+    padding: 20px;
 }
 
 
 .aboutMe h2 {
 
-    font-size: 1em;
+    font-size: 1vw;
     font-family: aboutme2;
 }
 
@@ -156,10 +163,7 @@
 }
 
 .grafisktittel {
-
-    margin: 40px 30px;
-    width: 300px;
-    height: 40px;
+    padding-bottom: 60px;
 }
 
 .skills {
@@ -200,7 +204,7 @@
 
 
     font-weight: 600;
-    margin: 10px;
+
 
 
 
@@ -247,14 +251,15 @@
 
 
 .card {
-    width: 90%;
+    width: 10vw;
     text-align: center;
-    margin: 10px -100px 40px;
+    flex-grow: 1;
+    margin: auto;
     padding-bottom: 1rem;
     background-image: url(/src/images/Rectangle.png);
     background-size: cover;
     background-repeat: no-repeat;
-
+    font-size: 1vw;
     border: solid 2px #5d88b0;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -266,13 +271,13 @@
 .cardscontainer {
     text-align: center;
     display: flex;
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: auto;
     align-items: flex-end;
     flex-direction: column;
 
-    justify-content: flex-end;
-    margin: 10px;
+    justify-content: center;
+    margin: auto;
 }
 
 
@@ -281,7 +286,7 @@
 .card {
 
     text-align: center;
-    flex-basis: calc(30% - 3rem);
+    width: 33vw;
 }
 
 .card>h1 {
@@ -299,17 +304,18 @@
     font-size: 1.2rem;
     text-decoration: none;
     background-color: rgb(106, 104, 240);
-
+    width: 2vw;
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
 
-    font-size: 0.9em;
+    height: 1vw;
+    font-size: 0.9vw;
 
 }
 
 .card p {
-
-    width: 300px;
+    height: 2vw;
+    width: 20vw;
     margin: 10px auto;
     line-height: 60px;
     text-align: center;
@@ -335,9 +341,9 @@ a {
 
 
 .bars {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+
+    width: 100%;
+
     margin: 0;
     position: relative;
 
@@ -352,9 +358,13 @@ a {
 
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    padding-left: 20%;
 
+
+}
+
+.bigwrap h1 {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -443,13 +453,20 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    height: 50%;
+    border: 0.5px solid black;
 
 
 
 
 
+
+}
+
+.grafisk p {
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .kompetanse {
@@ -475,16 +492,11 @@ a {
 
 }
 
-.mma p {
 
-    display: inline;
-    margin-left: 150px;
-}
 
 .linefix2 p {
 
-    margin-left: -80px;
-    margin-bottom: -50px;
+    margin-bottom: 20px;
 
 }
 
@@ -578,5 +590,5 @@ a {
 
 .cardbox {
     padding-bottom: 100px;
-    margin-left: -90px;
+    margin: auto;
 }

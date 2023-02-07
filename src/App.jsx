@@ -28,12 +28,13 @@ function App() {
             setShowFooter={setShowFooter}
           />
         </div>
-
-        <Background
-          showHeader={showHeader}
-          showBody={showBody}
-          showFooter={showFooter}
-        />
+        <div className="wrapper">
+          <Background
+            showHeader={showHeader}
+            showBody={showBody}
+            showFooter={showFooter}
+          />
+        </div>
       </div>
     </>
   );
