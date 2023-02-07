@@ -1,0 +1,38 @@
+.footerwrapper {
+
+    width: 100vh;
+    height: 10vh;
+    position: relative;
+    margin: 0;
+
+}
+
+.footerbackground {
+
+
+    background-image: url("../images/VSC/footer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 170vh;
+    height: 20vh;
+
+
+
+
+}
+
+.footerbackground>ul {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    color: wheat;
+    font-size: 1.7vw;
+    width: 100px;
+    height: 2px;
+
+
+
+
+}
