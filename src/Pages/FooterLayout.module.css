@@ -1,7 +1,27 @@
+@font-face {
+    font-family: aboutme;
+    src: url(/src/fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: aboutme2;
+    src: url(/src/fonts/Comfortaa-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: aboutme3;
+    src: url(/src/fonts/Comfortaa-Bold.ttf);
+}
+
+
+
+
+
 .footerwrapper {
 
-    width: 100vh;
-    height: 10vh;
+
     position: relative;
     margin: 0;
 
@@ -10,11 +30,15 @@
 .footerbackground {
 
 
-    background-image: url("../images/VSC/footer2.png");
+    background-image: url("../images/VSC/footer3.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 170vh;
-    height: 20vh;
+    background-size: contain;
+    width: 139vh;
+    height: 17vh;
+    background-position-x: -6%;
+    background-position-y: 5%;
+
+
 
 
 
@@ -25,14 +49,31 @@
 
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
+    align-items: start;
     justify-content: space-evenly;
-    color: wheat;
-    font-size: 1.7vw;
-    width: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    width: 600px;
+    text-align: end;
+    padding-top: 30px;
     height: 2px;
+    list-style: none;
+    align-content: stretch;
 
 
 
 
+
+}
+
+
+.bottomtext {}
+
+
+@media (max-height: 400px) {
+    .footerbackground {
+        width: 70vh;
+
+        height: 10vh;
+    }
 }

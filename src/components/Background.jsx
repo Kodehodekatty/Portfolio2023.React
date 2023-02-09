@@ -7,58 +7,70 @@ import FaceNav from "../Pages/FaceNav";
 import Navbar from "./Navbar";
 
 import Footer from "../Pages/Footer";
+import VSCbackground from "../images/VSC/vscbackground.png";
 
 export default function Background({ showHeader, showBody, showFooter }) {
   const [textSelector, setTextSelector] = useState("landing page");
 
   return (
     <div className={styles.wrapping}>
-      {/* {showHeader && !showBody && !showFooter && (
+      {showHeader && !showBody && !showFooter && (
         <div className={styles.whatever}>
+          <div className={styles.headerwrapper}>
+            <FaceNav setTextSelector={setTextSelector} />
+          </div>
           <div className={styles.socialmediabar}>
-            {" "}
             <Navbar />
-          </div>{" "}
-          <div className={styles.codeimage}>
-            <div className={styles.facewrap}>
-              <FaceNav setTextSelector={setTextSelector} />{" "}
-            </div>
           </div>
         </div>
-      )} */}
-      {/* {showHeader && showBody && !showFooter && (
-       
-          <FaceNav setTextSelector={setTextSelector} />
-          <AboutMe textSelector={textSelector} />
-        </div>
-      )} */}
-
-      {/* {!showHeader && showBody && showFooter && (
+      )}
+      {showHeader && showBody && !showFooter && (
         <div className={styles.whatever}>
-       
-            <AboutMe textSelector={textSelector} />
-            <div className={styles.socialmediabar}>
-              <Navbar />{" "}
-            </div>
+          <div className={styles.headerwrapper}>
+            <FaceNav setTextSelector={setTextSelector} />
           </div>
-        
-      )} */}
-      {/* {!showHeader && showBody && !showFooter && (
-        
+          <div className={styles.aboutmewrapper}>
+            <AboutMe textSelector={textSelector} />{" "}
+          </div>
           <div className={styles.socialmediabar}>
-            <Navbar /> <AboutMe textSelector={textSelector} />
-          </div>
-       
-      )} */}
-      {/* {!showHeader && !showBody && showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.footerbackgrounddiv}>
-            <div className={styles.socialmediabar}>
-              <Navbar />{" "}
-            </div>
+            <Navbar />
           </div>
         </div>
-      )} */}
+      )}
+      {!showHeader && showBody && showFooter && (
+        <div className={styles.whatever}>
+          <div className={styles.aboutmewrapper}>
+            <AboutMe textSelector={textSelector} />
+          </div>
+          <div className={styles.socialmediabar}>
+            <Navbar />{" "}
+          </div>
+          <div className={styles.footerbox}>
+            <Footer />
+          </div>
+        </div>
+      )}
+      {!showHeader && showBody && !showFooter && (
+        <div className={styles.whatever}>
+          <div className={styles.aboutmewrapper}>
+            <AboutMe textSelector={textSelector} />
+          </div>
+
+          <div className={styles.socialmediabar}>
+            <Navbar />{" "}
+          </div>
+        </div>
+      )}
+      {!showHeader && !showBody && showFooter && (
+        <div className={styles.whatever}>
+          <div className={styles.footerbox}>
+            <Footer />
+          </div>
+          <div className={styles.socialmediabar}>
+            <Navbar />{" "}
+          </div>
+        </div>
+      )}
       {/* {showHeader && !showBody && showFooter && (
         
           <FaceNav setTextSelector={setTextSelector} />
@@ -68,7 +80,6 @@ export default function Background({ showHeader, showBody, showFooter }) {
           </div>
         
       )} */}
-
       {showHeader && showBody && showFooter && (
         <div className={styles.whatever}>
           <div className={styles.headerwrapper}>
@@ -85,16 +96,13 @@ export default function Background({ showHeader, showBody, showFooter }) {
           </div>
         </div>
       )}
-      {/* {!showHeader && !showBody && !showFooter && (
-       
-            <div className={styles.socialmediabar}>
-              <Navbar />{" "}
-            </div>
-       
+      {!showHeader && !showBody && !showFooter && (
+        <div className={styles.whatever}>
+          <div className={styles.socialmediabar}>
+            <Navbar />{" "}
+          </div>
+        </div>
       )}
-    </div>
-  );
-} */}
     </div>
   );
 }

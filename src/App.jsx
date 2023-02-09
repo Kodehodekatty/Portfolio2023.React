@@ -3,12 +3,13 @@
 import Background from "./components/Background";
 import Framework from "./components/Framework/Framework";
 import Navbar from "./components/Navbar";
-import style2 from "./components/FrameworkStyles.module.css";
+import style from "./components/BackgroundStyles.module.css";
 import React, { useState } from "react";
 
 //imports styles
 
 import "./styles/App.css";
+import "./styles/index.css";
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
@@ -16,27 +17,25 @@ function App() {
   const [showFooter, setShowFooter] = useState(false);
 
   return (
-    <>
-      <div className="container">
-        <div className={style2.kattywrap}>
-          <Framework
-            showHeader={showHeader}
-            showBody={showBody}
-            showFooter={showFooter}
-            setShowHeader={setShowHeader}
-            setShowBody={setShowBody}
-            setShowFooter={setShowFooter}
-          />
-        </div>
-        <div className="wrapper">
-          <Background
-            showHeader={showHeader}
-            showBody={showBody}
-            showFooter={showFooter}
-          />
-        </div>
+    <div className="grid">
+      <div className="wrapper">
+        <Framework
+          showHeader={showHeader}
+          showBody={showBody}
+          showFooter={showFooter}
+          setShowHeader={setShowHeader}
+          setShowBody={setShowBody}
+          setShowFooter={setShowFooter}
+        />
       </div>
-    </>
+      <div className="container">
+        <Background
+          showHeader={showHeader}
+          showBody={showBody}
+          showFooter={showFooter}
+        />
+      </div>
+    </div>
   );
 }
 

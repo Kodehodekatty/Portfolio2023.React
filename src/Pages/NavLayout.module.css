@@ -1,11 +1,32 @@
-.FaceNavWrap {
-    width: 173vh;
+@font-face {
+    font-family: aboutme;
+    src: url(/src/fonts/Comfortaa-Light.ttf);
+}
 
-    height: 30vh;
-    background-position-x: 10%;
+@font-face {
+    font-family: aboutme2;
+    src: url(/src/fonts/Comfortaa-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: aboutme3;
+    src: url(/src/fonts/Comfortaa-Bold.ttf);
+}
+
+
+
+.FaceNavWrap {
+    width: 121vh;
+
+    height: 20vh;
+    background-position-y: 10%;
     background-image: url("../images/VSC/headerbackground2.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position-x: 10%;
+    background-position-y: 2%;
 
 
 }
@@ -52,14 +73,15 @@
     border: 1.5px solid whitesmoke;
 
     margin: 20px auto;
-    width: 20vh;
-
+    width: 16vh;
+    font-size: 2vh;
     border-radius: 20px;
     background-image: url(/src/images/Rectangle.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 5vh;
+    height: 7vh;
     cursor: pointer;
+    font-family: aboutme3;
 
 }
 
@@ -69,4 +91,26 @@
     color: whitesmoke;
 
 
+}
+
+
+@media (max-height: 400px) {
+    .FaceNavWrap {
+        width: 80vh;
+
+        height: 20vh;
+    }
+
+    button {
+        height: 1vh;
+        width: 1vh;
+
+    }
+
+    .list {
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        align-content: start;
+    }
 }

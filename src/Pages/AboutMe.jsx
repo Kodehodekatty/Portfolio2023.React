@@ -9,7 +9,7 @@ export default function AboutMe({ textSelector }) {
         </div>
       )}
       {textSelector === "om meg" && (
-        <div>
+        <div className={layout.wordfix}>
           <h3>Litt kort om hvem jeg er</h3>
 
           <h2 className={layout.myname}>
@@ -36,22 +36,26 @@ export default function AboutMe({ textSelector }) {
           </p>
 
           <p>
-            Min ambisjon for å bli front end utvikler, og drive med utvikling av
-            web- og mobile applikasjoner, er ikke bare fordi jeg elsker å kode,{" "}
-            <b>
-              men fordi jeg også kan ta i bruk mine kreative talenter og
-              kompentanse!
-            </b>
+            <blockquote>
+              {" "}
+              Min ambisjon for å bli front end utvikler, og drive med utvikling
+              av web- og mobile applikasjoner, er ikke bare fordi jeg elsker å
+              kode,{" "}
+              <b>
+                men fordi jeg også kan ta i bruk mine kreative talenter og
+                kompentanse!
+              </b>{" "}
+            </blockquote>{" "}
           </p>
 
           <p>
             {" "}
-            Mine design kunnskaper i Figma/Adobe programmer sammen med
+            Design kunnskaper i Figma/Adobe programmer sammen med
             programmeringsspråk som JavaScript og rammeverk som React, gir meg
             gode ferdigheter til å faktisk virkeligjøre nettsider fra bunnen av!
           </p>
 
-          <p>
+          <p className={layout.bottompadding}>
             Det er enda så mye mer kode,rammeverk og programmer jeg vil lære for
             anskaffe høyere digital kompetansen. Muligheten for praksis ute i
             den store verden, tror jeg er riktig neste steg for å få både
@@ -75,7 +79,7 @@ export default function AboutMe({ textSelector }) {
 
           <section id={layout.cards}>
             <div className={layout.cardscontainer}>
-              <div className={layout.card} id={layout.project1}>
+              <div className={layout.card}>
                 <h1>Prosjekter som har blitt kodet i React/Vite</h1>
 
                 <a href="https://github.com/Kodehodekatty/JulCountdown">
@@ -132,26 +136,23 @@ export default function AboutMe({ textSelector }) {
               <h1 className={layout.grafisktittel}>
                 Annet programmvare kunnskaper
               </h1>
-              <span className={layout.linefix2}>
-                <p className={layout.skillp}>Figma</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.figma}>75%</div>
-                </div>
 
-                <p className={layout.skillp}>Adobe Creative Suite</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.adobe}>89%</div>
-                </div>
+              <p className={layout.skillp}>Figma</p>
+              <div className={layout.skillbox}>
+                <div className={layout.figma}>75%</div>
+              </div>
 
-                <p className={layout.skillp}>Wordpress</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.wordpress}>90%</div>
-                </div>
-              </span>
+              <p className={layout.skillp}>Adobe Creative Suite</p>
+              <div className={layout.skillbox}>
+                <div className={layout.adobe}>89%</div>
+              </div>
 
+              <p className={layout.skillp}>Wordpress</p>
+              <div className={layout.skillbox}>
+                <div className={layout.wordpress}>90%</div>
+              </div>
+              <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
               <section className={layout.grafisk}>
-                <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
-
                 <p>Filmproduksjon</p>
                 <p>Video Redigering</p>
                 <p>Bilde redigering</p>
@@ -169,8 +170,8 @@ export default function AboutMe({ textSelector }) {
 
                   <li>Digital markedsføring</li>
                   <li>
-                    administrasjon av sosiale medie kanaler og publisering av
-                    innhold for klienter.
+                    administrasjon av og publisering av innhold for klienter på
+                    sosiale medie kanaler .
                   </li>
                   <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
                 </ul>

@@ -6,10 +6,12 @@ export default function Footer() {
       <div className={FooterLayout.footerbackground}>
         <ul>
           <li>
-            <h1>test</h1>
+            <h1 className={FooterLayout.bottomtext}>
+              copyright: Kathrine Stangeland 2023
+            </h1>
           </li>
           <li>
-            <h1>test</h1>
+            <h1>Portfolio</h1>
           </li>
         </ul>
       </div>

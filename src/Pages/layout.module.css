@@ -42,32 +42,59 @@
     color: black;
 
 
-    height: 100vh;
-    width: 100%;
+    height: 75vh;
+    width: 122vh;
     position: relative;
+    grid-template-columns: repeat(1, 10vh);
+    font-size: 3vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+    grid-gap: 10px;
+    justify-items: center;
 
-
-    text-align: center;
-
+    background-position-x: 10%;
+    background-position-y: 5%;
     background-image: url("../images/VSC/aboutmebackground.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 
 
 
 }
 
+.bottompadding {
 
-.myname {
-    margin: 20px;
-    line-height: 30px;
+    padding-bottom: 300px;
+}
+
+.aboutMe>* {
+    grid-row: 1/3;
+    min-width: 0;
+    grid-column: 3/-1;
+}
+
+.aboutMe>.cardbox {
+    grid-row: 1 / -1;
+    margin: 20px 0;
+
 
 }
+
+
+blockquote {
+    grid-row: 1 / -1;
+    margin: 10px 0;
+    font-weight: 600;
+    border-left: 10px solid #ffffff;
+    padding-left: 10px;
+}
+
+
 
 .opening {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 
@@ -75,37 +102,34 @@
 
 .aboutMe p {
 
-    width: fit-content;
 
-    font-size: 1vw;
-    width: 40vw;
-    height: 2vw;
-    margin: 50px auto;
-    font-family: aboutme;
 
-}
+    font-size: 3vh;
 
-.paraskill p {
-    margin-top: 20px;
 
-    height: 20px;
-    display: inline-block;
-    width: auto;
-
+    margin: 35px auto;
+    font-family: aboutme2;
 
 }
+
+.myname {}
+
+.paraskill p {}
+
+.wordfix {}
 
 .aboutMe h3 {
-
-    font-size: 3vw;
+    padding-top: 100px;
+    font-size: 6vh;
     font-family: aboutme2;
-    padding: 20px;
+
+
 }
 
 
 .aboutMe h2 {
 
-    font-size: 1vw;
+    font-size: 3vh;
     font-family: aboutme2;
 }
 
@@ -122,12 +146,13 @@
 
 .abouth1 {
 
-    width: 750px;
-    height: 400px;
+    width: max-content;
+    height: 200px;
+    padding-top: 200px;
 
     position: relative;
 
-
+    grid-column-start: 2;
     animation: text-focus-in 2s cubic-bezier(.55, .085, .68, .53) both;
 
 
@@ -151,8 +176,8 @@
 
 
 .skillbox {
-
-    width: 400px;
+    width: 80%;
+    grid-column: 1 / 4;
     box-sizing: border-box;
     margin: 10px auto;
 
@@ -163,16 +188,17 @@
 }
 
 .grafisktittel {
-    padding-bottom: 60px;
+
+    margin-top: 50px;
 }
 
 .skills {
-    text-align: right;
+
 
     padding-top: 10px;
 
     padding-bottom: 5px;
-
+    grid-row: 1/1;
     color: white;
 
 }
@@ -251,7 +277,7 @@
 
 
 .card {
-    width: 10vw;
+
     text-align: center;
     flex-grow: 1;
     margin: auto;
@@ -266,34 +292,43 @@
 }
 
 
-
-
-.cardscontainer {
-    text-align: center;
-    display: flex;
-    width: 70%;
-    height: auto;
-    align-items: flex-end;
-    flex-direction: column;
-
-    justify-content: center;
-    margin: auto;
+#project1 {
+    margin-top: 100px;
 }
 
+.cardscontainer {
+    margin-top: 100px;
+}
 
+#cards {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
 
 
 .card {
 
-    text-align: center;
-    width: 33vw;
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 60vh;
+    height: 40vh;
+    justify-content: center;
+
+
+
 }
 
 .card>h1 {
 
     color: white;
     text-shadow: 0.7px 0.2px 1.5px #000000;
-    font-size: 1em;
+    font-size: 3vh;
+    width: auto;
+    min-height: 5vh;
+    position: relative;
 }
 
 .label {
@@ -307,9 +342,12 @@
     width: 2vw;
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
+    text-align: center;
+    padding: 10px;
 
     height: 1vw;
-    font-size: 0.9vw;
+
+
 
 }
 
@@ -319,14 +357,17 @@
     margin: 10px auto;
     line-height: 60px;
     text-align: center;
+    line-height: 40px;
+    font-size: 1.3vw;
 }
 
 .label:hover {
 
 
     scale: 90%;
-
+    text-shadow: 0.7px 0.2px 1.5px #000000;
     cursor: pointer;
+
 }
 
 .label:active {
@@ -346,7 +387,10 @@ a {
 
     margin: 0;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 10px;
 
 
@@ -356,16 +400,18 @@ a {
 .bigwrap {
 
 
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 3vh;
+    display: grid;
+    grid-template-rows:
+        1fr min(65ch, 100%) 1fr;
+    justify-items: stretch;
+    width: 65ch;
 
 
 }
 
-.bigwrap h1 {
-    display: flex;
-    flex-direction: column;
-}
+.bigwrap h1 {}
 
 
 .kontaktboks {
@@ -449,12 +495,13 @@ a {
 
 .grafisk {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    width: fit-content;
+
+    width: 100%;
     height: 50%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 0.5px solid black;
 
 
@@ -513,11 +560,11 @@ a {
     flex-direction: row;
 
     margin: 0;
-    width: 40vw;
-    height: 14vw;
+    width: 100vh;
+    height: 40vh;
+    background-position: 49%;
 
 
-    font-size: 0.6em;
     border: 1px solid black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
@@ -534,13 +581,12 @@ a {
     font-family: aboutme3;
 
     list-style-type: none;
+    font-size: max(2vh);
 
-    flex-flow: wrap;
-    flex-shrink: 2;
 
-    margin: 10px auto;
-    width: 200px;
-    height: 200px;
+    margin: 30px auto;
+    width: 50vh;
+    height: 20vh;
 
 
 
@@ -550,40 +596,27 @@ a {
 }
 
 .annet li {
-    width: 250px;
-    margin: 3% auto;
-}
+    position: relative;
+    width: 60vh;
+    margin: 4%;
+    text-align: center;
+    text-indent: 4%;
 
-.secondlist {
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    flex-direction: column;
-    margin-top: -220px;
-    margin-left: 50px;
+
 
 
 }
 
-.secondlist li {
-    font-size: 0.6em;
-    width: 200px;
-    height: 5px;
-    font-family: aboutme3;
-    border-collapse: collapse;
-    list-style-type: none;
-    text-overflow: clip;
 
-    margin: 27px 240px;
-    margin-bottom: 20px;
-    padding: 5px;
-}
+
+
 
 
 .mecard {
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: 100px;
+
 
 
 }
@@ -591,4 +624,16 @@ a {
 .cardbox {
     padding-bottom: 100px;
     margin: auto;
+    text-align: center;
+    text-indent: 60px;
+
+}
+
+
+@media (max-height: 400px) {
+    .aboutMe {
+        width: 80vh;
+        grid-column: 3/-3;
+        height: 50vh;
+    }
 }
