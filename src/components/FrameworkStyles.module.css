@@ -38,16 +38,17 @@
     display: grid;
 
 
-    grid-template-columns: repeat(auto-fit, minmax(20vh, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10vh, 1fr));
     grid-auto-flow: row;
-    grid-template-rows: repeat(3, 27vh);
+    grid-template-rows: repeat(3, 25vh);
     padding: 10px;
-
+    justify-content: stretch;
+    align-items: stretch;
 
 }
 
 .btnGroup>button:hover {
-    scale: 160%;
+    scale: 130%;
 
 }
 
@@ -56,13 +57,14 @@
 .btnGroup>button {
 
 
-    border: 2px dotted rgba(255, 255, 255, 0.225);
+    border: 0.7px dotted rgba(255, 255, 255, 0.225);
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
-    margin: auto;
-    width: 16vh;
-    height: 3vh;
-    font-size: 1vw;
+    margin-top: 30px;
+    width: fit-content;
+    height: 2vh;
+    font-size: 2vh;
+
 
 
 
@@ -92,15 +94,15 @@
     position: relative;
 
 
-    align-content: start;
+    align-items: center;
     justify-content: stretch;
 
 
     display: grid;
 
 
-    grid-template-columns: repeat(3, 10vh);
-    grid-template-rows: 10vh minmax(50vh, 20vh) 1vh;
+    grid-template-columns: repeat(3, 15%);
+    grid-template-rows: 60% minmax(10%, 30%) 1fr;
 
 
 
@@ -117,10 +119,10 @@
 
 }
 
-@media (max-height: 400px) {
+@media (max-height: 500px) {
     .shadowmain {
         width: 40vh;
-        grid-column: 1/-3;
+        grid-column: 1/-1;
         height: 50vh;
 
 
@@ -128,9 +130,33 @@
     }
 
     .btnGroup>button {
-        width: 8vh;
-        height: 4vh;
-        grid-column: 3/2;
-        margin: -10px;
+        width: min-content;
+        margin-top: 1px;
+        grid-column-start: -1;
+        width: -10px;
+        height: 1px;
+
+
+
+
     }
+
+    .something {
+        grid-template-columns: repeat(3, 10%);
+    }
+
+    .btnGroup {
+        grid-column: 2/-3;
+        grid-template-rows: repeat(3, 15%);
+
+
+    }
+}
+
+@media (max-width: 700px) {
+
+    .something {
+        grid-template-columns: repeat(3, 20vh);
+    }
+
 }
