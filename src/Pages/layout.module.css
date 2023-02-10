@@ -94,7 +94,8 @@ blockquote {
 
 .opening {
     margin: 0;
-    margin-top: 100px;
+    margin-top: 30px;
+
 }
 
 
@@ -119,7 +120,7 @@ blockquote {
 .wordfix {}
 
 .aboutMe h3 {
-    padding-top: 100px;
+    padding-top: 6%;
     font-size: 6vh;
     font-family: aboutme2;
 
@@ -146,13 +147,13 @@ blockquote {
 
 .abouth1 {
 
-    width: max-content;
-    height: 200px;
-    padding-top: 200px;
+    width: fit-content;
+    height: 30px;
+    padding-top: 2vh;
 
     position: relative;
 
-    grid-column-start: 2;
+
     animation: text-focus-in 2s cubic-bezier(.55, .085, .68, .53) both;
 
 
@@ -632,8 +633,23 @@ a {
 
 @media (max-height: 400px) {
     .aboutMe {
-        width: 80vh;
+        width: 100%;
         grid-column: 3/-3;
-        height: 50vh;
+        height: 48vh;
+        background-position-x: 3px;
+        background-position-y: 2px;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .abouth1 {
+
+        font-size: 3vh;
+        width: 70vh;
+        height: 30px;
+        margin: 10%;
     }
 }

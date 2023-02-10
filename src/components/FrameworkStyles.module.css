@@ -57,12 +57,12 @@
 .btnGroup>button {
 
 
-    border: 0.7px dotted rgba(255, 255, 255, 0.225);
+    border: 0.7px dotted rgba(0, 0, 0, 0.225);
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
     margin-top: 30px;
-    width: fit-content;
-    height: 2vh;
+    width: 5vw;
+    height: 5vh;
     font-size: 2vh;
 
 
@@ -101,8 +101,8 @@
     display: grid;
 
 
-    grid-template-columns: repeat(3, 15%);
-    grid-template-rows: 60% minmax(10%, 30%) 1fr;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 30% minmax(10%, 30%) 1fr;
 
 
 
@@ -121,9 +121,9 @@
 
 @media (max-height: 500px) {
     .shadowmain {
-        width: 40vh;
-        grid-column: 1/-1;
-        height: 50vh;
+        width: auto;
+        grid-column: -3/1;
+        height: 70vh;
 
 
 
@@ -133,8 +133,8 @@
         width: min-content;
         margin-top: 1px;
         grid-column-start: -1;
-        width: -10px;
-        height: 1px;
+        width: 50px;
+        height: 10px;
 
 
 
@@ -142,21 +142,14 @@
     }
 
     .something {
-        grid-template-columns: repeat(3, 10%);
+        grid-template-columns: repeat(3, 20%);
+        align-items: stretch;
     }
 
     .btnGroup {
-        grid-column: 2/-3;
-        grid-template-rows: repeat(3, 15%);
+        grid-column: -1/2;
+        grid-template-rows: repeat(3, 200%);
 
 
     }
-}
-
-@media (max-width: 700px) {
-
-    .something {
-        grid-template-columns: repeat(3, 20vh);
-    }
-
 }

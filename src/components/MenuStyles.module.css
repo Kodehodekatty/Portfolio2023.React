@@ -141,13 +141,15 @@
     border-bottom: none;
     color: whitesmoke;
 
-    width: 160px;
-    height: 35px;
+    width: 30vh;
+    height: 3vh;
+
     grid-column: 1/2;
     grid-row: 3/-1;
     font: inherit;
     font-size: 3vh;
     cursor: pointer;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 
 }
 

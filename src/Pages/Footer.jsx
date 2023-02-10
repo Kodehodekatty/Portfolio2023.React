@@ -4,16 +4,14 @@ export default function Footer() {
   return (
     <div className={FooterLayout.footerwrapper}>
       <div className={FooterLayout.footerbackground}>
-        <ul>
-          <li>
-            <h1 className={FooterLayout.bottomtext}>
+        <div className={FooterLayout.text}>
+          <ul className={FooterLayout.footerlist}>
+            <li className={FooterLayout.footeritems}>
               copyright: Kathrine Stangeland 2023
-            </h1>
-          </li>
-          <li>
-            <h1>Portfolio</h1>
-          </li>
-        </ul>
+            </li>
+            <li className={FooterLayout.footeritems}>Portfolio</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
