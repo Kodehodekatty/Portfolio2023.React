@@ -248,16 +248,11 @@
     }
 
 
-
-}
-
-
-@media (max-height: 400px) {
-    .whatever {
-        width: 100vh;
-        grid-template-rows: 10vh 40vh 20vh;
+    @media (max-width: 450px) {
+        .whatever {
+            width: 200vw;
+            grid-template-rows: 10vh 40vh 20vh;
+        }
     }
-
-
 
 }

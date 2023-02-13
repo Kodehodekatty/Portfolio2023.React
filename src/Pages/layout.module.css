@@ -19,17 +19,20 @@
 
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
+
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgb(204, 53, 169);
     border-radius: 10px;
+
 }
 
 .aboutMe {
@@ -137,9 +140,9 @@ blockquote {
 .aboutMe h1 {
 
 
-
-
+    font-size: 4vh;
     font-family: aboutme3;
+    margin: 20px auto;
 }
 
 
@@ -294,11 +297,11 @@ blockquote {
 
 
 #project1 {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .cardscontainer {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 #cards {
@@ -314,9 +317,10 @@ blockquote {
     display: flex;
     align-content: center;
     flex-direction: column;
-    width: 60vh;
-    height: 40vh;
+    width: 80%;
+    height: 30%;
     justify-content: center;
+
 
 
 
@@ -358,7 +362,7 @@ blockquote {
     margin: 10px auto;
     line-height: 60px;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
     font-size: 1.3vw;
 }
 
@@ -418,7 +422,10 @@ a {
 .kontaktboks {
     margin: 0 auto;
     width: 70%;
+    height: 50%;
     line-height: 60px;
+    grid-column: 2/-3;
+    grid-row: 2/1;
 
 
 
@@ -432,21 +439,24 @@ a {
     display: flex;
     flex-direction: column;
 
-
-
 }
 
 .pinfo>p {
     padding: 10px;
-    width: fit-content;
+    text-align: center;
+
     margin: 20px auto;
     color: white;
 
-    font-size: 1.2rem;
+    font-size: 1em;
     text-decoration: none;
     font-size: 0.9em;
 
+    width: 30%;
+    line-break: auto;
 
+    height: 80%;
+    line-height: 30px;
     background-color: rgb(106, 104, 240);
     padding: 0.5rem;
     border-radius: 7px;
@@ -462,6 +472,7 @@ a {
     background-size: cover;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
+
 
 
 }
@@ -633,11 +644,12 @@ a {
 
 @media (max-height: 400px) {
     .aboutMe {
-        width: 100%;
-        grid-column: 3/-3;
-        height: 48vh;
+        width: max-content;
+        grid-template-columns: (5, 1fr);
+        height: 120%;
         background-position-x: 3px;
         background-position-y: 2px;
+        grid-template-rows: 10vh 1fr;
     }
 
 
@@ -651,5 +663,17 @@ a {
         width: 70vh;
         height: 30px;
         margin: 10%;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+    .aboutMe {
+
+        grid-template-columns: (5, 1fr);
+        height: 120%;
+
+        grid-template-rows: 10vh 1fr;
     }
 }
