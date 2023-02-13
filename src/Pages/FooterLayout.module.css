@@ -76,29 +76,3 @@
     text-shadow: 6px 6px 0px rgba(113, 113, 113, 0.39);
 
 }
-
-.bottomtext {}
-
-
-@media (max-height: 400px) {
-    .footerbackground {
-        width: 80vh;
-        background-position-x: 30%;
-        background-position-y: 0;
-
-        height: 12vh;
-    }
-
-    .footeritems {
-        font-size: 1.6vh;
-        margin-top: 4vh;
-
-
-    }
-
-    .footerlist {
-        text-indent: -10%;
-        text-align: center;
-
-    }
-}

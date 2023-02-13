@@ -48,10 +48,10 @@
     height: 75vh;
     width: 122vh;
     position: relative;
-    grid-template-columns: repeat(1, 10vh);
+    grid-template-columns: repeat(10, 1fr);
     font-size: 3vh;
     display: grid;
-    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-rows: repeat(20, auto);
     grid-gap: 10px;
     justify-items: center;
 
@@ -68,13 +68,14 @@
 
 .bottompadding {
 
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 
 .aboutMe>* {
-    grid-row: 1/3;
+    grid-row: 1/2;
     min-width: 0;
-    grid-column: 3/-1;
+    grid-column: 2/10;
+
 }
 
 .aboutMe>.cardbox {
@@ -109,24 +110,21 @@ blockquote {
 
 
     font-size: 3vh;
-
-
+    text-align: center;
+    text-justify: inter-word;
+    width: 100%;
     margin: 35px auto;
     font-family: aboutme2;
 
 }
 
-.myname {}
 
-.paraskill p {}
-
-.wordfix {}
 
 .aboutMe h3 {
     padding-top: 6%;
     font-size: 6vh;
     font-family: aboutme2;
-
+    text-align: center;
 
 }
 
@@ -135,6 +133,7 @@ blockquote {
 
     font-size: 3vh;
     font-family: aboutme2;
+    text-align: center;
 }
 
 .aboutMe h1 {
@@ -143,6 +142,7 @@ blockquote {
     font-size: 4vh;
     font-family: aboutme3;
     margin: 20px auto;
+    text-align: center;
 }
 
 
@@ -350,7 +350,7 @@ blockquote {
     text-align: center;
     padding: 10px;
 
-    height: 1vw;
+    height: 3vh;
 
 
 
@@ -420,43 +420,42 @@ a {
 
 
 .kontaktboks {
-    margin: 0 auto;
-    width: 70%;
-    height: 50%;
-    line-height: 60px;
-    grid-column: 2/-3;
-    grid-row: 2/1;
+    margin: 20px auto;
+    width: 100%;
+
+
+    line-height: 10px;
+    border-radius: 20px;
+
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+
+    grid-column: 2/10;
+    grid-row: 4/5;
+    border-radius: 20px;
+    background-image: url(/src/images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 
 
 }
 
-.infobox {
-    padding-bottom: 30px;
-    margin: 10px 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
 
-}
 
-.pinfo>p {
-    padding: 10px;
+.kontaktpara {
+    padding: 5px;
     text-align: center;
 
-    margin: 20px auto;
+
     color: white;
 
     font-size: 1em;
     text-decoration: none;
     font-size: 0.9em;
 
-    width: 30%;
-    line-break: auto;
 
-    height: 80%;
-    line-height: 30px;
     background-color: rgb(106, 104, 240);
     padding: 0.5rem;
     border-radius: 7px;
@@ -465,26 +464,49 @@ a {
 
 }
 
+.kontaktpara2 {
+    background-color: rgb(231, 29, 207);
+    cursor: pointer;
+    height: 60px;
+    line-height: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+
+.kontaktpara2:hover {
+    scale: 110%;
+
+}
+
 .pinfo {
 
-    background-image: url(/src/images/Rectangle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
+    margin: 1px auto;
+
+    line-height: 15px;
+    width: 50%;
 
 
-
+    margin: auto;
 }
 
 
 .pinfo>h1 {
-
-    font-size: 1em;
-    text-align: center;
-    margin: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 1em;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 20px;
+
+
+}
+
+.kontakttittel {
+
+    margin-top: 40px;
+    color: white;
+    text-shadow: 0.7px 0.3px 1.5px #000000;
 
 }
 
@@ -495,10 +517,8 @@ a {
     font-size: 1.2rem;
     text-decoration: none;
 
-    margin: 20px auto;
-    width: 100px;
-    background-color: rgb(106, 104, 240);
-    padding: 0.5rem;
+
+
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
 
@@ -610,7 +630,7 @@ a {
 .annet li {
     position: relative;
     width: 60vh;
-    margin: 4%;
+    margin: 3%;
     text-align: center;
     text-indent: 4%;
 
@@ -643,7 +663,7 @@ a {
 
 
 @media (max-height: 400px) {
-    .aboutMe {
+    /* .aboutMe {
         width: max-content;
         grid-template-columns: (5, 1fr);
         height: 120%;
@@ -675,5 +695,5 @@ a {
         height: 120%;
 
         grid-template-rows: 10vh 1fr;
-    }
+    } */
 }
