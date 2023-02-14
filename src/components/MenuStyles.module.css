@@ -21,14 +21,22 @@
 
 
 .iconNames {
-    font-size: 2vh;
-
+    font-size: 2.5vh;
+    color: white;
     margin: 0;
     position: relative;
-    width: 2vh;
-    height: 2vw;
-
-
+    padding: 11px;
+    grid-row: 1/2;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-position-y: 50%;
+    padding-left: 20px;
 
 }
 
@@ -37,6 +45,11 @@
     width: 5vh;
     height: 5vh;
     padding: 2px;
+    display: flex;
+
+
+
+
 
 
 
@@ -51,31 +64,64 @@
 
 }
 
-.container {
+.socialclick {
 
-    background-image: url("../images/VSC/socialmediabackground.png");
-    background-repeat: no-repeat;
-    height: auto;
-    width: 31vh;
-    background-size: contain;
-    justify-items: stretch;
+    border: 1px solid rgb(122, 122, 122);
+
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 10%));
+    grid-template-rows: repeat(100px, 1fr);
+    align-content: stretch;
+    justify-items: start;
+    justify-content: space-between;
+    align-items: stretch;
+    display: grid;
+
+
 
 }
 
-.container>.MenuNav {
+.socialclick:hover {
+
+    background-color: rgba(211, 211, 211, 0.207);
+    width: 140px;
+    height: fit-content;
+    cursor: pointer;
+
+}
+
+.socialbox {
+
+    background-image: url("../images/VSC/socialmediabackground.png");
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: fit-content;
+    background-size: contain;
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(10, 100px);
+    resize: both;
+
+
+}
+
+.MenuNav {
 
     font-size: 0.7em;
     position: relative;
-    font-size: 1vw;
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(10, 3vh);
-    grid-template-rows: repeat(10, 7vw);
-    justify-content: space-around;
-    height: fit-content;
-    width: fit-content;
 
+
+    /* grid-template-columns: repeat(1, 10%);
+    font-size: 3vh;
+    display: grid;
+    grid-template-rows: repeat(30, 5%); */
+    grid-gap: 10px;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
     justify-items: stretch;
+
 
 
 
@@ -89,67 +135,69 @@
     text-align: left;
     position: relative;
     background-color: none;
-    color: inherit;
+
     border: none;
-    padding: 4px;
+    padding: 10px;
 
 
     font: inherit;
     display: flex;
     flex-direction: column;
-    justify-items: left;
+
 
     align-items: stretch;
-    width: 2vw;
-    min-height: 20px;
 
     font-size: 0.8em;
     cursor: pointer;
+    grid-row: 1/2;
 }
 
 
 
-.media:hover {
-    background-color: rgba(211, 211, 211, 0.478);
-    width: 100px;
 
-    border-radius: 10px;
-
-
-}
-
-.Social:hover {}
 
 .topButton {
     background-color: grey;
 
-    width: 100px;
-    height: 20px;
+
 
 
 
 }
 
-.MenuNav>button {
+
+
+.btnwrap {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    border: none;
+    width: 200px;
+    height: 10px;
+
+    border: none;
 
 
 
+}
 
-    color: inherit;
+.btnwrap>button {
+
     border-right: none;
     border-top: none;
     border-bottom: none;
+    font: inherit;
+    font-size: 1.5em;
+
+    cursor: pointer;
     color: whitesmoke;
 
-    width: 30vh;
-    height: 3vh;
+}
 
-    grid-column: 1/2;
-    grid-row: 3/-1;
-    font: inherit;
-    font-size: 3vh;
-    cursor: pointer;
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+
+
+.btnwrap>button:hover {
+
+    background-color: rgb(73, 73, 74);
 
 }
 
@@ -174,18 +222,22 @@
     }
 }
 
-.MenuNav>button:hover {
-
-    background-color: rgb(73, 73, 74);
 
 
-}
-
-.MenuNav>button:focus {
+.btnwrap>button:focus {
 
     background-color: rgb(4, 57, 94);
     border: 1.5px solid rgb(11, 112, 184);
 
+
+
+}
+
+.test {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(5, 50%);
+    grid-template-rows: repeat(10, 20%);
 
 
 }
@@ -198,97 +250,59 @@
     list-style-type: none;
     color: whitesmoke;
     padding-bottom: 10px;
+    position: relative;
 
-    margin: 0;
-    grid-row: 6/4;
+    grid-row: 7/8;
     grid-column: 1/2;
     align-items: center;
     text-align: center;
+
 }
 
 .arrow {
 
-    width: 1vh;
-    height: 1.5vh;
-    padding-right: 2px;
-
+    width: 1vw;
+    height: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    align-items: flex-start;
 }
 
-@media (max-height: 400px) {
-    .container {
-        width: 20vh;
+@media (max-width: 430px) {
+    .container {}
 
 
 
-    }
-
-
-
-    .topButton {
+    /* .topButton {
 
         width: 1px;
         height: 2px;
 
         font-size: 1px;
-    }
-
-    .MenuNav {}
-
-    .MenuNav>button {
-
-        grid-row: -2/2;
-
-        width: 20vh;
-        height: 2vh;
-        font-size: 2vh;
-    }
-
-    .MenuNav>button:hover {
-
-        width: 100px;
-    }
-
-    .btnText {
-        font-size: 1vh;
-    }
-
-    .MenuNav {
-        width: 10%;
-        height: 10%;
-
-    }
-
-    .iconlist {
-        grid-row: 2/-1;
-        padding-top: 30px;
+    } */
 
 
-    }
+    .MenuNav>button:hover {}
 
-    li>.media {
+    .btnText {}
 
-        width: 2px;
-    }
 
-    .Social {
 
-        width: 3vh;
-        height: 3vh;
-    }
+    .iconlist {}
+
+    li>.media {}
+
+    .Social {}
 }
 
 @media (max-height: 300px) {
-    .container {
-        width: 20vh;
-
-
-
-    }
+    .container {}
 }
 
 @media (max-width: 430px) {
 
-    .MenuNav>button {
+    /* .MenuNav>button {
 
         grid-row: 8/9;
 
@@ -302,6 +316,6 @@
         padding-top: 30px;
 
 
-    }
+    } */
 
 }

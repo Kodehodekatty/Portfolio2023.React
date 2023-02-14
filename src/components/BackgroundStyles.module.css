@@ -6,7 +6,6 @@
 
     height: auto;
 
-    /* margin-left: 200px; */
     background-image: url("../images/VSC/image16.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,141 +15,6 @@
 
 
 
-/* 
-
-
-.welcome {
-
-
-    width: 100px;
-    height: 300px;
-    left: 40%;
-
-
-}
-
-
-
-
-
-.both {
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-
-
-
-
-
-
-
-
-}
-
-.bodybackgrounddiv {
-
-    height: auto;
-    width: 100%;
-    flex-grow: 1;
-    background-image: url("../images/VSC/onlybody.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-}
-
-.faceandbodybackgrounddiv {
-    height: auto;
-    width: 100%;
-
-    background-image: url("../images/VSC/faceandbodyCODE.png");
-    flex-grow: 1;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-}
-
-.faceandfooter {
-
-    height: auto;
-    width: 100%;
-    background-image: url("../images/VSC/faceandfooter.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-} */
-
-
-
-
-
-
-
-
-
-.wrapping {}
-
-/* .facecodebackgrounddiv {
-
-
-
-    height: auto;
-    width: 100%;
-    background-image: url("../images/VSC/faceCODE.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-}
-
-.footerbackgrounddiv {
-
-
-    height: auto;
-    width: 100%;
-    background-image: url("../images/VSC/footer.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-
-} */
-
-
-
-
-/* 
-.entirebodybackgrounddiv {
-
-
-    height: auto;
-    width: 100%;
-    background-image: url("../images/VSC/entirebody.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-
-}
-
-.bodyandfooterbackgrounddiv {
-
-
-    height: auto;
-    width: 100%;
-    background-image: url("../images/VSC/bodyandfooterbackground.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-} */
 
 .codeimage {
 
@@ -209,8 +73,8 @@
     height: 100%;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 14vh 66vh 20vh;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 14vh 62vh 20vh;
     justify-items: stretch;
 
     background-image: url("../images/VSC/vscbackground.png");
@@ -242,7 +106,7 @@
 
 
 @media (max-height: 400px) {
-    .whatever {
+    /* .whatever {
         width: 100%;
         grid-template-rows: 10vh 40vh 20vh;
     }
@@ -253,6 +117,13 @@
             width: 200vw;
             grid-template-rows: 10vh 40vh 20vh;
         }
-    }
+    } */
 
 }
+
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */

@@ -19,16 +19,7 @@
 
 
 
-.btn1 {}
 
-
-.btn2 {}
-
-
-.btn3 {}
-
-
-.container {}
 
 
 .btnGroup {
@@ -120,7 +111,7 @@
 
 }
 
-@media (max-height: 520px) {
+/* @media (max-width: 500px) {
     .shadowmain {
         width: auto;
         grid-column: -3/1;
@@ -135,10 +126,9 @@
 
         grid-column: 2/3;
 
-        width: 17vw;
+        width: 100px;
         height: 4px;
 
-        margin: 10px auto;
 
 
 
@@ -151,9 +141,9 @@
     }
 
     .btnGroup {
-        grid-column: -1/2;
-        grid-template-rows: repeat(3, 200%);
+        grid-column: auto;
+
 
 
     }
-}
+} */

@@ -183,20 +183,28 @@ export default function AboutMe({ textSelector }) {
 
       {textSelector === "kontakt" && (
         <div className={layout.kontaktboks}>
-          <section className={layout.infobox}>
-            <h1>kontakt informasjon</h1>
-            <div className={layout.pinfo}>
-              <h1>Telefon </h1>
-              <p>+47 92993977</p>
+          <h2 className={layout.kontakttittel}>Kontakt informasjon</h2>
+          <div className={layout.pinfo}>
+            <h1>Telefon </h1>
+            <p className={layout.kontaktpara}>+47 92993977</p>
+          </div>
 
-              <h1>Adresse</h1>
-              <p>Hasselveien 34315 Sandnes, Rogaland.</p>
-              <h1>
-                Les mer om Kodehode, Joobloop{" "}
-                <a href="https://jobloop.no/kodehode-modellen">her</a>{" "}
-              </h1>
-            </div>
-          </section>
+          <div className={layout.pinfo}>
+            {" "}
+            <h1>Adresse</h1>
+            <p className={layout.kontaktpara}>
+              Hasselveien 34315 Sandnes, Rogaland.
+            </p>
+          </div>
+          <div className={layout.pinfo}>
+            {" "}
+            <a href="https://jobloop.no/kodehode-modellen">
+              <p className={layout.kontaktpara2}>
+                {" "}
+                Les mer om JoobLoop-Kodehode{" "}
+              </p>
+            </a>{" "}
+          </div>
         </div>
       )}
     </div>
