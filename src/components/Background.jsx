@@ -13,6 +13,13 @@ export default function Background({ showHeader, showBody, showFooter }) {
 
   return (
     <div className={styles.wrapping}>
+      <svg
+        width="1975"
+        height="1202"
+        viewBox="0 0 1975 1202"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      ></svg>
       {showHeader && !showBody && !showFooter && (
         <div className={styles.whatever}>
           <div className={styles.headerwrapper}>
