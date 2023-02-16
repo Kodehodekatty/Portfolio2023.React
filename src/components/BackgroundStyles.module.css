@@ -28,21 +28,19 @@
 }
 
 .facewrap {
-    grid-column: 2 / -3;
+    grid-area: header;
 
 
 }
 
 .socialmediabar {
 
-    grid-column-start: 1;
-    grid-row-start: 1;
+    grid-area: socialmedia;
 }
 
 
 .aboutmewrapper {
-    grid-column: 2 / -3;
-    grid-row-start: 2;
+    grid-area: aboutme;
 
 
 
@@ -50,39 +48,35 @@
 
 .footerbox {
 
-    grid-column-start: 2;
-    grid-row: 3/3;
-    grid-row: 3;
+    grid-area: footer;
 }
 
-.onlyfooterbox {
+.onlyfooterbox {}
 
-
-
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.VSHwrap {
-    grid-column: 2 / -3;
-
-}
+.VSHwrap {}
 
 .whatever {
 
     height: 100%;
     display: grid;
+
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 14vh 50vh 20vh;
     grid-gap: 0px;
-    grid-template-columns: repeat(20, 150px);
-    grid-template-rows: 14vh 60vh 20vh;
-    justify-items: stretch;
+    grid-template-areas:
+        "socialmedia  header header header"
+        "socialmedia aboutme aboutme aboutme"
+        "socialmedia aboutme aboutme aboutme"
+        "socialmedia footer footer footer ";
 
     background-image: url("../images/VSC/vscbackground.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    object-fit: cover;
+
+    max-height: 100%;
 
 
-    height: auto;
 
 
 
