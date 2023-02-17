@@ -9,7 +9,7 @@
     background-image: url("../images/VSC/image16.png");
     background-repeat: no-repeat;
     background-size: contain;
-
+    
 
 }
 
@@ -35,24 +35,10 @@
 
 .socialmediabar {
 
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-
-.aboutmewrapper {
-    grid-column: 2 / -3;
-    grid-row-start: 2;
-
-
-
-}
-
-.footerbox {
-
-    grid-column-start: 2;
-    grid-row: 3/3;
-    grid-row: 3;
+    width: 300px;
+    height: 100%;
+    margin-left: -300px;
+    position: absolute;
 }
 
 .onlyfooterbox {
@@ -70,24 +56,15 @@
 
 .whatever {
 
-    height: 100%;
     display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(20, 150px);
-    grid-template-rows: 14vh 60vh 20vh;
-    justify-items: stretch;
-
     background-image: url("../images/VSC/vscbackground.png");
     background-repeat: no-repeat;
-    background-size: contain;
-
-
+    overflow: hidden;
     height: auto;
-
-
-
-
-
+    flex-direction: column;
+    padding-left: 300px;
+    width: 1444px;
+    grid-template-rows: 80px 1fr 80px;
 
 }
 

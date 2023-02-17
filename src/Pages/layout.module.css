@@ -44,10 +44,6 @@
 
     color: black;
 
-
-    height: 75vh;
-    width: 122vh;
-    position: relative;
     grid-template-columns: repeat(10, 1fr);
     font-size: 3vh;
     display: grid;
@@ -59,8 +55,9 @@
     background-position-y: 5%;
     background-image: url("../images/VSC/aboutmebackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: 100% 100%;
+    width:100%;
+    grid-row: 2/3;
 
 
 

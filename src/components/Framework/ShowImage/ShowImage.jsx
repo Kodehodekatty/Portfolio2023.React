@@ -11,33 +11,13 @@ import styled from "styled-components";
 import style2 from "../../FrameworkStyles.module.css";
 
 export function ShowImage({ showHeader, showBody, showFooter }) {
-  return (
-    <div>
-      {/* showing shadow me at the start*/}
-      {!showHeader && !showBody && !showFooter && (
-        <img className={style2.shadowmain} src={fullshadow} />
-      )}
-      {showHeader && !showBody && !showFooter && (
-        <img className={style2.shadowmain} src={shadowface} />
-      )}
-      {showHeader && showBody && !showFooter && (
-        <img className={style2.shadowmain} src={faceandbody} />
-      )}
-      {!showHeader && showBody && !showFooter && (
-        <img className={style2.shadowmain} src={shadowbody} />
-      )}
-      {!showHeader && showBody && showFooter && (
-        <img className={style2.shadowmain} src={bodyandfooter} />
-      )}
-      {showHeader && !showBody && showFooter && (
-        <img className={style2.shadowmain} src={faceandfooter} />
-      )}
-      {!showHeader && !showBody && showFooter && (
-        <img className={style2.shadowmain} src={shadowfooter} />
-      )}
-      {showHeader && showBody && showFooter && (
-        <img className={style2.shadowmain} src={fullkatty} />
-      )}
-    </div>
-  );
+
+  if(!showHeader && !showBody && !showFooter) return <img className={style2.shadowmain} src={fullshadow} />
+  if(showHeader && !showBody && !showFooter)  return <img className={style2.shadowmain} src={shadowface} />
+  if(showHeader && showBody && !showFooter)   return <img className={style2.shadowmain} src={faceandbody} />
+  if(!showHeader && showBody && !showFooter)  return <img className={style2.shadowmain} src={shadowbody} />
+  if(!showHeader && showBody && showFooter)   return <img className={style2.shadowmain} src={bodyandfooter} />
+  if(showHeader && !showBody && showFooter)   return <img className={style2.shadowmain} src={faceandfooter} />
+  if(!showHeader && !showBody && showFooter)  return <img className={style2.shadowmain} src={shadowfooter} />
+  if(showHeader && showBody && showFooter)    return <img className={style2.shadowmain} src={fullkatty} />
 }

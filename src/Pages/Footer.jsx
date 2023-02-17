@@ -2,8 +2,7 @@ import FooterLayout from "./FooterLayout.module.css";
 
 export default function Footer() {
   return (
-    <div className={FooterLayout.footerwrapper}>
-      <div className={FooterLayout.footerbackground}>
+    <div className={FooterLayout.footerbackground}>
         <div className={FooterLayout.text}>
           <ul className={FooterLayout.footerlist}>
             <li className={FooterLayout.footeritems}>
@@ -13,6 +12,5 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-    </div>
   );
 }
