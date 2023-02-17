@@ -32,11 +32,12 @@
 
     background-image: url("../images/VSC/footer3.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 55vw;
-    height: 30vh;
+    background-size: cover;
+    width: 120vh;
+    height: 15vh;
     background-position-x: -6%;
     background-position-y: 5%;
+    position: relative;
 
 
 

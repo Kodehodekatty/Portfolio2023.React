@@ -91,19 +91,19 @@ export default function Background({ showHeader, showBody, showFooter }) {
           <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
           </div>
-          <div className={styles.socialmediabar}>
+          {/* <div className={styles.socialmediabar}>
             <Navbar />
-          </div>
+          </div> */}
           <div className={styles.footerbox}>
             <Footer />
           </div>
         </div>
       )}
       {!showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.socialmediabar}>
+        <div className={styles.whatever} style={{ position: "absolute" }}>
+          {/* <div className={styles.socialmediabar}>
             <Navbar />{" "}
-          </div>
+          </div> */}
         </div>
       )}
     </div>
