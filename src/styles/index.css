@@ -22,7 +22,3 @@
     align-content: space-between;
 
 }
-
-@media only screen and (max-width: 500px) {
-    .container {}
-}
