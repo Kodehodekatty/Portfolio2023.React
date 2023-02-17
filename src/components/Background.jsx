@@ -11,101 +11,73 @@ import Footer from "../Pages/Footer";
 export default function Background({ showHeader, showBody, showFooter }) {
   const [textSelector, setTextSelector] = useState("landing page");
 
-  return (
-    <div className={styles.wrapping}>
-      {showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.headerwrapper}>
+  if(showHeader && !showBody && !showFooter){
+    return <div className={styles.whatever}>
             <FaceNav setTextSelector={setTextSelector} />
+            <div className={styles.socialmediabar}>
+              <Navbar />
+            </div>
           </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />
-          </div>
-        </div>
-      )}
-      {showHeader && showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.headerwrapper}>
+  }
+  if(showHeader && showBody && !showFooter){
+    return <div className={styles.whatever}>
             <FaceNav setTextSelector={setTextSelector} />
-          </div>
-          <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
+            <div className={styles.socialmediabar}>
+              <Navbar />
+            </div>
           </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />
-          </div>
-        </div>
-      )}
-      {!showHeader && showBody && showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.aboutmewrapper}>
+  }
+  if(!showHeader && showBody && showFooter){
+    return <div className={styles.whatever}>
             <AboutMe textSelector={textSelector} />
-          </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
-          </div>
-          <div className={styles.footerbox}>
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
             <Footer />
           </div>
-        </div>
-      )}
-      {!showHeader && showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.aboutmewrapper}>
+  }
+  if(!showHeader && showBody && !showFooter){
+    return <div className={styles.whatever}>
             <AboutMe textSelector={textSelector} />
-          </div>
 
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
           </div>
-        </div>
-      )}
-      {!showHeader && !showBody && showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.footerbox}>
+  }
+  if(!showHeader && !showBody && showFooter){
+    return <div className={styles.whatever}>
+            <Footer />
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
+          </div>
+  }
+  if(showHeader && !showBody && showFooter){
+    return <div className={styles.whatever}>
+            <FaceNav setTextSelector={setTextSelector} />
+            <div className={styles.socialmediabar}>
+              <Navbar />
+            </div>
             <Footer />
           </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
-          </div>
-        </div>
-      )}
-      {showHeader && !showBody && showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.headerwrapper}>
+  }
+  if(showHeader && showBody && showFooter){
+    return <div className={styles.whatever}>
             <FaceNav setTextSelector={setTextSelector} />
-          </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />
-          </div>
-          <div className={styles.footerbox}>
-            <Footer />
-          </div>
-        </div>
-      )}
-      {showHeader && showBody && showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.headerwrapper}>
-            <FaceNav setTextSelector={setTextSelector} />
-          </div>
-          <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
-          </div>
-          <div className={styles.socialmediabar}>
-            <Navbar />
-          </div>
-          <div className={styles.footerbox}>
+            <div className={styles.socialmediabar}>
+              <Navbar />
+            </div>
             <Footer />
           </div>
-        </div>
-      )}
-      {!showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
-          <div className={styles.socialmediabar}>
-            <Navbar />{" "}
+  }
+  if(!showHeader && !showBody && !showFooter){
+    return <div className={styles.whatever}>
+            <div className={styles.socialmediabar}>
+              <Navbar />{" "}
+            </div>
           </div>
-        </div>
-      )}
-    </div>
-  );
+  }
 }

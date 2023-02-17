@@ -18,8 +18,7 @@ function App() {
 
   return (
     <div className="grid">
-      <div className="wrapper">
-        <Framework
+      <Framework
           showHeader={showHeader}
           showBody={showBody}
           showFooter={showFooter}
@@ -27,14 +26,11 @@ function App() {
           setShowBody={setShowBody}
           setShowFooter={setShowFooter}
         />
-      </div>
-      <div className="container">
-        <Background
+      <Background
           showHeader={showHeader}
           showBody={showBody}
           showFooter={showFooter}
         />
-      </div>
     </div>
   );
 }

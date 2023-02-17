@@ -27,16 +27,13 @@ export default function Framework({
   setShowFooter,
 }) {
   return (
-    <div className={style2.wraptest}>
-      {" "}
-      <span className={style2.something}>
+    <span className={style2.something}>
         <ShowImage
           showHeader={showHeader}
           showFooter={showFooter}
           showBody={showBody}
         />
-        <div className={style2.container}>
-          <div className={style2.btnGroup}>
+        <div className={style2.btnGroup}>
             <Button
               className={style2.btn1}
               onClick={() => setShowHeader((prev) => !prev)}
@@ -56,8 +53,6 @@ export default function Framework({
               {!showFooter ? footer : ""}
             </Button>
           </div>
-        </div>{" "}
-      </span>{" "}
-    </div>
+      </span>
   );
 }

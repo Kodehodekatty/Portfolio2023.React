@@ -96,18 +96,12 @@
 
     background-image: url("../images/VSC/socialmediabackground.png");
     background-repeat: no-repeat;
-    height: 35vh;
-    width: fit-content;
-    background-size: contain;
     justify-items: stretch;
-    display: grid;
-    grid-template-columns: repeat(2, 75px);
-    grid-template-rows: repeat(10, 80px);
-    resize: both;
-    grid-row-gap: 2px;
-
-
-
+    display: flex;
+    height: 100%;
+    padding-top: 35.2vh;
+    flex-direction: column;
+    
 
 }
 
@@ -127,8 +121,8 @@ ul {
     grid-template-rows: repeat(30, 50%);
     grid-gap: 30px; */
     overflow: hidden;
-    height: 600px;
     width: 100%;
+    height: 100%;
     justify-items: stretch;
 
 
@@ -178,15 +172,12 @@ ul {
 
 
 .btnwrap {
-    grid-column: 1/2;
-    grid-row: 4/3;
     border: none;
-    width: 200px;
-    height: 10px;
-
-
+    width: 283px;
+    position:absolute;
     border: none;
-
+    height: 30px;
+    top:318px;
 
 
 }
@@ -202,7 +193,7 @@ ul {
     cursor: pointer;
     color: whitesmoke;
     position: relative;
-
+    height:100%;
 
 
 }
@@ -250,13 +241,15 @@ ul {
 }
 
 .test {
-    display: grid;
+    display: flex;
     row-gap: 10px;
     grid-template-columns: repeat(5, 50%);
     grid-template-rows: repeat(10, 20%);
-    margin-left: -25px;
-    width: 80px;
+    margin-left: 60px;
     height: auto;
+    position: absolute;
+    top: 336px;
+    
 
 
 
@@ -276,6 +269,7 @@ ul {
     grid-column: 1/2;
 
     text-align: center;
+    padding: 0;
 
 }
 

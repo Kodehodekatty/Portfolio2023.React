@@ -35,6 +35,8 @@
     padding: 10px;
     justify-content: stretch;
     align-items: stretch;
+    position: absolute;
+    left:25%;
 
 }
 
@@ -84,17 +86,10 @@
 
 .something {
     position: relative;
-
+    display:flex;
 
     align-items: center;
     justify-content: stretch;
-
-
-    display: grid;
-
-
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 30% minmax(10%, 30%) 1fr;
 
 
 
