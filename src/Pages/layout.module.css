@@ -51,7 +51,7 @@
     grid-template-columns: repeat(10, 1fr);
     font-size: 3vh;
     display: grid;
-    grid-template-rows: repeat(20, auto);
+    grid-template-rows: repeat(10, auto);
     grid-gap: 10px;
     justify-items: center;
 
@@ -142,6 +142,7 @@ blockquote {
     font-size: 4vh;
     font-family: aboutme3;
     margin: 60px auto;
+
     text-align: center;
 }
 
@@ -308,6 +309,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    justify-items: center;
 }
 
 
@@ -332,7 +334,7 @@ blockquote {
     text-shadow: 0.7px 0.2px 1.5px #000000;
     font-size: 3vh;
     width: auto;
-    min-height: 5vh;
+    height: 1vh;
     position: relative;
 }
 
@@ -357,8 +359,8 @@ blockquote {
 }
 
 .card p {
-    height: 2vw;
-    width: 20vw;
+    height: 10%;
+    width: 70%;
     margin: 10px auto;
     line-height: 60px;
     text-align: center;
@@ -411,12 +413,12 @@ a {
     grid-template-rows:
         1fr min(65ch, 100%) 1fr;
     justify-items: stretch;
-    width: 65ch;
+    width: 70ch;
 
 
 }
 
-.bigwrap h1 {}
+
 
 
 .kontaktboks {
@@ -646,55 +648,21 @@ a {
 
 
 .mecard {
-    padding: 30px;
+
     margin-top: 30px;
-    margin-right: 100px;
+
+
 
 
 
 }
+
+
 
 .cardbox {
     padding-bottom: 100px;
     margin: auto;
     text-align: center;
-    text-indent: 60px;
-
-}
 
 
-@media (max-height: 400px) {
-    /* .aboutMe {
-        width: max-content;
-        grid-template-columns: (5, 1fr);
-        height: 120%;
-        background-position-x: 3px;
-        background-position-y: 2px;
-        grid-template-rows: 10vh 1fr;
-    }
-
-
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    .abouth1 {
-
-        font-size: 3vh;
-        width: 70vh;
-        height: 30px;
-        margin: 10%;
-    }
-
-}
-
-
-@media (max-width: 520px) {
-    .aboutMe {
-
-        grid-template-columns: (5, 1fr);
-        height: 120%;
-
-        grid-template-rows: 10vh 1fr;
-    } */
 }
