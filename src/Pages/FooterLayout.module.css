@@ -22,7 +22,7 @@
 .footerwrapper {
 
 
-    position: relative;
+
     margin: 0;
 
 }
@@ -38,7 +38,7 @@
     background-position-x: -6%;
     background-position-y: 5%;
 
-
+    overflow: hidden;
 
 
 
@@ -50,7 +50,8 @@
 
 
     list-style: none;
-
+    height: min(5vh);
+    width: min(100vh);
     align-content: stretch;
     display: flex;
     flex-direction: row;
@@ -58,6 +59,12 @@
     justify-content: space-evenly;
     font-family: aboutme3;
 
+
+}
+
+.footerlist>li {
+    margin-top: 3%;
+    padding-right: 60px;
 }
 
 .text {
@@ -71,8 +78,7 @@
 
 .footeritems {
 
-    font-size: 2vh;
-
+    font-size: 3vh;
 
     text-shadow: 6px 6px 0px rgba(113, 113, 113, 0.39);
 

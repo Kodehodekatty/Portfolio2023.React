@@ -41,7 +41,7 @@
 
 
 .aboutmewrapper {
-    grid-column: 2 / -3;
+    grid-column: 2 / 4;
     grid-row-start: 2;
 
 
@@ -63,7 +63,7 @@
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(5, 30vh);
-    grid-template-rows: 14vh 66vh 20vh;
+    grid-template-rows: 13vh 68vh 30vh;
     justify-items: stretch;
 
     background-image: url("../images/VSC/vscbackground.png");
