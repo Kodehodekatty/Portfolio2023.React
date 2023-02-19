@@ -69,10 +69,9 @@
     border: 1px solid rgb(122, 122, 122);
 
 
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    grid-template-rows: repeat(100px, 1fr);
-    align-content: stretch;
-    justify-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(13vh, 1fr));
+    grid-template-rows: auto;
+
     justify-content: space-between;
     align-items: stretch;
     display: grid;
@@ -96,13 +95,13 @@
 
     background-image: url("../images/VSC/socialmediabackground.png");
     background-repeat: no-repeat;
-    height: 35vh;
-    width: fit-content;
+    height: min(35vh);
+    width: min(30vh);
     background-size: contain;
     justify-items: stretch;
     display: grid;
-    grid-template-columns: repeat(2, 75px);
-    grid-template-rows: repeat(10, 80px);
+    grid-template-columns: minmax(min-content, 100px) minmax(100px, 1fr) 100px;
+    grid-template-rows: repeat(5, 16%);
     resize: both;
     grid-row-gap: 2px;
 
@@ -127,8 +126,8 @@ ul {
     grid-template-rows: repeat(30, 50%);
     grid-gap: 30px; */
     overflow: hidden;
-    height: 600px;
-    width: 100%;
+    height: min(85vh);
+    width: auto;
     justify-items: stretch;
 
 
@@ -179,10 +178,10 @@ ul {
 
 .btnwrap {
     grid-column: 1/2;
-    grid-row: 4/3;
+    grid-row: 9/9;
     border: none;
-    width: 200px;
-    height: 10px;
+    width: 30vh;
+
 
 
     border: none;
@@ -198,7 +197,7 @@ ul {
     border-bottom: none;
     font: inherit;
     font-size: 1.5em;
-    width: 100%;
+    width: min(30vh);
     cursor: pointer;
     color: whitesmoke;
     position: relative;
@@ -223,8 +222,8 @@ ul {
 
     position: relative;
     text-align: center;
-    text-indent: -27%;
-    height: 17px;
+    text-indent: -17%;
+    font-size: 3vh;
     animation: bounce .4s ease infinite alternate;
 
 }
@@ -252,14 +251,11 @@ ul {
 .test {
     display: grid;
     row-gap: 10px;
-    grid-template-columns: repeat(5, 50%);
-    grid-template-rows: repeat(10, 20%);
+    grid-template-columns: repeat(5, 90%);
+    grid-template-rows: 10vh 10%;
     margin-left: -25px;
-    width: 80px;
-    height: auto;
-
-
-
+    width: max(1px);
+    height: max(3vh);
 }
 
 
@@ -272,7 +268,7 @@ ul {
     padding-bottom: 10px;
     position: relative;
 
-    grid-row: 7/8;
+    grid-row: 10;
     grid-column: 1/2;
 
     text-align: center;
@@ -287,55 +283,4 @@ ul {
     flex-direction: row;
     justify-items: left;
     align-items: flex-start;
-}
-
-@media (max-width: 430px) {
-    .container {}
-
-
-
-    /* .topButton {
-
-        width: 1px;
-        height: 2px;
-
-        font-size: 1px;
-    } */
-
-
-    .MenuNav>button:hover {}
-
-    .btnText {}
-
-
-
-    .iconlist {}
-
-    li>.media {}
-
-    .Social {}
-}
-
-@media (max-height: 300px) {
-    .container {}
-}
-
-@media (max-width: 430px) {
-
-    /* .MenuNav>button {
-
-        grid-row: 8/9;
-
-        width: 37vw;
-        height: 2vh;
-        font-size: 2vh;
-    }
-
-    .iconlist {
-        grid-row: 8/9;
-        padding-top: 30px;
-
-
-    } */
-
 }

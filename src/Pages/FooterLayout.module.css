@@ -43,6 +43,7 @@
 
 
 
+
 }
 
 .footerlist {
@@ -55,6 +56,7 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
+    font-family: aboutme3;
 
 }
 
@@ -68,11 +70,10 @@
 }
 
 .footeritems {
-    width: 70vh;
-    height: 20px;
-    font-size: 3vh;
-    margin-top: 8vh;
-    font-family: aboutme2;
+
+    font-size: 2vh;
+
+
     text-shadow: 6px 6px 0px rgba(113, 113, 113, 0.39);
 
 }

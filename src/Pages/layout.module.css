@@ -46,7 +46,7 @@
 
 
     height: 75vh;
-    width: 122vh;
+    width: 200%;
     position: relative;
     grid-template-columns: repeat(10, 1fr);
     font-size: 3vh;
@@ -141,7 +141,7 @@ blockquote {
 
     font-size: 4vh;
     font-family: aboutme3;
-    margin: 20px auto;
+    margin: 60px auto;
     text-align: center;
 }
 
@@ -157,7 +157,7 @@ blockquote {
     position: relative;
 
 
-    animation: text-focus-in 2s cubic-bezier(.55, .085, .68, .53) both;
+    animation: text-focus-in 0.3s cubic-bezier(.55, .085, .68, .53) both;
 
 
 
@@ -180,7 +180,7 @@ blockquote {
 
 
 .skillbox {
-    width: 80%;
+    width: 70%;
     grid-column: 1 / 4;
     box-sizing: border-box;
     margin: 10px auto;
@@ -604,7 +604,7 @@ a {
 
 .cardfix {
 
-    margin-right: 15px;
+    margin-right: 45px;
 }
 
 .annet ul {
@@ -616,7 +616,8 @@ a {
     font-size: max(2vh);
 
 
-    margin: 30px auto;
+    margin-top: 10px;
+    margin-left: 30%;
     width: 50vh;
     height: 20vh;
 
@@ -629,8 +630,8 @@ a {
 
 .annet li {
     position: relative;
-    width: 60vh;
-    margin: 3%;
+    width: auto;
+    margin: 2%;
     text-align: center;
     text-indent: 4%;
 

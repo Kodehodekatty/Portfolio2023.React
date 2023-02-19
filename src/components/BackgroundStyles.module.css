@@ -55,26 +55,15 @@
     grid-row: 3;
 }
 
-.onlyfooterbox {
 
-
-
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.VSHwrap {
-    grid-column: 2 / -3;
-
-}
 
 .whatever {
 
     height: 100%;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(20, 150px);
-    grid-template-rows: 14vh 60vh 20vh;
+    grid-template-columns: repeat(5, 30vh);
+    grid-template-rows: 14vh 66vh 20vh;
     justify-items: stretch;
 
     background-image: url("../images/VSC/vscbackground.png");
@@ -82,7 +71,6 @@
     background-size: contain;
 
 
-    height: auto;
 
 
 
