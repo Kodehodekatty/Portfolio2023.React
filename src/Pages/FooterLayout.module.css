@@ -30,54 +30,16 @@
 .footerbackground {
 
 
-    background-image: url("../images/VSC/footer2.png");
+    background-image: url("../images/Groupfooter.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 246%;
     height: 26vh;
     background-position-y: -1px;
-    overflow: hidden;
 
 
 
 
 
-}
-
-.footerlist {
-
-
-    list-style: none;
-    height: min(5vh);
-    width: min(100vh);
-    align-content: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-evenly;
-    font-family: aboutme3;
-
-
-}
-
-.footerlist>li {
-    margin-top: 3%;
-    padding-right: 60px;
-}
-
-.text {
-
-
-
-    text-align: center;
-
-
-}
-
-.footeritems {
-
-    font-size: 3vh;
-
-    text-shadow: 6px 6px 0px rgba(113, 113, 113, 0.39);
 
 }

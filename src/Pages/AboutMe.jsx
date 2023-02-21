@@ -77,43 +77,38 @@ export default function AboutMe({ textSelector }) {
             <div className={layout.cardscontainer}>
               <div className={layout.card} id={layout.project1}>
                 <h1>Prosjekter som har blitt kodet i React/Vite</h1>
-
-                <a href="https://kodehodekatty.github.io/JulCountdown/">
-                  <p className={layout.label}>Juleoppgave</p>
-                  <a href="https://github.com/Kodehodekatty/JulCountdown">
-                    link to repository
-                  </a>
+                <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
+                <p className={layout.label}>Juleoppgave</p>
+                <a
+                  className={layout.secondlink}
+                  href="https://github.com/Kodehodekatty/JulCountdown"
+                >
+                  link to repository{" "}
                 </a>
-                <a href="https://github.com/Kodehodekatty/React.Pokedex.API">
-                  <p className={layout.label}>Pokedex v.2</p>{" "}
-                </a>
-
-                <a href="https://github.com/Kodehodekatty/Portfolio2023.React">
-                  <p className={layout.label}>Portfolio</p>{" "}
-                </a>
-
+                <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
+                <p className={layout.label}>Pokedex v.2</p>{" "}
+                <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
+                <p className={layout.label}>Portfolio</p>{" "}
                 <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
-                  <p className={layout.label}>React Routes og Kalkulator</p>{" "}
-                  <a href="https://github.com/Kodehodekatty/ReactRoutesCalculator">
-                    link to repository
-                  </a>
+                  {" "}
+                </a>
+                <p className={layout.label}>React Routes og Kalkulator</p>{" "}
+                <a
+                  className={layout.secondlink}
+                  href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
+                >
+                  link to repository
                 </a>
               </div>
 
               <div className={layout.card} id={layout.project1}>
                 <h1>Prosjekter som har blitt kodet i Javascript</h1>
-
-                <a href="https://github.com/Kodehodekatty/Blackjack">
-                  {" "}
-                  <p className={layout.label}>BlackJack</p>{" "}
-                </a>
-                <a href=" https://github.com/Kodehodekatty/Pokedex">
-                  <p className={layout.label}>Pokedex v.1</p>{" "}
-                </a>
-                <a href="https://github.com/Kodehodekatty/spaceproject">
-                  {" "}
-                  <p className={layout.label}>Space Project</p>{" "}
-                </a>
+                <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
+                <p className={layout.label}>BlackJack</p>{" "}
+                <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
+                <p className={layout.label}>Pokedex v.1</p>{" "}
+                <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
+                <p className={layout.label}>Space Project</p>{" "}
               </div>
             </div>
           </section>
@@ -142,7 +137,7 @@ export default function AboutMe({ textSelector }) {
 
             <section className={layout.bars}>
               <h1 className={layout.grafisktittel}>
-                Andre rogrammvare kunnskaper
+                Andre Programmvare kunnskaper
               </h1>
               <span className={layout.linefix2}>
                 <p className={layout.skillp}>Figma</p>
@@ -196,7 +191,7 @@ export default function AboutMe({ textSelector }) {
       {textSelector === "kontakt" && (
         <div className={layout.kontaktboks}>
           <section className={layout.infobox}>
-            <h1>kontakt informasjon</h1>
+            <h1>Kontakt informasjon</h1>
             <div className={layout.pinfo}>
               <h1>Telefon </h1>
               <p>+47 92993977</p>
@@ -208,7 +203,12 @@ export default function AboutMe({ textSelector }) {
             </div>
             <h1>
               Les mer om Kodehode, Joobloop{" "}
-              <a href="https://jobloop.no/kodehode-modellen">her</a>{" "}
+              <a
+                className={layout.joobloop}
+                href="https://jobloop.no/kodehode-modellen"
+              >
+                her
+              </a>{" "}
             </h1>{" "}
           </section>
         </div>

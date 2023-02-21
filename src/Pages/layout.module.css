@@ -201,9 +201,9 @@ blockquote {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #231557 10%,
-            #44107a 29%,
+            #5e17ab 29%,
             #ff1361 67%,
-            #fff7008b 80%);
+            #ca00e0 80%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -324,6 +324,7 @@ blockquote {
     border: solid 2px #5d88b0;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -352,6 +353,7 @@ blockquote {
     flex-direction: column;
     width: 100vh;
     height: 30%;
+
     justify-content: center;
 
 
@@ -400,12 +402,31 @@ blockquote {
 
 }
 
+.secondlink {
+
+    cursor: pointer;
+    font-family: aboutme;
+
+
+}
+
+.secondlink:hover {
+
+    filter: brightness(10%);
+
+}
+
+
+
+
 .label:hover {
 
 
     scale: 90%;
     text-shadow: 0.7px 0.2px 1.5px #000000;
     cursor: pointer;
+    filter: brightness(130%);
+
 
 }
 
@@ -429,7 +450,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 10px;
 
 
@@ -571,9 +592,10 @@ a {
     justify-content: space-between;
 
     flex-direction: row;
-    color: white;
 
-    background: linear-gradient(to right, #77adff08, #cfe2fd84, #77adff, #7403c092, #ec38bc99, #ffffff);
+    background-image: url("../images/texture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 3vh;
 
 
@@ -584,18 +606,10 @@ a {
 .grafisk p {
     font-size: 1em;
     font-weight: 600;
-    text-shadow: 1px 1px 0.7px #000000;
+    font-family: aboutme;
 }
 
-.kompetanse {
-
-
-
-
-    box-shadow: rgb(255, 100, 214) 0px 50px 80px -20px, rgb(7, 23, 162) 20px 30px 60px -30px, #c56fff 0px -2px 3px 0px inset;
-
-
-}
+.kompetanse {}
 
 .kompetanse p {
 
@@ -702,5 +716,29 @@ a {
     margin: 0;
     text-align: center;
 
+
+}
+
+.joobloop {
+
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    font-size: 5vh;
+    cursor: pointer;
+    border: 1.5px solid whitesmoke;
+    margin: 1px auto;
+    width: 10vh;
+
+    border-radius: 20px;
+    background-image: url(/Portfolio2023.React/src/images/btnRectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(30%);
+    padding: 10px;
+    height: 50vh;
+}
+
+.joobloop:hover {
+    filter: brightness(120%);
 
 }

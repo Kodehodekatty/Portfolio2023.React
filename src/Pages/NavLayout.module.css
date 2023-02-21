@@ -102,25 +102,6 @@
 
     scale: 110%;
     color: whitesmoke;
+    filter: brightness(150%);
 
-
-}
-
-
-@media (max-height: 400px) {
-    /* .FaceNavWrap {
-        width: 80vh;
-
-        height: 20vh;
-    }
-
-    .list {}
-
-    .navigation>button {
-
-        margin-top: -10px;
-        align-items: center;
-        height: fit-content;
-        width: fit-content;
-    } */
 }

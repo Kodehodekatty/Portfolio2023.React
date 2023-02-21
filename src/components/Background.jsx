@@ -85,6 +85,9 @@ export default function Background({ showHeader, showBody, showFooter }) {
       )}
       {showHeader && showBody && showFooter && (
         <div className={styles.whatever}>
+          <div className={styles.footerbox}>
+            <Footer />
+          </div>
           <div className={styles.headerwrapper}>
             <FaceNav setTextSelector={setTextSelector} />
           </div>
@@ -93,9 +96,6 @@ export default function Background({ showHeader, showBody, showFooter }) {
           </div>
           <div className={styles.socialmediabar}>
             <Navbar />
-          </div>
-          <div className={styles.footerbox}>
-            <Footer />
           </div>
         </div>
       )}
