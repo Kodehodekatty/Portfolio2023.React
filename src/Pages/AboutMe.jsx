@@ -9,7 +9,7 @@ export default function AboutMe({ textSelector }) {
         </div>
       )}
       {textSelector === "om meg" && (
-        <div className={layout.wordfix}>
+        <div>
           <h3>Litt kort om hvem jeg er</h3>
 
           <h2 className={layout.myname}>
@@ -36,26 +36,22 @@ export default function AboutMe({ textSelector }) {
           </p>
 
           <p>
-            <blockquote>
-              {" "}
-              Min ambisjon for å bli front end utvikler, og drive med utvikling
-              av web- og mobile applikasjoner, er ikke bare fordi jeg elsker å
-              kode,{" "}
-              <b>
-                men fordi jeg også kan ta i bruk mine kreative talenter og
-                kompentanse!
-              </b>{" "}
-            </blockquote>{" "}
+            Min ambisjon for å bli front end utvikler, og drive med utvikling av
+            web- og mobile applikasjoner, er ikke bare fordi jeg elsker å kode,{" "}
+            <b>
+              men fordi jeg også kan ta i bruk mine kreative talenter og
+              kompentanse!
+            </b>
           </p>
 
           <p>
             {" "}
-            Design kunnskaper i Figma/Adobe programmer sammen med
+            Mine design kunnskaper i Figma/Adobe programmer sammen med
             programmeringsspråk som JavaScript og rammeverk som React, gir meg
             gode ferdigheter til å faktisk virkeligjøre nettsider fra bunnen av!
           </p>
 
-          <p className={layout.bottompadding}>
+          <p>
             Det er enda så mye mer kode,rammeverk og programmer jeg vil lære for
             anskaffe høyere digital kompetansen. Muligheten for praksis ute i
             den store verden, tror jeg er riktig neste steg for å få både
@@ -79,11 +75,14 @@ export default function AboutMe({ textSelector }) {
 
           <section id={layout.cards}>
             <div className={layout.cardscontainer}>
-              <div className={layout.card}>
+              <div className={layout.card} id={layout.project1}>
                 <h1>Prosjekter som har blitt kodet i React/Vite</h1>
 
-                <a href="https://github.com/Kodehodekatty/JulCountdown">
+                <a href="https://kodehodekatty.github.io/JulCountdown/">
                   <p className={layout.label}>Juleoppgave</p>
+                  <a href="https://github.com/Kodehodekatty/JulCountdown">
+                    link to repository
+                  </a>
                 </a>
                 <a href="https://github.com/Kodehodekatty/React.Pokedex.API">
                   <p className={layout.label}>Pokedex v.2</p>{" "}
@@ -91,6 +90,13 @@ export default function AboutMe({ textSelector }) {
 
                 <a href="https://github.com/Kodehodekatty/Portfolio2023.React">
                   <p className={layout.label}>Portfolio</p>{" "}
+                </a>
+
+                <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
+                  <p className={layout.label}>React Routes og Kalkulator</p>{" "}
+                  <a href="https://github.com/Kodehodekatty/ReactRoutesCalculator">
+                    link to repository
+                  </a>
                 </a>
               </div>
 
@@ -114,48 +120,54 @@ export default function AboutMe({ textSelector }) {
           <div className={layout.bigwrap}>
             <section className={layout.bars}>
               <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
-              <p className={layout.skillp}>HTML</p>
-              <div className={layout.skillbox}>
-                <div className={layout.html}>100%</div>
-              </div>
-              <p className={layout.skillp}>CSS</p>
-              <div className={layout.skillbox}>
-                <div className={layout.css}>95%</div>
-              </div>
-              <p className={layout.skillp}>JavaScript</p>
-              <div className={layout.skillbox}>
-                <div className={layout.js}>90%</div>
-              </div>
-              <p className={layout.skillp}>REACT</p>
-              <div className={layout.skillbox}>
-                <div className={layout.react}>80%</div>
-              </div>{" "}
+              <span className={layout.mma}>
+                <p className={layout.skillp}>HTML</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.html}>100%</div>
+                </div>
+                <p className={layout.skillp}>CSS</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.css}>95%</div>
+                </div>
+                <p className={layout.skillp}>JavaScript</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.js}>90%</div>
+                </div>
+                <p className={layout.skillp}>REACT</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.react}>80%</div>
+                </div>{" "}
+              </span>
             </section>
 
             <section className={layout.bars}>
               <h1 className={layout.grafisktittel}>
-                Annet programmvare kunnskaper
+                Andre rogrammvare kunnskaper
               </h1>
+              <span className={layout.linefix2}>
+                <p className={layout.skillp}>Figma</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.figma}>75%</div>
+                </div>
 
-              <p className={layout.skillp}>Figma</p>
-              <div className={layout.skillbox}>
-                <div className={layout.figma}>75%</div>
-              </div>
+                <p className={layout.skillp}>Adobe Creative Suite</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.adobe}>89%</div>
+                </div>
 
-              <p className={layout.skillp}>Adobe Creative Suite</p>
-              <div className={layout.skillbox}>
-                <div className={layout.adobe}>89%</div>
-              </div>
+                <p className={layout.skillp}>Wordpress</p>
+                <div className={layout.skillbox}>
+                  <div className={layout.wordpress}>90%</div>
+                </div>
+              </span>
 
-              <p className={layout.skillp}>Wordpress</p>
-              <div className={layout.skillbox}>
-                <div className={layout.wordpress}>90%</div>
-              </div>
-              <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
               <section className={layout.grafisk}>
-                <p>Filmproduksjon</p>
-                <p>Video Redigering</p>
-                <p>Bilde redigering</p>
+                <h1 className={layout.kreativtittel}>kreative ferdigheter</h1>
+                <div className={layout.kompetanse}>
+                  <p>Filmproduksjon</p>
+                  <p>Video Redigering</p>
+                  <p>Bilde redigering</p>
+                </div>
               </section>
             </section>
             <div className={layout.cardbox}>
@@ -170,8 +182,8 @@ export default function AboutMe({ textSelector }) {
 
                   <li>Digital markedsføring</li>
                   <li>
-                    administrasjon av og publisering av innhold for klienter på
-                    sosiale medie kanaler .
+                    administrasjon av sosiale medie kanaler og publisering av
+                    innhold for klienter.
                   </li>
                   <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
                 </ul>
@@ -183,28 +195,22 @@ export default function AboutMe({ textSelector }) {
 
       {textSelector === "kontakt" && (
         <div className={layout.kontaktboks}>
-          <h2 className={layout.kontakttittel}>Kontakt informasjon</h2>
-          <div className={layout.pinfo}>
-            <h1>Telefon </h1>
-            <p className={layout.kontaktpara}>+47 92993977</p>
-          </div>
-
-          <div className={layout.pinfo}>
-            {" "}
-            <h1>Adresse</h1>
-            <p className={layout.kontaktpara}>
-              Hasselveien 34315 Sandnes, Rogaland.
-            </p>
-          </div>
-          <div className={layout.pinfo}>
-            {" "}
-            <a href="https://jobloop.no/kodehode-modellen">
-              <p className={layout.kontaktpara2}>
-                {" "}
-                Les mer om JoobLoop-Kodehode{" "}
-              </p>
-            </a>{" "}
-          </div>
+          <section className={layout.infobox}>
+            <h1>kontakt informasjon</h1>
+            <div className={layout.pinfo}>
+              <h1>Telefon </h1>
+              <p>+47 92993977</p>
+            </div>
+            <div className={layout.pinfo}>
+              {" "}
+              <h1>Adresse</h1>
+              <p>Hasselveien 34315 Sandnes, Rogaland.</p>
+            </div>
+            <h1>
+              Les mer om Kodehode, Joobloop{" "}
+              <a href="https://jobloop.no/kodehode-modellen">her</a>{" "}
+            </h1>{" "}
+          </section>
         </div>
       )}
     </div>

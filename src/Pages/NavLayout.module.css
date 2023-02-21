@@ -18,15 +18,15 @@
 
 
 .FaceNavWrap {
-    width: 121vh;
+    width: 148vh;
 
     height: 20vh;
     background-position-y: 10%;
     background-image: url("../images/VSC/headerbackground2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 10%;
-    background-position-y: 2%;
+
+    background-position-y: -12px;
     padding: 1px;
 
 

@@ -27,9 +27,9 @@
 
 }
 
-.facewrap {
-    grid-column: 2 / -3;
-
+.headerwrapper {
+    grid-column: 2 / 4;
+    grid-row-start: 1;
 
 }
 
@@ -46,13 +46,15 @@
 
 
 
+
 }
+
 
 .footerbox {
 
-    grid-column-start: 2;
+    grid-column: 2/4;
     grid-row: 3/3;
-    grid-row: 3;
+
 }
 
 
@@ -62,14 +64,16 @@
     height: 100%;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: repeat(5, 30vh);
-    grid-template-rows: 13vh 68vh 30vh;
+    grid-template-columns: repeat(6, 30vh);
+    grid-template-rows: 13vh 76vh 26vh;
     justify-items: stretch;
 
     background-image: url("../images/VSC/vscbackground.png");
     background-repeat: no-repeat;
     background-size: contain;
-
+    justify-content: start;
+    align-items: stretch;
+    align-content: stretch;
 
 
 

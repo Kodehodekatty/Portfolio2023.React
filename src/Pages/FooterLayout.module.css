@@ -30,14 +30,12 @@
 .footerbackground {
 
 
-    background-image: url("../images/VSC/footer3.png");
+    background-image: url("../images/VSC/footer2.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 139vh;
-    height: 17vh;
-    background-position-x: -6%;
-    background-position-y: 5%;
-
+    background-size: 100%;
+    width: 246%;
+    height: 26vh;
+    background-position-y: -1px;
     overflow: hidden;
 
 

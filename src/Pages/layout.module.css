@@ -27,6 +27,7 @@
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -45,8 +46,8 @@
     color: black;
 
 
-    height: 75vh;
-    width: 200%;
+    height: 86vh;
+    width: 250%;
     position: relative;
     grid-template-columns: repeat(10, 1fr);
     font-size: 3vh;
@@ -55,11 +56,11 @@
     grid-gap: 10px;
     justify-items: center;
 
-    background-position-x: 10%;
+    background-position-x: 1%;
     background-position-y: 5%;
     background-image: url("../images/VSC/aboutmebackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
 
 
@@ -99,6 +100,7 @@ blockquote {
 .opening {
     margin: 0;
     margin-top: 30px;
+    width: min(100vh);
 
 }
 
@@ -181,7 +183,7 @@ blockquote {
 
 
 .skillbox {
-    width: 70%;
+    width: 70vh;
     grid-column: 1 / 4;
     box-sizing: border-box;
     margin: 10px auto;
@@ -192,10 +194,38 @@ blockquote {
 
 }
 
-.grafisktittel {
+.kreativtittel {
 
     margin-top: 50px;
+    padding: 15px;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 10%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff7008b 80%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+
 }
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+.grafisktittel {}
 
 .skills {
 
@@ -290,7 +320,7 @@ blockquote {
     background-image: url(/src/images/Rectangle.png);
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 1vw;
+    width: 100%;
     border: solid 2px #5d88b0;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -298,11 +328,12 @@ blockquote {
 
 
 #project1 {
-    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .cardscontainer {
     margin-top: 70px;
+
 }
 
 #cards {
@@ -319,7 +350,7 @@ blockquote {
     display: flex;
     align-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 100vh;
     height: 30%;
     justify-content: center;
 
@@ -343,7 +374,7 @@ blockquote {
 
     text-align: center;
 
-    font-size: 1.2rem;
+    font-size: 4vh;
     text-decoration: none;
     background-color: rgb(106, 104, 240);
     width: 2vw;
@@ -365,7 +396,8 @@ blockquote {
     line-height: 60px;
     text-align: center;
     line-height: 20px;
-    font-size: 1.3vw;
+    font-size: 3vh;
+
 }
 
 .label:hover {
@@ -411,9 +443,9 @@ a {
     font-size: 3vh;
     display: grid;
     grid-template-rows:
-        1fr min(65ch, 100%) 1fr;
+        1fr min(85ch, 100%) 1fr;
     justify-items: stretch;
-    width: 70ch;
+
 
 
 }
@@ -483,13 +515,15 @@ a {
 
 .pinfo {
 
-    margin: 1px auto;
+    margin: 10px auto;
 
     line-height: 15px;
     width: 50%;
-
-
+    background-color: rgba(255, 255, 255, 0.122);
+    border-radius: 1%;
+    text-align: center;
     margin: auto;
+    border: 1px solid white;
 }
 
 
@@ -529,16 +563,18 @@ a {
 
 .grafisk {
 
+    margin-top: 90px;
+    line-height: 20px;
 
-    width: 100%;
-    height: 50%;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 0.5px solid black;
 
+    flex-direction: row;
+    color: white;
 
+    background: linear-gradient(to right, #77adff08, #cfe2fd84, #77adff, #7403c092, #ec38bc99, #ffffff);
+    font-size: 3vh;
 
 
 
@@ -548,23 +584,24 @@ a {
 .grafisk p {
     font-size: 1em;
     font-weight: 600;
+    text-shadow: 1px 1px 0.7px #000000;
 }
 
 .kompetanse {
 
 
-    width: 350px;
-    height: 200px;
-    border: 1px solid black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+    box-shadow: rgb(255, 100, 214) 0px 50px 80px -20px, rgb(7, 23, 162) 20px 30px 60px -30px, #c56fff 0px -2px 3px 0px inset;
 
 
 }
 
 .kompetanse p {
 
-    width: 250px;
-    height: 40px;
+    width: min(40vh);
+    height: 20px;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -661,7 +698,8 @@ a {
 
 .cardbox {
     padding-bottom: 100px;
-    margin: auto;
+    padding-top: 50px;
+    margin: 0;
     text-align: center;
 
 
