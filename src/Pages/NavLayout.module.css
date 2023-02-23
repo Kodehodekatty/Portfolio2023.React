@@ -95,13 +95,22 @@
     height: 7vh;
     cursor: pointer;
     font-family: aboutme3;
-
+    transition: all 200ms ease;
 }
 
 .navigation>button:hover {
 
     scale: 110%;
     color: whitesmoke;
-    filter: brightness(150%);
+
+
+
+
+}
+
+.navigation>button:active {
+
+    color: black;
+
 
 }
