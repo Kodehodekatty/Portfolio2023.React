@@ -31,8 +31,27 @@ export default function AboutMe({ textSelector }) {
           </p>
 
           <p>
-            Men i 2022 fikk jeg endelig muligheten igjennom Kodehode å lære
-            programmering!
+            men i 2022 fikk jeg muligheten å delta i Kodehode. En boot-camp i
+            programmering gjennom Jobloop AS.
+          </p>
+
+          <p>
+            {" "}
+            De siste 6 månedene har jeg fått spisset kodekunnskapene mine i
+            HTML, CSS, React, JavaScript og Figma.
+          </p>
+
+          <blockquote>
+            {" "}
+            Jeg har funnet et kall i kodingen, og stortrives med å lage
+            nettsider med React. Men det er enda så mye mer koding,rammeverk og
+            programmvarer jeg vil lære for anskaffe høyere digital kompetanse.
+          </blockquote>
+          <p>
+            {" "}
+            Så Det neste steget for meg, er å finne en Frontend praksisplass hos
+            en bedrift for å anskaffe mer programmeringskunnskaper, og personlig
+            utvikling.
           </p>
 
           <p>
@@ -42,20 +61,6 @@ export default function AboutMe({ textSelector }) {
               men fordi jeg også kan ta i bruk mine kreative talenter og
               kompentanse!
             </b>
-          </p>
-
-          <p>
-            {" "}
-            Mine design kunnskaper i Figma/Adobe programmer sammen med
-            programmeringsspråk som JavaScript og rammeverk som React, gir meg
-            gode ferdigheter til å faktisk virkeligjøre nettsider fra bunnen av!
-          </p>
-
-          <p>
-            Det er enda så mye mer kode,rammeverk og programmer jeg vil lære for
-            anskaffe høyere digital kompetansen. Muligheten for praksis ute i
-            den store verden, tror jeg er riktig neste steg for å få både
-            faglig, og personlig utvikling.
           </p>
         </div>
       )}
