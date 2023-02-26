@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import style2 from "../FrameworkStyles.module.css";
 import { ShowImage } from "./ShowImage/ShowImage";
-const face = "<face>";
+const face = "<Head>";
 const body = "<body>";
 const footer = "<footer>";
 
