@@ -61,7 +61,7 @@
 
     background-position-x: 1%;
     background-position-y: 5%;
-    background-image: url("../images/VSC/aboutmebackground.png");
+    background-image: url("../images/VSC/aboutmebackground2.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -118,7 +118,7 @@ blockquote {
     text-align: center;
     text-justify: inter-word;
     width: 100%;
-    margin: 35px auto;
+    margin: 25px auto;
     font-family: aboutme2;
 
 }
@@ -146,11 +146,20 @@ blockquote {
 
     font-size: 4vh;
     font-family: aboutme3;
-    margin: 60px auto;
+    margin: 10px auto;
 
     text-align: center;
 }
 
+.welcometext {
+
+    font-size: 4vh;
+    font-family: aboutme3;
+    margin: 80px auto;
+    text-align: center;
+    display: block;
+
+}
 
 
 
@@ -487,28 +496,19 @@ a {
 
 
 .kontaktboks {
-    margin: 20px auto;
+    margin: 40px auto;
     width: 100%;
 
 
-    line-height: 10px;
-    border-radius: 20px;
-
-    border-left: 4px solid white;
-    border-right: 4px solid white;
-
     grid-column: 2/10;
-    grid-row: 4/5;
-    border-radius: 20px;
-    background-image: url(/src/images/Rectangle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-row: 2/5;
+
+
 
 
 
 
 }
-
 
 
 .kontaktpara {
@@ -534,7 +534,7 @@ a {
 .kontaktpara2 {
     background-color: rgb(231, 29, 207);
     cursor: pointer;
-    height: 60px;
+    height: 30px;
     line-height: 30px;
     border-radius: 20px;
     border: 2px solid white;
@@ -546,17 +546,42 @@ a {
 
 }
 
+.infobox {
+    background-image: url(/src/images/Rectangle2.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 20px;
+    image-rendering: optimizeQuality;
+
+}
+
+.infobox>h1 {
+    color: white;
+    text-shadow: -1px 1px 0 #3e093d,
+        1px 1px 0 #043d76,
+        1px -1px 0 #232a29,
+        -1px -1px 0 #54095d;
+}
+
 .pinfo {
 
-    margin: 10px auto;
-
+    margin: 60px auto;
+    font-family: aboutme2;
     line-height: 15px;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.122);
-    border-radius: 1%;
+    width: 90%;
+    height: 13vh;
+    background-color: rgba(209, 209, 209, 0.511);
+    border-radius: 20px;
     text-align: center;
-    margin: auto;
-    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 5px solid rgba(248, 241, 241, 0.712);
 }
 
 
@@ -564,16 +589,17 @@ a {
     display: flex;
     flex-direction: column;
     font-size: 1em;
+    height: 2px;
     text-align: center;
-    line-height: 15px;
-    margin-top: 20px;
+
+    margin-top: 10px;
 
 
 }
 
 .kontakttittel {
 
-    margin-top: 40px;
+    margin-top: 20px;
     color: white;
     text-shadow: 0.7px 0.3px 1.5px #000000;
 
@@ -618,7 +644,7 @@ a {
 .grafisk p {
     font-size: 1em;
     font-weight: 600;
-    font-family: aboutme;
+    font-family: aboutme2;
 }
 
 .kompetanse {}
@@ -734,23 +760,65 @@ a {
 .joobloop {
 
     color: rgb(255, 255, 255);
-    margin: 10%;
+
     font-size: 5vh;
     cursor: pointer;
     border: 1.5px solid whitesmoke;
-    margin: 1px auto;
-    width: 10vh;
-
+    margin: 120px auto;
+    width: 100%;
+    height: 10%;
+    font-family: aboutme2;
     border-radius: 20px;
     background-image: url(/Portfolio2023.React/src/images/btnRectangle.png);
     background-repeat: no-repeat;
+
     background-size: cover;
-    filter: saturate(30%);
+    cursor: pointer;
+
+    text-shadow: -1px 1px 0 #3e093d,
+        1px 1px 0 #043d76,
+        1px -1px 0 #232a29,
+        -1px -1px 0 #221a23;
     padding: 10px;
-    height: 50vh;
+    text-align: center;
+    transform: translate(0, -0.2rem);
+    backface-visibility: hidden;
+    transition: all 800ms ease;
+
+
 }
 
-.joobloop:hover {
+.joobloop h1:hover {
     filter: brightness(120%);
+    scale: 80%;
+    cursor: pointer;
+    transition: all 800ms ease;
+
+
+}
+
+.joobloop h1 {
+    transform: translate(0, -0.2rem);
+    backface-visibility: hidden;
+    transition: all 800ms ease;
+}
+
+.joobloop:active {
+
+    filter: brightness(170%);
+
+}
+
+
+.lesmer {
+
+
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: aboutme3;
+    font-weight: 600;
 
 }

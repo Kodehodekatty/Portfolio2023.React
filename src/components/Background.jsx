@@ -14,7 +14,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
   return (
     <div className={styles.wrapping}>
       {showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
             <FaceNav setTextSelector={setTextSelector} />
           </div>
@@ -24,7 +24,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {showHeader && showBody && !showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
             <FaceNav setTextSelector={setTextSelector} />
           </div>
@@ -37,7 +37,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {!showHeader && showBody && showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />
           </div>
@@ -50,7 +50,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {!showHeader && showBody && !showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />
           </div>
@@ -61,7 +61,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {!showHeader && !showBody && showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.footerbox}>
             <Footer />
           </div>
@@ -71,7 +71,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {showHeader && !showBody && showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
             <FaceNav setTextSelector={setTextSelector} />
           </div>
@@ -84,7 +84,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {showHeader && showBody && showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.footerbox}>
             <Footer />
           </div>
@@ -100,7 +100,7 @@ export default function Background({ showHeader, showBody, showFooter }) {
         </div>
       )}
       {!showHeader && !showBody && !showFooter && (
-        <div className={styles.whatever}>
+        <div className={styles.maincodingbackground}>
           <div className={styles.socialmediabar}>
             <Navbar />{" "}
           </div>

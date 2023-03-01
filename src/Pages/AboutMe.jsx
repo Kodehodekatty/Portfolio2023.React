@@ -5,7 +5,10 @@ export default function AboutMe({ textSelector }) {
     <div className={layout.aboutMe}>
       {textSelector === "landing page" && (
         <div className={layout.landing}>
-          <h1 className={layout.abouth1}>Hei! Velkommen til siden min!</h1>
+          <span className={layout.welcometext}>
+            {" "}
+            Hei! Velkommen til siden min!
+          </span>
         </div>
       )}
       {textSelector === "om meg" && (
@@ -206,15 +209,13 @@ export default function AboutMe({ textSelector }) {
               <h1>Adresse</h1>
               <p>Hasselveien 34315 Sandnes, Rogaland.</p>
             </div>
-            <h1>
-              Les mer om Kodehode, Joobloop{" "}
-              <a
-                className={layout.joobloop}
-                href="https://jobloop.no/kodehode-modellen"
-              >
-                her
-              </a>{" "}
-            </h1>{" "}
+            <a href="https://jobloop.no/kodehode-modellen">
+              {" "}
+              <div className={layout.joobloop}>
+                {" "}
+                <h1>Les mer om Kodehode, Joobloop her </h1>{" "}
+              </div>{" "}
+            </a>{" "}
           </section>
         </div>
       )}

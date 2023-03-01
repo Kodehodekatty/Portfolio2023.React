@@ -59,7 +59,7 @@
 
 
 
-.whatever {
+.maincodingbackground {
 
     height: 100%;
     display: grid;
@@ -71,9 +71,8 @@
     background-image: url("../images/VSC/vscbackground.png");
     background-repeat: no-repeat;
     background-size: contain;
-    justify-content: start;
-    align-items: stretch;
-    align-content: stretch;
+
+
 
 
 
