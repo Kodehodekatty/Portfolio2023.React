@@ -29,7 +29,7 @@ export default function Framework({
   return (
     <div className={style2.wraptest}>
       {" "}
-      <span className={style2.something}>
+      <span className={style2.kattyandbuttonscontainer}>
         <ShowImage
           showHeader={showHeader}
           showFooter={showFooter}

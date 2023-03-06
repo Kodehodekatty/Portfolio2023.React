@@ -16,16 +16,6 @@
 
 
 
-.codeimage {
-
-
-    width: 100%;
-    height: auto;
-
-
-
-
-}
 
 .headerwrapper {
     grid-column: 2 / 4;
@@ -61,7 +51,7 @@
 
 .maincodingbackground {
 
-    height: 100%;
+
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(6, 30vh);
@@ -81,40 +71,3 @@
 
 
 }
-
-
-/* .codeimage {
-
-    height: fit-content;
-    width: auto;
-    background-image: url("../images/VSC/vscbackground.png");
-    background-repeat: no-repeat;
-    background-size: contain;
- display: grid;
-
-
-} */
-
-
-@media (max-height: 400px) {
-    /* .whatever {
-        width: 100%;
-        grid-template-rows: 10vh 40vh 20vh;
-    }
-
-
-    @media (max-width: 450px) {
-        .whatever {
-            width: 200vw;
-            grid-template-rows: 10vh 40vh 20vh;
-        }
-    } */
-
-}
-
-
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
