@@ -50,16 +50,14 @@
 
 
     height: 86vh;
-    width: 150svh;
+    width: 60rem;
     position: relative;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     font-size: 1rem;
     display: grid;
     grid-template-rows: repeat(10, auto);
     grid-gap: 10px;
     justify-items: center;
-
-
     background-image: url("../images/VSC/aboutmebackground2.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -74,7 +72,7 @@
 .aboutMe>* {
     grid-row: 1/2;
     min-width: 0;
-    grid-column: 2/10;
+    grid-column: 2/9;
 
 }
 
@@ -578,7 +576,7 @@ a {
 
 
     margin: 0 auto;
-    background-image: url(/src/images/skills.png);
+    background-image: url(/src/images/skillsimage.png);
     background-repeat: no-repeat;
     background-size: contain;
     font-family: aboutme3;
@@ -648,5 +646,28 @@ a {
     display: inline;
     font-family: aboutme3;
     font-weight: 600;
+
+}
+
+@media (max-width: 480px) {
+    .aboutMe {
+        background-image: url("../images/phone/aboutmephone.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 150vh;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+
+
+    }
+
+
 
 }

@@ -59,21 +59,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className={MenuStyles.MenuNav}>
-      <div className={MenuStyles.socialbox}>
+    <div className={MenuStyles.socialbox}>
+      {" "}
+      <div className={MenuStyles.btnwrap}>
         {" "}
-        <span className={MenuStyles.btnwrap}>
+        <button onClick={() => setOpen(!open)} className={MenuStyles.topButton}>
           {" "}
-          <button
-            onClick={() => setOpen(!open)}
-            className={MenuStyles.topButton}
-          >
-            {" "}
-            <div className={MenuStyles.btnText}> Social Media</div>
-          </button>{" "}
-        </span>
-        {open && <List />}
+          <div className={MenuStyles.btnText}> Social Media</div>
+        </button>{" "}
       </div>
-    </nav>
+      {open && <List />}
+    </div>
   );
 }

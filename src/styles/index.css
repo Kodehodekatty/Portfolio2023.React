@@ -24,3 +24,27 @@
 
 
 }
+
+@media (max-width: 480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 100px);
+
+    }
+
+    .wrapper {
+        grid-row: 6/6;
+        grid-column: 2/2;
+        align-self: start;
+
+    }
+
+    .container {
+
+        grid-row: 1/3;
+        grid-column: 2/3;
+
+    }
+
+}

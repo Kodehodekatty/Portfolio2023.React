@@ -114,3 +114,19 @@
 
 
 }
+
+@media (max-width: 480px) {
+    .FaceNavWrap {
+
+        width: 100%;
+
+        height: 20vh;
+        background-position-y: 10%;
+        background-image: url("../images/phone/phoneheader.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -12px;
+        padding: 1px;
+    }
+
+}

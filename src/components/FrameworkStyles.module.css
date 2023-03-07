@@ -16,12 +16,6 @@
 }
 
 
-
-
-
-
-
-
 .btnGroup {
 
 
@@ -64,7 +58,11 @@
 
 }
 
+.container {
 
+    display: grid;
+
+}
 
 @keyframes bounce {
     0% {
@@ -84,15 +82,8 @@
 
 .something {
     position: relative;
-
-
     align-items: center;
-    justify-content: stretch;
-
-
     display: grid;
-
-
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 30% minmax(10%, 30%) 1fr;
 
@@ -107,6 +98,40 @@
     height: auto;
 
 
+
+
+}
+
+
+@media (max-width: 480px) {
+    .something {
+        position: relative;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column-reverse;
+
+        height: 100svh;
+        width: auto;
+
+
+    }
+
+    .btnGroup {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 25rem;
+        left: 3rem;
+    }
+
+    .btnGroup>button {
+
+        margin: 74% auto;
+        position: relative;
+
+    }
+
+    .shadowmain {}
 
 
 }
