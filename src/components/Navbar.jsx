@@ -5,53 +5,43 @@ import gmail from "../images/icons/gmail.png";
 import cv from "../images/icons/CV.png";
 import linkedin from "../images/icons/Linkedin.png";
 import arrow from "../images/arrow.png";
+import arrowdown from "../images/arrowdown.png";
 
 const List = () => {
   return (
-    <div className={MenuStyles.test}>
-      <ul className={MenuStyles.iconlist}>
-        <a href="https://github.com/Kodehodekatty?tab=repositories">
-          {" "}
-          <div className={MenuStyles.socialclick}>
-            {open && <p className={MenuStyles.iconNames}>Github</p>}
-            <li className={MenuStyles.media}>
-              {" "}
-              <img src={github} className={MenuStyles.Social} />
-            </li>
-          </div>{" "}
-        </a>
-        <a href="mailto: kathrinestangeland@gmail.com">
-          <div className={MenuStyles.socialclick}>
-            {open && <p className={MenuStyles.iconNames}>Gmail</p>}
-            <li className={MenuStyles.media}>
-              <img src={gmail} className={MenuStyles.Social} />{" "}
-            </li>{" "}
-          </div>{" "}
-        </a>
+    <ul className={MenuStyles.socialmediagrid}>
+      <a href="https://github.com/Kodehodekatty?tab=repositories">
+        <li className={MenuStyles.socialclick}>
+          {open && <p>Github</p>}
 
-        <a href="src/files/CV.kathrinestangeland2023.pdf" download>
-          <div className={MenuStyles.socialclick}>
-            {open && <p className={MenuStyles.iconNames}>CV</p>}
-            <li className={MenuStyles.media}>
-              <img src={cv} className={MenuStyles.Social} />{" "}
-            </li>{" "}
-          </div>{" "}
-        </a>
+          <img src={github} className={MenuStyles.Socialmediaimage} />
+        </li>
+      </a>
+      <a href="mailto: kathrinestangeland@gmail.com">
+        <li className={MenuStyles.socialclick}>
+          {open && <p>Gmail</p>}
 
-        <a
-          href="https://linkedin.com/in/kathrine-stangeland-1b6417171"
-          target="_blank"
-        >
-          {" "}
-          <div className={MenuStyles.socialclick}>
-            {open && <p className={MenuStyles.iconNames}>Linkdin</p>}
-            <li className={MenuStyles.media}>
-              <img src={linkedin} className={MenuStyles.Social} />{" "}
-            </li>{" "}
-          </div>{" "}
-        </a>
-      </ul>
-    </div>
+          <img src={gmail} className={MenuStyles.Socialmediaimage} />
+        </li>
+      </a>
+
+      <a href="src/files/CV.kathrinestangeland2023.pdf" download>
+        <li className={MenuStyles.socialclick}>
+          {open && <p>CV</p>}
+          <img src={cv} className={MenuStyles.Socialmediaimage} />
+        </li>
+      </a>
+
+      <a
+        href="https://linkedin.com/in/kathrine-stangeland-1b6417171"
+        target="_blank"
+      >
+        <li className={MenuStyles.socialclick}>
+          {open && <p>Linkdin</p>}
+          <img src={linkedin} className={MenuStyles.Socialmediaimage} />{" "}
+        </li>{" "}
+      </a>
+    </ul>
   );
 };
 
@@ -59,15 +49,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={MenuStyles.socialbox}>
+    <div className={MenuStyles.socialbuttonandiconsGrid}>
       {" "}
-      <div className={MenuStyles.btnwrap}>
+      <section className={MenuStyles.btnwrap}>
         {" "}
         <button onClick={() => setOpen(!open)} className={MenuStyles.topButton}>
           {" "}
-          <div className={MenuStyles.btnText}> Social Media</div>
+          <div className={MenuStyles.btnText}>
+            {" "}
+            <img src={open ? arrowdown : arrow} /> Social Media
+          </div>
         </button>{" "}
-      </div>
+      </section>
       {open && <List />}
     </div>
   );

@@ -30,6 +30,17 @@ function App() {
       </div>
       <div className="container">
         <Background
+          onNavigated={(page) => {
+            if (page == "om meg") {
+              setShowBody(true);
+            }
+            if (page == "mitt arbeid") {
+              setShowBody(true);
+            }
+            if (page == "kontakt") {
+              setShowBody(true);
+            }
+          }}
           showHeader={showHeader}
           showBody={showBody}
           showFooter={showFooter}

@@ -32,10 +32,10 @@
 
     background-image: url("../images/Groupfooter.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 246%;
-    height: 26vh;
-    background-position-y: -1px;
+    background-size: contain;
+    width: min(100%);
+    height: 30vh;
+
 
 
 

@@ -27,37 +27,36 @@ export default function Framework({
   setShowFooter,
 }) {
   return (
-    <div className={style2.wraptest}>
+    <section>
       {" "}
-      <span className={style2.something}>
+      <span className={style2.kattywrapandbuttons}>
         <ShowImage
           showHeader={showHeader}
           showFooter={showFooter}
           showBody={showBody}
         />
-        <div className={style2.container}>
-          <div className={style2.btnGroup}>
-            <Button
-              className={style2.btn1}
-              onClick={() => setShowHeader((prev) => !prev)}
-            >
-              {!showHeader ? face : ""}
-            </Button>
-            <Button
-              className={style2.btn1}
-              onClick={() => setShowBody((prev) => !prev)}
-            >
-              {!showBody ? body : ""}
-            </Button>
-            <Button
-              className={style2.btn1}
-              onClick={() => setShowFooter((prev) => !prev)}
-            >
-              {!showFooter ? footer : ""}
-            </Button>
-          </div>
-        </div>{" "}
+
+        <div className={style2.btnGroup}>
+          <Button
+            className={style2.btn1}
+            onClick={() => setShowHeader((prev) => !prev)}
+          >
+            {!showHeader ? face : ""}
+          </Button>
+          <Button
+            className={style2.btn1}
+            onClick={() => setShowBody((prev) => !prev)}
+          >
+            {!showBody ? body : ""}
+          </Button>
+          <Button
+            className={style2.btn1}
+            onClick={() => setShowFooter((prev) => !prev)}
+          >
+            {!showFooter ? footer : ""}
+          </Button>
+        </div>
       </span>{" "}
-    </div>
+    </section>
   );
 }

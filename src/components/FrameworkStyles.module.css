@@ -18,17 +18,10 @@
 
 .btnGroup {
 
-
-
-    display: grid;
-
-
-    grid-template-columns: repeat(auto-fit, minmax(10vh, 1fr));
-    grid-auto-flow: row;
-    grid-template-rows: repeat(3, 25vh);
-    padding: 10px;
-    justify-content: stretch;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
 
 }
 
@@ -37,32 +30,20 @@
 
 }
 
-
-
 .btnGroup>button {
 
 
     border: 1px solid rgba(255, 255, 255, 0.318);
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
-    margin-top: 30px;
     width: min(15vh);
     height: 3vh;
     font-size: 2vh;
     background-color: rgba(255, 255, 255, 0.27);
-
-
-
-
-
-
+    margin: 4rem auto;
 }
 
-.container {
 
-    display: grid;
-
-}
 
 @keyframes bounce {
     0% {
@@ -80,38 +61,29 @@
 
 
 
-.something {
+.kattywrapandbuttons {
     position: relative;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 30% minmax(10%, 30%) 1fr;
+    grid-template-columns: repeat(3, 18%);
+    grid-template-rows: 80% minmax(10%, 30%) 1fr;
+    width: fit-content;
 
 
 
 }
 
-.kattywrap {
-
-    position: relative;
-
-    height: auto;
-
-
-
-
-}
 
 
 @media (max-width: 480px) {
-    .something {
+    .kattywrapandbuttons {
         position: relative;
         align-items: flex-start;
         display: flex;
         flex-direction: column-reverse;
-
+        z-index: 2;
         height: 100svh;
-        width: auto;
+        width: fit-content;
 
 
     }
@@ -120,18 +92,25 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        top: 25rem;
-        left: 3rem;
+        top: 37rem;
+        left: 7rem;
+        z-index: 1;
     }
 
     .btnGroup>button {
 
-        margin: 74% auto;
+        margin: 80px auto;
         position: relative;
-
+        height: 1.4rem;
+        width: 100px;
+        display: inline-block;
     }
 
-    .shadowmain {}
+    .shadowmain {
+        width: 100%;
+        height: 120vh;
+
+    }
 
 
 }
