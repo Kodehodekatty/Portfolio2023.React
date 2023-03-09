@@ -1,13 +1,9 @@
 // imports
-
 import Background from "./components/Background";
 import Framework from "./components/Framework/Framework";
-import Navbar from "./components/Navbar";
-import style from "./components/BackgroundStyles.module.css";
 import React, { useState } from "react";
 
 //imports styles
-
 import "./styles/App.css";
 import "./styles/index.css";
 

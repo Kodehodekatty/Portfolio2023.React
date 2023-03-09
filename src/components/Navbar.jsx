@@ -4,8 +4,8 @@ import github from "../images/icons/github.png";
 import gmail from "../images/icons/gmail.png";
 import cv from "../images/icons/CV.png";
 import linkedin from "../images/icons/Linkedin.png";
-import arrow from "../images/arrow.png";
-import arrowdown from "../images/arrowdown.png";
+import arrow from "../images/icons/arrow.png";
+import arrowdown from "../images/icons/arrowdown.png";
 
 const List = () => {
   return (

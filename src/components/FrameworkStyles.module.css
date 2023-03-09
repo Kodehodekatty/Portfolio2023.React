@@ -21,7 +21,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2rem;
+
+    width: 100%;
+    position: relative;
 
 }
 
@@ -92,8 +94,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        top: 37rem;
-        left: 7rem;
+        top: 35rem;
+        right: 4rem;
         z-index: 1;
     }
 

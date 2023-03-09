@@ -50,9 +50,9 @@
 
         background-image: url("../images/phone/phonefooter.png");
         background-repeat: no-repeat;
-        background-size: 100%;
-        width: 39rem;
-        height: 25vh;
+        background-size: contain;
+        width: 600px;
+
     }
 
 

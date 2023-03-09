@@ -33,7 +33,6 @@
 
     .aboutmewrapper {
         grid-column: 2 / 7;
-
         grid-row-start: 2;
 
 
@@ -53,13 +52,12 @@
 
 
         display: grid;
-        grid-template-columns: repeat(7, 32vh);
+        grid-template-columns: repeat(6, 30vh);
         grid-template-rows: 13vh 74vh 28vh;
         background-image: url("../images/VSC/vscbackground.png");
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
-
 
     }
 
@@ -81,20 +79,20 @@
         .aboutmewrapper {
 
             grid-column: 2/5;
-
         }
 
         .headerwrapper {
 
             grid-column: 2 / 5;
 
-
+            height: fit-content;
         }
 
         .footerbox {
 
             grid-column: 2/3;
             grid-row: 10/10;
+
 
         }
     }
