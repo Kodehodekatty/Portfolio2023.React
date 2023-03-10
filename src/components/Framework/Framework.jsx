@@ -29,13 +29,6 @@ export default function Framework({
   return (
     <section>
       {" "}
-      <span className={style2.kattywrapandbuttons}>
-        <ShowImage
-          showHeader={showHeader}
-          showFooter={showFooter}
-          showBody={showBody}
-        />
-      </span>{" "}
       <div className={style2.btnGroup}>
         <Button
           className={style2.btn1}
@@ -56,6 +49,13 @@ export default function Framework({
           {!showFooter ? footer : ""}
         </Button>
       </div>
+      <span className={style2.kattywrapandbuttons}>
+        <ShowImage
+          showHeader={showHeader}
+          showFooter={showFooter}
+          showBody={showBody}
+        />
+      </span>
     </section>
   );
 }
