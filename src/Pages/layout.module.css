@@ -642,12 +642,10 @@ a {
         background-image: url("../images/phone/aboutmephone.png");
         background-repeat: no-repeat;
         background-size: contain;
-
         overflow-y: scroll;
         overflow-x: hidden;
-        height: min(150svh);
+        height: 120%;
         width: 100%;
-        position: relative;
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         padding-top: 2rem;

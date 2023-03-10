@@ -68,8 +68,7 @@
             background-size: contain;
             display: grid;
             grid-template-columns: repeat(4, 200px);
-
-            height: 200svh;
+            height: auto;
 
 
 
@@ -91,7 +90,20 @@
         .footerbox {
 
             grid-column: 2/3;
-            grid-row: 10/10;
+            grid-row: 3/3;
+
+
+        }
+    }
+
+    @media (max-width: 320px) {
+        .maincodingbackground {
+
+            display: grid;
+            grid-template-columns: repeat(1, 100px);
+            height: auto;
+
+
 
 
         }

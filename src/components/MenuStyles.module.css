@@ -76,7 +76,6 @@
 
     text-align: left;
     border: none;
-
     font-size: 0.8rem;
     cursor: pointer;
     width: 1rem;
@@ -175,21 +174,24 @@
     font-family: aboutme;
     list-style-type: none;
     color: whitesmoke;
-
     padding-top: 2rem;
+
+    padding-left: 1rem;
 
 }
 
 @media (max-width: 480px) {
     .socialbox {
         background-image: none;
-        grid-template-rows: repeat(10, 12%);
+        grid-template-rows: repeat(1, 1fr);
+
 
     }
 
     .socialbuttonandiconsGrid {
 
         grid-template-rows: repeat(5, 10%);
+
     }
 
 
@@ -203,20 +205,22 @@
     .btnwrap {
 
         grid-column: 1/2;
-        grid-row: 6/6;
+        grid-row: 4/4;
 
     }
 
 
     .socialmediagrid {
 
-        grid-row: 6/6;
+        grid-row: 4/4;
         background-color: rgb(4, 57, 94);
         border: 1.5px solid rgb(11, 112, 184);
-        width: 14rem;
+        width: auto;
         height: fit-content;
-        padding-bottom: 2rem;
-        padding-top: 10rem;
+        padding-bottom: 1rem;
+
+
+
     }
 
 }
