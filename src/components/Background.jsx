@@ -36,7 +36,12 @@ export default function Background({
       {showHeader && showBody && !showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav setTextSelector={setTextSelector} />
+            <FaceNav
+              setTextSelector={(text) => {
+                setTextSelector(text);
+                onNavigated(text);
+              }}
+            />
           </div>
           <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
@@ -83,7 +88,12 @@ export default function Background({
       {showHeader && !showBody && showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav setTextSelector={setTextSelector} />
+            <FaceNav
+              setTextSelector={(text) => {
+                setTextSelector(text);
+                onNavigated(text);
+              }}
+            />
           </div>
           <div className={styles.socialmediabar}>
             <Navbar />
@@ -96,7 +106,12 @@ export default function Background({
       {showHeader && showBody && showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav setTextSelector={setTextSelector} />
+            <FaceNav
+              setTextSelector={(text) => {
+                setTextSelector(text);
+                onNavigated(text);
+              }}
+            />
           </div>
           <div className={styles.aboutmewrapper}>
             <AboutMe textSelector={textSelector} />{" "}
