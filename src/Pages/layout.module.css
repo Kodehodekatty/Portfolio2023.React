@@ -176,15 +176,9 @@ blockquote {
 
 
 .skillbox {
-    width: 70vh;
-    grid-column: 1 / 4;
     box-sizing: border-box;
     margin: 10px auto;
-
     border: 1.5px solid rgb(0, 0, 0);
-
-
-
 }
 
 .kreativtittel {
@@ -202,8 +196,6 @@ blockquote {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-
-
     animation: textclip 2s linear infinite;
     display: inline-block;
 
@@ -217,7 +209,6 @@ blockquote {
 }
 
 
-.grafisktittel {}
 
 .skills {
 
@@ -283,8 +274,6 @@ blockquote {
 .card {
 
     text-align: center;
-
-
     padding-bottom: 1rem;
     background-image: url(/src/images/Rectangle.png);
     background-size: cover;
@@ -299,9 +288,6 @@ blockquote {
 }
 
 
-
-
-
 #cards {
 
 
@@ -310,15 +296,11 @@ blockquote {
 }
 
 
-
-
 .card>h1 {
 
     color: white;
     text-shadow: 0.7px 0.2px 1.5px #000000;
     font-size: clamp(.5rem, 2vw + .2rem, 1rem);
-
-
     padding: 1rem;
 
 }
@@ -334,12 +316,10 @@ blockquote {
     width: 2vw;
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
-
     padding: 10px;
     cursor: pointer;
     height: 3vh;
     transition: all 800ms ease;
-
 
 
 }
@@ -348,11 +328,8 @@ blockquote {
     height: 10%;
     width: 80%;
     margin: 10px auto;
-
-
     line-height: 10px;
     font-size: 1rem;
-
 }
 
 .secondlink {
@@ -457,10 +434,8 @@ a {
     width: min(500px, 80%);
     height: 60%;
     margin: 0 auto;
-
     border: 2px solid black;
     border-radius: 20px;
-
 
 }
 
@@ -483,7 +458,6 @@ a {
     height: max(20%);
     background-color: rgba(209, 209, 209, 0.511);
     border-radius: 20px;
-
     font-size: 1rem;
     font-weight: 600;
     padding: .8rem;
@@ -497,8 +471,6 @@ a {
 
     font-size: 1rem;
     height: 2px;
-
-
     margin-top: 10px;
 
 
@@ -518,9 +490,6 @@ a {
 
     font-size: 1.2rem;
     text-decoration: none;
-
-
-
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
 
@@ -535,10 +504,8 @@ a {
     width: min(100%);
     display: flex;
     align-items: center;
-
     justify-content: center;
     flex-direction: row;
-
     background-image: url("../images/texture.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -558,27 +525,15 @@ a {
 }
 
 
-.annet {
-
-
-
-
-    margin: 0 auto;
+.cardbox {
+    padding-bottom: 1rem;
+    width: min(200px);
+    height: 40vh;
     background-image: url(/src/images/skillsimage.png);
     background-repeat: no-repeat;
     background-size: contain;
-    font-family: aboutme3;
-    min-height: 45vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 80px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-}
 
 
-.cardbox {
-    padding-bottom: 3rem;
-    text-align: center;
-    padding-bottom: 10rem;
-    width: min(100%);
 
 }
 
@@ -651,14 +606,21 @@ a {
         padding-top: 2rem;
 
 
-
     }
 
     .aboutMe>* {
-
-        grid-column: 2/9;
+        grid-column: 2/10;
+        width: min(100%, 200px);
     }
 
+    .aboutMe h2 {
+        margin: 0;
+        width: 100%;
+    }
 
+    .grafisk {
+
+        display: block;
+    }
 
 }

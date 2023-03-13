@@ -19,13 +19,7 @@
 
 
 
-.footerwrapper {
 
-
-
-    margin: 0;
-
-}
 
 .footerbackground {
 
@@ -51,8 +45,10 @@
         background-image: url("../images/phone/phonefooter.png");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 600px;
-        background-position-y: 22px;
+        position: relative;
+        background-position-y: 30px;
+
+        width: 100%;
     }
 
 
