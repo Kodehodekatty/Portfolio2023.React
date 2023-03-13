@@ -20,9 +20,9 @@
 
     display: flex;
     position: relative;
-    height: 10px;
+    height: min(100px);
     flex-direction: column;
-    bottom: 90vh;
+    z-index: 1;
     right: 10px;
 
 }
