@@ -8,59 +8,42 @@
 
 .shadowmain {
     position: relative;
-    width: 300px;
+    width: 60vh;
+    height: auto;
+
+
 
 }
 
-
-
-
-
-.btn1 {}
-
-
-.btn2 {}
-
-
-.btn3 {}
-
-
-.container {
-
-
-    margin-top: -370px;
-    padding: 50px;
-
-
-}
 
 .btnGroup {
 
-
-
-    min-height: 280px;
-    width: fit-content;
-
     display: flex;
+    position: relative;
+    height: min(100px);
     flex-direction: column;
-    justify-content: space-between;
-
+    z-index: 1;
+    right: 10px;
 
 }
 
 .btnGroup>button:hover {
-    scale: 160%;
+    scale: 130%;
+
 }
 
-
-
 .btnGroup>button {
-    width: 100px;
-    height: 20px;
-    border: 2px dotted white;
+
+
+    border: 1px solid rgba(255, 255, 255, 0.318);
     font-family: codetext;
     animation: bounce .4s ease infinite alternate;
+    width: min(8vw);
+    padding: 3%;
 
+    font-size: 2vh;
+    background-color: rgba(255, 255, 255, 0.27);
+    margin: 60px auto;
 }
 
 
@@ -81,35 +64,65 @@
 
 
 
-.faceandbody {
-
-    margin-left: 320px;
-    width: 135vh;
+.kattywrapandbuttons {
     position: relative;
-    height: 100vh;
-    margin-top: 0;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 18%);
+    grid-template-rows: 80% minmax(10%, 30%) 1fr;
+    width: fit-content;
+
+}
 
 
+
+@media (max-width: 480px) {
+    .kattywrapandbuttons {
+        display: flex;
+        flex-direction: column;
+
+        max-height: 500px;
+        width: fit-content;
+
+    }
+
+
+
+    .btnGroup {
+
+
+        margin: 30px auto;
+        right: 15rem;
+
+    }
+
+    .btnGroup>button {
+
+        height: auto;
+        width: 150px;
+        display: inline-block;
+        position: relative;
+        top: 900px;
+
+        z-index: 1;
+    }
+
+    .shadowmain {
+        width: 100%;
+        max-height: 70vh;
+
+    }
 
 
 }
 
-.something {
-    position: relative;
-
-    width: 50px;
-    height: 100px;
-    margin-top: -20px;
+@media (max-width: 320px) {
+    .btnGroup {
 
 
+        height: 200px;
+        right: 10rem;
 
 
-}
-
-.kattywrap {
-    width: 200px;
-    height: 50px;
-    position: relative;
-
-
+    }
 }

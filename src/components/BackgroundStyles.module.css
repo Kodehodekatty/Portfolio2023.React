@@ -1,166 +1,110 @@
-.codebackground {
+    .codebackground {
 
 
-    background-position: center;
-    position: relative;
 
+        position: relative;
 
-    flex-grow: 1;
+        height: auto;
 
-    /* margin-left: 200px; */
-    background-image: url("../images/VSC/image16.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+        background-image: url("../images/VSC/image16.png");
+        background-repeat: no-repeat;
+        background-size: contain;
 
-}
 
+    }
 
 
 
 
 
-.welcome {
+    .headerwrapper {
+        grid-column: 2 / 7;
+        grid-row-start: 1;
 
+    }
 
-    width: 100px;
-    height: 300px;
-    left: 40%;
+    .socialmediabar {
 
+        grid-column: 1/1;
+        grid-row: 1/1;
 
-}
+    }
 
 
+    .aboutmewrapper {
+        grid-column: 2 / 7;
+        grid-row-start: 2;
 
 
+    }
 
-.both {
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    .footerbox {
 
+        grid-column: 2/7;
+        grid-row: 3/3;
 
+    }
 
 
 
+    .maincodingbackground {
 
 
+        display: grid;
+        grid-template-columns: repeat(6, 30vh);
+        grid-template-rows: 13vh 74vh 28vh;
+        background-image: url("../images/VSC/vscbackground.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
 
+    }
 
-}
+    @media (max-width: 480px) {
+        .maincodingbackground {
+            background-image: url("../images/phone/phonebackground.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            height: auto;
 
-.bodybackgrounddiv {
 
-    margin: auto;
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/onlybody.png");
-    background-repeat: no-repeat;
-    background-size: contain;
 
 
-}
+        }
 
-.faceandbodybackgrounddiv {
+        .aboutmewrapper {
 
-    margin: auto;
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/faceandbodyCODE.png");
+            grid-column: 2/5;
+        }
 
-    background-repeat: no-repeat;
-    background-size: contain;
+        .headerwrapper {
 
+            grid-column: 2 / 5;
 
-}
+            height: fit-content;
+        }
 
-.faceandfooter {
-    margin: auto;
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/faceandfooter.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+        .footerbox {
 
+            grid-column: 2/3;
+            grid-row: 3/3;
 
-}
 
-.whatever {
+        }
+    }
 
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    @media (max-width: 320px) {
+        .maincodingbackground {
 
+            display: grid;
+            grid-template-columns: repeat(1, 100px);
+            height: auto;
 
-}
 
-.facecodebackgrounddiv {
-    margin: auto;
 
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/faceCODE.png");
-    background-repeat: no-repeat;
-    background-size: contain;
 
-
-}
-
-.footerbackgrounddiv {
-
-    margin: auto;
-
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/footer.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-
-}
-
-.socialmediabar {
-
-    position: relative;
-
-    margin-top: 190px;
-    margin-left: -160px;
-
-}
-
-
-
-.entirebodybackgrounddiv {
-
-    margin: auto;
-
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/entirebody.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-
-}
-
-.bodyandfooterbackgrounddiv {
-
-
-    margin: auto;
-
-    height: 900px;
-    width: 900px;
-    background-image: url("../images/VSC/bodyandfooterbackground.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
-
-}
+        }
+    }

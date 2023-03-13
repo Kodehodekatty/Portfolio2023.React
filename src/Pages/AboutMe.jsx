@@ -5,7 +5,10 @@ export default function AboutMe({ textSelector }) {
     <div className={layout.aboutMe}>
       {textSelector === "landing page" && (
         <div className={layout.landing}>
-          <h1 className={layout.abouth1}>Hei! Velkommen til siden min!</h1>
+          <span className={layout.welcometext}>
+            {" "}
+            Hei! Velkommen til siden min!
+          </span>
         </div>
       )}
       {textSelector === "om meg" && (
@@ -31,8 +34,27 @@ export default function AboutMe({ textSelector }) {
           </p>
 
           <p>
-            Men i 2022 fikk jeg endelig muligheten igjennom Kodehode å lære
-            programmering!
+            men i 2022 fikk jeg muligheten å delta i Kodehode. En boot-camp i
+            programmering gjennom Jobloop AS.
+          </p>
+
+          <p>
+            {" "}
+            De siste 6 månedene har jeg fått spisset kodekunnskapene mine i
+            HTML, CSS, React, JavaScript og Figma.
+          </p>
+
+          <blockquote>
+            {" "}
+            Jeg har funnet et kall i kodingen, og stortrives med å lage
+            nettsider med React. Men det er enda så mye mer koding,rammeverk og
+            programmvarer jeg vil lære for anskaffe høyere digital kompetanse.
+          </blockquote>
+          <p>
+            {" "}
+            Så Det neste steget for meg, er å finne en Frontend praksisplass hos
+            en bedrift for å anskaffe mer programmeringskunnskaper, og personlig
+            utvikling.
           </p>
 
           <p>
@@ -42,20 +64,6 @@ export default function AboutMe({ textSelector }) {
               men fordi jeg også kan ta i bruk mine kreative talenter og
               kompentanse!
             </b>
-          </p>
-
-          <p>
-            {" "}
-            Mine design kunnskaper i Figma/Adobe programmer sammen med
-            programmeringsspråk som JavaScript og rammeverk som React, gir meg
-            gode ferdigheter til å faktisk virkeligjøre nettsider fra bunnen av!
-          </p>
-
-          <p>
-            Det er enda så mye mer kode,rammeverk og programmer jeg vil lære for
-            anskaffe høyere digital kompetansen. Muligheten for praksis ute i
-            den store verden, tror jeg er riktig neste steg for å få både
-            faglig, og personlig utvikling.
           </p>
         </div>
       )}
@@ -77,33 +85,38 @@ export default function AboutMe({ textSelector }) {
             <div className={layout.cardscontainer}>
               <div className={layout.card} id={layout.project1}>
                 <h1>Prosjekter som har blitt kodet i React/Vite</h1>
-
-                <a href="https://github.com/Kodehodekatty/JulCountdown">
-                  <p className={layout.label}>Juleoppgave</p>
+                <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
+                <p className={layout.label}>Juleoppgave</p>
+                <a
+                  className={layout.secondlink}
+                  href="https://github.com/Kodehodekatty/JulCountdown"
+                >
+                  link to repository{" "}
                 </a>
-                <a href="https://github.com/Kodehodekatty/React.Pokedex.API">
-                  <p className={layout.label}>Pokedex v.2</p>{" "}
+                <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
+                <p className={layout.label}>Pokedex v.2</p>{" "}
+                <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
+                <p className={layout.label}>Portfolio</p>{" "}
+                <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
+                  {" "}
                 </a>
-
-                <a href="https://github.com/Kodehodekatty/Portfolio2023.React">
-                  <p className={layout.label}>Portfolio</p>{" "}
+                <p className={layout.label}>React Routes og Kalkulator</p>{" "}
+                <a
+                  className={layout.secondlink}
+                  href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
+                >
+                  link to repository
                 </a>
               </div>
 
               <div className={layout.card} id={layout.project1}>
                 <h1>Prosjekter som har blitt kodet i Javascript</h1>
-
-                <a href="https://github.com/Kodehodekatty/Blackjack">
-                  {" "}
-                  <p className={layout.label}>BlackJack</p>{" "}
-                </a>
-                <a href=" https://github.com/Kodehodekatty/Pokedex">
-                  <p className={layout.label}>Pokedex v.1</p>{" "}
-                </a>
-                <a href="https://github.com/Kodehodekatty/spaceproject">
-                  {" "}
-                  <p className={layout.label}>Space Project</p>{" "}
-                </a>
+                <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
+                <p className={layout.label}>BlackJack</p>{" "}
+                <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
+                <p className={layout.label}>Pokedex v.1</p>{" "}
+                <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
+                <p className={layout.label}>Space Project</p>{" "}
               </div>
             </div>
           </section>
@@ -132,7 +145,7 @@ export default function AboutMe({ textSelector }) {
 
             <section className={layout.bars}>
               <h1 className={layout.grafisktittel}>
-                Annet programmvare kunnskaper
+                Andre Programmvare kunnskaper
               </h1>
               <span className={layout.linefix2}>
                 <p className={layout.skillp}>Figma</p>
@@ -152,7 +165,7 @@ export default function AboutMe({ textSelector }) {
               </span>
 
               <section className={layout.grafisk}>
-                <h1 className={layout.grafisktittel}>Grafisk kompetanser</h1>
+                <h1 className={layout.kreativtittel}>kreative ferdigheter</h1>
                 <div className={layout.kompetanse}>
                   <p>Filmproduksjon</p>
                   <p>Video Redigering</p>
@@ -163,21 +176,7 @@ export default function AboutMe({ textSelector }) {
             <div className={layout.cardbox}>
               <h1 className={layout.mecard}>Annet</h1>
 
-              <div className={layout.annet}>
-                <ul>
-                  <li>Public Relations</li>
-                  <li>1-linje IT Support</li>
-
-                  <li>Kundeservice/telefonsupport</li>
-
-                  <li>Digital markedsføring</li>
-                  <li>
-                    administrasjon av sosiale medie kanaler og publisering av
-                    innhold for klienter.
-                  </li>
-                  <li>Konsulentvirksomhet tilknyttet informasjonsteknologi</li>
-                </ul>
-              </div>
+              <div className={layout.annet}></div>
             </div>
           </div>
         </div>
@@ -186,18 +185,23 @@ export default function AboutMe({ textSelector }) {
       {textSelector === "kontakt" && (
         <div className={layout.kontaktboks}>
           <section className={layout.infobox}>
-            <h1>kontakt informasjon</h1>
+            <h1>Kontakt informasjon</h1>
             <div className={layout.pinfo}>
               <h1>Telefon </h1>
               <p>+47 92993977</p>
-
+            </div>
+            <div className={layout.pinfo}>
+              {" "}
               <h1>Adresse</h1>
               <p>Hasselveien 34315 Sandnes, Rogaland.</p>
-              <h1>
-                Les mer om Kodehode, Joobloop{" "}
-                <a href="https://jobloop.no/kodehode-modellen">her</a>{" "}
-              </h1>
             </div>
+            <a href="https://jobloop.no/kodehode-modellen">
+              {" "}
+              <div className={layout.joobloop}>
+                {" "}
+                <h1>Les mer om Kodehode, Joobloop her </h1>{" "}
+              </div>{" "}
+            </a>{" "}
           </section>
         </div>
       )}

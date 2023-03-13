@@ -1,0 +1,60 @@
+@font-face {
+    font-family: aboutme;
+    src: url(/src/fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: aboutme2;
+    src: url(/src/fonts/Comfortaa-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: aboutme3;
+    src: url(/src/fonts/Comfortaa-Bold.ttf);
+}
+
+
+
+
+
+.footerwrapper {
+
+
+
+    margin: 0;
+
+}
+
+.footerbackground {
+
+
+    background-image: url("../images/Groupfooter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: min(100%);
+    height: 30vh;
+
+
+
+
+
+
+
+}
+
+@media (max-width: 480px) {
+    .footerbackground {
+
+
+        background-image: url("../images/phone/phonefooter.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        background-position-y: 22px;
+    }
+
+
+
+}
