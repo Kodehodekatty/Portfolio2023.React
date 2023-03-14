@@ -20,7 +20,7 @@
 
     display: flex;
     position: relative;
-    height: min(100px);
+    height: min(90vh);
     flex-direction: column;
     z-index: 1;
     right: 10px;
@@ -43,7 +43,7 @@
 
     font-size: 2vh;
     background-color: rgba(255, 255, 255, 0.27);
-    margin: 100px auto;
+    margin: 70px auto;
 }
 
 
