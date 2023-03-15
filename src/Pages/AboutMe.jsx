@@ -174,8 +174,8 @@ export default function AboutMe({ textSelector }) {
               </section>
             </section>
             <h1>Annet</h1>
+            <div className={layout.cardbox}></div>
           </div>
-          <div className={layout.cardbox}></div>
         </div>
       )}
 

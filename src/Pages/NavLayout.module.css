@@ -40,23 +40,11 @@
 
 
     position: relative;
-
     display: flex;
     flex-direction: row;
-    width: 100%;
-
-    justify-items: center;
     justify-content: space-evenly;
     list-style-type: none;
-
-
-
-    border: none;
     padding: 1px;
-
-
-
-    font-size: 1vw;
     cursor: pointer;
 }
 
@@ -70,9 +58,8 @@
 
 .list>li {
 
-    width: 20vh;
+
     height: auto;
-    font-size: 2vh;
     margin-top: 1vh;
 
 
@@ -82,12 +69,10 @@
 
 .navigation>button {
 
-    appearance: none;
-    border: 1.5px solid whitesmoke;
 
-    margin: 1px auto;
-    width: 16vh;
-    font-size: 2vh;
+    border: 1.5px solid whitesmoke;
+    margin: 0;
+    position: relative;
     border-radius: 20px;
     background-image: url(/src/images/btnRectangle.png);
     background-repeat: no-repeat;
@@ -118,15 +103,21 @@
 @media (max-width: 480px) {
     .FaceNavWrap {
 
-        width: 100%;
 
-        height: 20vh;
-        background-position-y: 10%;
+
+
         background-image: url("../images/phone/phoneheader.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -12px;
+
         padding: 1px;
+
+    }
+
+    .navigation>button {
+
+        width: max(60px);
+        font-size: .5rem;
     }
 
 }

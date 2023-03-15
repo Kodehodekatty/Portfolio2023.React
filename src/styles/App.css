@@ -2,11 +2,11 @@ html,
 body {
 
   background-image: url("../images/triangles2.svg");
-  background-repeat: no-repeat;
+
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-size: cover;
+
 
 }
 

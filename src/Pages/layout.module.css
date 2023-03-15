@@ -500,12 +500,12 @@ a {
 
     margin-top: 5rem;
     line-height: 1;
-    height: 40vh;
+    max-height: 40vh;
     width: min(100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     background-image: url("../images/texture.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -527,13 +527,11 @@ a {
 
 .cardbox {
     padding-bottom: 1rem;
-    width: min(200px);
-    height: 40vh;
+
+    height: 30vh;
     background-image: url(/src/images/skillsimage.png);
     background-repeat: no-repeat;
     background-size: contain;
-
-
 
 }
 
@@ -543,8 +541,8 @@ a {
     font-size: 2rem;
     cursor: pointer;
     border: 1.5px solid whitesmoke;
-    margin: 120px auto;
-    height: 10%;
+    margin: 100px auto;
+
     font-family: aboutme2;
     border-radius: 20px;
     background-image: url(/Portfolio2023.React/src/images/btnRectangle.png);
@@ -596,14 +594,10 @@ a {
     .aboutMe {
         background-image: url("../images/phone/aboutmephone.png");
         background-repeat: no-repeat;
-        background-size: contain;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 120%;
-        width: 100%;
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        padding-top: 2rem;
+        grid-template-columns: repeat(10, 1fr);
+
+
 
 
     }
@@ -618,9 +612,6 @@ a {
         width: 100%;
     }
 
-    .grafisk {
-
-        display: block;
-    }
+    .grafisk {}
 
 }

@@ -48,8 +48,8 @@
 
     grid-template-rows: repeat(10, 10%);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     height: 100vh;
+    grid-template-columns: 50px 1fr;
 
 }
 
@@ -93,6 +93,7 @@
 .topButton {
     background-color: grey;
 
+
 }
 
 
@@ -104,15 +105,15 @@
 
 .btnwrap>button {
 
+
     border: none;
-    font: inherit;
     font-size: 2.5rem;
     cursor: pointer;
     color: whitesmoke;
     padding: .5rem;
     box-sizing: border-box;
     width: 156px;
-    height: 15%;
+    height: 28px;
 }
 
 
@@ -136,7 +137,7 @@
 
     text-align: left;
     font-size: .8rem;
-
+    width: min(100px);
     animation: bounce .4s ease infinite alternate;
 
 }
@@ -184,7 +185,7 @@
 
     .socialbuttonandiconsGrid {
 
-        grid-template-rows: repeat(5, 10%);
+        grid-template-rows: repeat(10, 1fr);
 
     }
 
@@ -194,15 +195,14 @@
 
         width: min(100%);
 
+
     }
 
     .btnwrap {
 
-        grid-column: 1/2;
-        grid-row: 4/4;
         width: 100px;
-
-
+        z-index: 2;
+        grid-row: 3/3;
     }
 
 
@@ -211,14 +211,22 @@
         grid-row: 4/4;
         background-color: rgb(4, 57, 94);
         border: 1.5px solid rgb(11, 112, 184);
-        width: 5rem;
         z-index: 0;
         height: 10rem;
-        padding-bottom: 1rem;
         overflow: hidden;
+        margin: 0;
 
 
 
+    }
+
+    .socialclick>p {
+
+        text-indent: 0px;
+    }
+
+    .Socialmediaimage {
+        padding: 0px;
     }
 
 }
