@@ -7,7 +7,7 @@
 
 .wrapper {
 
-    grid-row: 2/2;
+    grid-row: 5/5;
 
 }
 
@@ -17,29 +17,24 @@
 
     max-height: 100vh;
     max-width: 100vh;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px 140px;
     grid-template-columns: 20vw minmax(200px, min-content) 1fr;
-    align-content: space-between;
+
 
 
 }
 
 @media (max-width: 480px) {
     .grid {
-        grid-template-rows: 120px 100px;
+        grid-template-rows: 300px;
         grid-template-columns: 10px minmax(100px, min-content) 1fr;
 
 
 
     }
 
-    .wrapper {
-        grid-row: 3/3;
-
-    }
-
     .container {
-        grid-row: 1/1;
+
         width: 100svw;
         height: 100svh;
 
