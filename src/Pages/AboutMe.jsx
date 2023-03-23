@@ -80,102 +80,92 @@ export default function AboutMe({ textSelector }) {
             jeg har drevet med, mine programmeringsferdigheter, og andre
             erfaringer.
           </p>
-
-          <section id={layout.cards}>
-            <div className={layout.cardscontainer}>
-              <div className={layout.card} id={layout.project1}>
-                <h1>Prosjekter som har blitt kodet i React/Vite</h1>
-                <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
-                <p className={layout.label}>Juleoppgave</p>
-                <a
-                  className={layout.secondlink}
-                  href="https://github.com/Kodehodekatty/JulCountdown"
-                >
-                  link to repository{" "}
-                </a>
-                <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
-                <p className={layout.label}>Pokedex v.2</p>{" "}
-                <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
-                <p className={layout.label}>Portfolio</p>{" "}
-                <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
-                  {" "}
-                </a>
-                <p className={layout.label}>React Routes og Kalkulator</p>{" "}
-                <a
-                  className={layout.secondlink}
-                  href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
-                >
-                  link to repository
-                </a>
-              </div>
-
-              <div className={layout.card} id={layout.project1}>
-                <h1>Prosjekter som har blitt kodet i Javascript</h1>
-                <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
-                <p className={layout.label}>BlackJack</p>{" "}
-                <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
-                <p className={layout.label}>Pokedex v.1</p>{" "}
-                <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
-                <p className={layout.label}>Space Project</p>{" "}
-              </div>
-            </div>
-          </section>
-          <div className={layout.bigwrap}>
-            <section className={layout.bars}>
-              <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
-              <span className={layout.mma}>
-                <p className={layout.skillp}>HTML</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.html}>100%</div>
-                </div>
-                <p className={layout.skillp}>CSS</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.css}>95%</div>
-                </div>
-                <p className={layout.skillp}>JavaScript</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.js}>90%</div>
-                </div>
-                <p className={layout.skillp}>REACT</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.react}>80%</div>
-                </div>{" "}
-              </span>
-            </section>
-
-            <section className={layout.bars}>
-              <h1 className={layout.grafisktittel}>
-                Andre Programmvare kunnskaper
-              </h1>
-              <span className={layout.linefix2}>
-                <p className={layout.skillp}>Figma</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.figma}>75%</div>
-                </div>
-
-                <p className={layout.skillp}>Adobe Creative Suite</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.adobe}>89%</div>
-                </div>
-
-                <p className={layout.skillp}>Wordpress</p>
-                <div className={layout.skillbox}>
-                  <div className={layout.wordpress}>90%</div>
-                </div>
-              </span>
-
-              <section className={layout.grafisk}>
-                <h1 className={layout.kreativtittel}>kreative ferdigheter</h1>
-                <div className={layout.kompetanse}>
-                  <p>Filmproduksjon</p>
-                  <p>Video Redigering</p>
-                  <p>Bilde redigering</p>
-                </div>
-              </section>
-            </section>
-            <h1>Annet</h1>
-            <div className={layout.cardbox}></div>
+          <div className={layout.card} id={layout.project1}>
+            <h1>Prosjekter som har blitt kodet i React/Vite</h1>
+            <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
+            <p className={layout.label}>Juleoppgave</p>
+            <a
+              className={layout.secondlink}
+              href="https://github.com/Kodehodekatty/JulCountdown"
+            >
+              link to repository{" "}
+            </a>
+            <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
+            <p className={layout.label}>Pokedex v.2</p>{" "}
+            <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
+            <p className={layout.label}>Portfolio</p>{" "}
+            <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
+              {" "}
+            </a>
+            <p className={layout.label}>React Routes og Kalkulator</p>{" "}
+            <a
+              className={layout.secondlink}
+              href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
+            >
+              link to repository
+            </a>
           </div>
+          <div className={layout.card} id={layout.project1}>
+            <h1>Prosjekter som har blitt kodet i Javascript</h1>
+            <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
+            <p className={layout.label}>BlackJack</p>{" "}
+            <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
+            <p className={layout.label}>Pokedex v.1</p>{" "}
+            <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
+            <p className={layout.label}>Space Project</p>{" "}
+          </div>
+          <section className={layout.bars}>
+            <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
+            <span className={layout.mma}>
+              <p className={layout.skillp}>HTML</p>
+              <div className={layout.skillbox}>
+                <div className={layout.html}>100%</div>
+              </div>
+              <p className={layout.skillp}>CSS</p>
+              <div className={layout.skillbox}>
+                <div className={layout.css}>95%</div>
+              </div>
+              <p className={layout.skillp}>JavaScript</p>
+              <div className={layout.skillbox}>
+                <div className={layout.js}>90%</div>
+              </div>
+              <p className={layout.skillp}>REACT</p>
+              <div className={layout.skillbox}>
+                <div className={layout.react}>80%</div>
+              </div>{" "}
+            </span>
+          </section>
+          <section className={layout.bars}>
+            <h1 className={layout.grafisktittel}>
+              Andre Programmvare kunnskaper
+            </h1>
+            <span className={layout.linefix2}>
+              <p className={layout.skillp}>Figma</p>
+              <div className={layout.skillbox}>
+                <div className={layout.figma}>75%</div>
+              </div>
+
+              <p className={layout.skillp}>Adobe Creative Suite</p>
+              <div className={layout.skillbox}>
+                <div className={layout.adobe}>89%</div>
+              </div>
+
+              <p className={layout.skillp}>Wordpress</p>
+              <div className={layout.skillbox}>
+                <div className={layout.wordpress}>90%</div>
+              </div>
+            </span>
+          </section>
+          <section className={layout.grafisk}>
+            <h1 className={layout.kreativtittel}>kreative ferdigheter</h1>
+            <div className={layout.kompetanse}>
+              <p>Filmproduksjon</p>
+              <p>Video Redigering</p>
+              <p>Bilde redigering</p>
+            </div>
+          </section>{" "}
+          <h1>Annet</h1>
+          <div className={layout.cardbox}></div>
         </div>
       )}
 

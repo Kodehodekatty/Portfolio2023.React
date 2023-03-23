@@ -46,6 +46,10 @@
 
     }
 
+    .wrapping {
+        max-height: 600px;
+    }
+
 
 
     .maincodingbackground {
@@ -53,25 +57,24 @@
 
         display: grid;
         grid-template-columns: repeat(6, 30vh);
-        grid-template-rows: 13vh 74vh 28vh;
+        /* grid-template-columns: minmax(210px, 1fr) minmax(800px, 1fr) minmax(100px, 1fr) minmax(800px, 1fr); */
+        grid-template-rows: 13vh 77vh 10rem;
         background-image: url("../images/VSC/vscbackground.png");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 100%;
+        min-width: 400px;
 
+        min-height: 600px;
     }
 
     @media (max-width: 480px) {
         .maincodingbackground {
             background-image: url("../images/phone/phonebackground.png");
             background-repeat: no-repeat;
-            background-size: contain;
             display: grid;
 
-            grid-template-columns: 100px 1fr;
-
-
-
+            grid-template-rows: minmax(20px, 50px, 100vh);
+            grid-template-columns: minmax(0, 80px) minmax(0, 1fr) minmax(0, 1fr);
 
         }
 
@@ -89,7 +92,7 @@
         .footerbox {
 
             grid-column: 2/5;
-            grid-row: 3/3;
+
 
 
         }

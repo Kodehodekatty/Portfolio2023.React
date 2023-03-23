@@ -1,11 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import styles from "../components/BackgroundStyles.module.css";
-
 import AboutMe from "../Pages/AboutMe";
 import FaceNav from "../Pages/FaceNav";
 import Navbar from "./Navbar";
-
 import Footer from "../Pages/Footer";
 
 export default function Background({
@@ -17,7 +15,7 @@ export default function Background({
   const [textSelector, setTextSelector] = useState("landing page");
 
   return (
-    <div className={styles.wrapping}>
+    <>
       {showHeader && !showBody && !showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
@@ -131,6 +129,6 @@ export default function Background({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

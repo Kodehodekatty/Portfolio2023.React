@@ -53,7 +53,7 @@ export default function Navbar() {
       {" "}
       <section className={MenuStyles.btnwrap}>
         {" "}
-        <button onClick={() => setOpen(!open)} className={MenuStyles.topButton}>
+        <button onClick={() => setOpen(!open)}>
           {" "}
           <div className={MenuStyles.btnText}>
             {" "}

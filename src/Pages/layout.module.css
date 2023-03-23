@@ -21,15 +21,11 @@
 ::-webkit-scrollbar {
     width: 10px;
 
-
-
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 20px rgb(45, 122, 237);
     border-radius: 10px;
-
-
 
 }
 
@@ -45,9 +41,6 @@
     overflow-y: scroll;
     overflow-x: hidden;
     box-sizing: border-box;
-
-    color: black;
-
     grid-template-columns: repeat(5, 1fr);
     font-size: 1rem;
     display: grid;
@@ -56,10 +49,7 @@
     justify-items: center;
     background-image: url("../images/VSC/aboutmebackground2.png");
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
     background-size: contain;
-
 
 }
 
@@ -69,6 +59,7 @@
     grid-row: 1/2;
     padding-bottom: 2rem;
     grid-column: 1/8;
+    height: 400px;
 
 }
 
@@ -76,35 +67,29 @@
 
 blockquote {
 
-    margin: 2rem 2rem;
+    margin: 0 0 0 2rem;
     font-weight: 600;
     border-left: 10px solid #ff76dd;
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: clamp(.5rem, .3vw + .6rem, 1rem);
     font-family: aboutme2;
+    line-height: 1rem;
+
 }
-
-
 
 .opening {
-    margin: 0 auto;
-    margin-top: 3rem;
-    width: max(80%, 400px);
-
+    margin: 1rem 4rem auto;
+    width: max(80%, 420px);
+    grid-column: 3/3;
 }
-
 
 
 
 .aboutMe p {
 
-
-
     font-size: clamp(.8rem, .3vw + .6rem, 1rem);
     text-align: center;
-
     max-width: 40rem;
-
     margin: 1rem auto;
     font-family: aboutme2;
     line-height: 1.5;
@@ -138,19 +123,16 @@ blockquote {
 
 .aboutMe h1 {
 
-
-    font-size: 4vh;
     font-family: aboutme3;
     margin: 10px auto;
-
     text-align: center;
 }
 
 .welcometext {
 
-    font-size: 4vh;
+    font-size: 1.5rem;
     font-family: aboutme3;
-    margin: 80px auto;
+    margin: 7rem 0;
     text-align: center;
     display: block;
     animation: text-focus-in 0.3s cubic-bezier(.55, .085, .68, .53) both;
@@ -214,7 +196,6 @@ blockquote {
 
 
     padding-top: 10px;
-
     padding-bottom: 5px;
     grid-row: 1/1;
     color: white;
@@ -246,12 +227,7 @@ blockquote {
 
 .skillp {
 
-
     font-weight: 600;
-
-
-
-
 
 }
 
@@ -277,24 +253,12 @@ blockquote {
     padding-bottom: 1rem;
     background-image: url(/src/images/Rectangle.png);
     background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 2rem;
     border: solid 2px #5d88b0;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
-
-
 }
-
-
-#cards {
-
-
-    margin: clamp(2rem, 1vh, 5rem) 0;
-
-}
-
 
 .card>h1 {
 
@@ -302,14 +266,10 @@ blockquote {
     text-shadow: 0.7px 0.2px 1.5px #000000;
     font-size: clamp(.5rem, 2vw + .2rem, 1rem);
     padding: 1rem;
-
 }
 
 .label {
     color: white;
-
-
-
     font-size: clamp(.5rem, 2vw + .2rem, 1rem);
     text-decoration: none;
     background-color: rgb(106, 104, 240);
@@ -321,14 +281,12 @@ blockquote {
     height: 3vh;
     transition: all 800ms ease;
 
-
 }
 
 .card>p {
     height: 10%;
     width: 80%;
-    margin: 10px auto;
-    line-height: 10px;
+    margin: 1rem auto;
     font-size: 1rem;
 }
 
@@ -345,9 +303,6 @@ blockquote {
     filter: brightness(10%);
 
 }
-
-
-
 
 .label:hover {
 
@@ -374,8 +329,6 @@ a {
 
 
 .bars {
-
-
     margin: clamp(2rem, 8vh, 5rem) 0;
     padding-top: 2rem;
 }
@@ -383,26 +336,17 @@ a {
 .kontaktboks {
 
     width: 100%;
-
-
     grid-column: 1/10;
     grid-row: 5/5;
     padding-top: 2rem;
 }
 
-
 .kontaktpara {
 
     text-align: center;
-
-
     color: white;
-
-
     text-decoration: none;
     font-size: 1rem;
-
-
     background-color: rgb(106, 104, 240);
     padding: 0.5rem;
     border-radius: 7px;
@@ -487,7 +431,6 @@ a {
 .pinfo a {
 
     color: white;
-
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 7px;
@@ -498,22 +441,14 @@ a {
 
 .grafisk {
 
-    margin-top: 5rem;
-    line-height: 1;
-    max-height: 40vh;
-    width: min(100%);
+    max-height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-image: url("../images/texture.png");
-    background-repeat: no-repeat;
     background-size: cover;
-
+    margin-bottom: 4rem;
 }
-
-
-
 
 .kompetanse p {
 
@@ -521,14 +456,13 @@ a {
     height: 20px;
     padding: 1%;
 
-
 }
 
-
 .cardbox {
-    padding-bottom: 1rem;
-
-    height: 30vh;
+    margin: 3rem 0;
+    width: 600px;
+    padding: 2%;
+    height: 50vh;
     background-image: url(/src/images/skillsimage.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -599,12 +533,18 @@ a {
 
 
 
+    }
+
+    .opening {
+        height: min(300px);
+
+
 
     }
 
     .aboutMe>* {
         grid-column: 2/10;
-        width: min(100%, 200px);
+        width: min(100%, 220px);
     }
 
     .aboutMe h2 {
@@ -612,6 +552,19 @@ a {
         width: 100%;
     }
 
-    .grafisk {}
+    .cardbox {
+
+        background-image: url("../images/phone/andreskillsphone.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30rem;
+        margin: 2rem 1rem 0;
+        width: 80%;
+        padding-bottom: 10rem;
+
+
+
+    }
+
 
 }

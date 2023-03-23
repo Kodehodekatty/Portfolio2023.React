@@ -35,6 +35,7 @@
     flex-direction: row;
     align-items: center;
 
+
 }
 
 .socialclick:hover {
@@ -49,7 +50,7 @@
     grid-template-rows: repeat(10, 10%);
     display: grid;
     height: 100vh;
-    grid-template-columns: 50px 1fr;
+
 
 }
 
@@ -86,26 +87,19 @@
     background-repeat: no-repeat;
     background-size: 8px;
     justify-content: space-around;
-    width: max(80%);
+    width: max(30%);
 }
-
-
-.topButton {
-    background-color: grey;
-
-
-}
-
 
 .btnwrap {
     grid-row: 4/4;
     grid-column: 1/1;
     border: none;
+    position: relative;
 }
 
 .btnwrap>button {
 
-
+    background-color: grey;
     border: none;
     font-size: 2.5rem;
     cursor: pointer;
@@ -185,7 +179,8 @@
 
     .socialbuttonandiconsGrid {
 
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 14%);
+        height: 50vh;
 
     }
 
@@ -199,34 +194,40 @@
     }
 
     .btnwrap {
-
+        height: 20px;
         width: 100px;
-        z-index: 2;
-        grid-row: 3/3;
+        z-index: 1;
+        grid-row: 4/4;
     }
 
 
     .socialmediagrid {
 
-        grid-row: 4/4;
+        grid-row: 5/5;
         background-color: rgb(4, 57, 94);
         border: 1.5px solid rgb(11, 112, 184);
         z-index: 0;
         height: 10rem;
-        overflow: hidden;
+        overflow-y: scroll;
         margin: 0;
-
-
 
     }
 
     .socialclick>p {
 
         text-indent: 0px;
+        width: 60px;
+
     }
 
     .Socialmediaimage {
         padding: 0px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+
+
     }
 
 }

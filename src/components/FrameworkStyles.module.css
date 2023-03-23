@@ -8,8 +8,8 @@
 
 .shadowmain {
     position: relative;
-    width: 60vh;
-    height: auto;
+    width: 50vh;
+
 
 
 
@@ -21,7 +21,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-
+    right: 10%;
 
 }
 
@@ -40,7 +40,8 @@
     padding: 3%;
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.27);
-    margin: 5rem auto;
+    margin: max(20%) auto;
+
 }
 
 
@@ -64,8 +65,9 @@
 .kattywrapandbuttons {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 3rem);
-    grid-template-rows: repeat(3, 2rem);
+    grid-template-columns: minmax(130px, 1fr);
+    grid-template-rows: minmax(10px, 10px);
+    margin: 0;
 
 
 }
@@ -73,13 +75,6 @@
 
 
 @media (max-width: 480px) {
-    .kattywrapandbuttons {
-
-        max-height: 230px;
-        width: fit-content;
-
-
-    }
 
     .mainwrap {
         margin: 0;
@@ -89,21 +84,20 @@
     }
 
 
-
     .btnGroup {
 
 
-        height: 40px;
-        bottom: 60%;
+        height: 10px;
+        margin: 10%;
 
 
     }
 
     .btnGroup>button {
-        width: 100%;
+        width: 4rem;
         position: relative;
         margin: 40px 0;
-        left: 10%;
+
 
     }
 
@@ -114,6 +108,22 @@
 
 
     }
+
+    .btnGroup>button:hover {
+        scale: 105%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .btnGroup>button {
+
+        margin: 30% 50%;
+    }
+
+
 
 
 }
