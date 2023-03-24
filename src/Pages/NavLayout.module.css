@@ -25,7 +25,7 @@
     background-size: contain;
     background-position-y: -12px;
     padding: 1px;
-    height: min(200px);
+    height: max(280px);
 }
 
 

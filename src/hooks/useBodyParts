@@ -1,0 +1,12 @@
+import { useState, useEffect } from "react";
+
+export const useBodyParts = () => {
+  const [showHeader, setShowHeader] = useState(false);
+  const [showBody, setShowBody] = useState(false);
+  const [showFooter, setShowFooter] = useState(false);
+  // useEffect(() => {
+
+  // }
+
+  //     return useBodyParts;
+};

@@ -50,6 +50,8 @@
     background-image: url("../images/VSC/aboutmebackground2.png");
     background-repeat: no-repeat;
     background-size: contain;
+    height: min(100vh);
+
 
 }
 
@@ -59,7 +61,9 @@
     grid-row: 1/2;
     padding-bottom: 2rem;
     grid-column: 1/8;
-    height: 400px;
+
+
+
 
 }
 
@@ -81,6 +85,7 @@ blockquote {
     margin: 1rem 4rem auto;
     width: max(80%, 420px);
     grid-column: 3/3;
+
 }
 
 
@@ -530,13 +535,15 @@ a {
         background-repeat: no-repeat;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
+        background-size: cover;
 
-
+        height: min(90svh);
+        width: 100%;
 
     }
 
     .opening {
-        height: min(300px);
+        height: min(800px);
 
 
 

@@ -22,7 +22,10 @@
     background-image: url("../images/Groupfooter.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 180px;
+    height: 30vh;
+    position: relative;
+
+
 
 
 }
@@ -32,9 +35,9 @@
 
         background-image: url("../images/phone/phonefooter.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
 
-
+        height: 10vh;
     }
 
 
