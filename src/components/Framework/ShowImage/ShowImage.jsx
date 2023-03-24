@@ -6,13 +6,11 @@ import faceandbody from "../../../images/faceandbody.png";
 import fullkatty from "../../../images/VSC/fullkatty.png";
 import bodyandfooter from "../../../images/bodyandfootershadow.png";
 import faceandfooter from "../../../images/faceandfooter.png";
-
-import styled from "styled-components";
-import style2 from "../../FrameworkStyles.module.css";
+import style2 from "../FrameworkStyles.module.css";
 
 export function ShowImage({ showHeader, showBody, showFooter }) {
   return (
-    <div>
+    <>
       {/* showing shadow me at the start*/}
       {!showHeader && !showBody && !showFooter && (
         <img className={style2.shadowmain} src={fullshadow} />
@@ -38,6 +36,6 @@ export function ShowImage({ showHeader, showBody, showFooter }) {
       {showHeader && showBody && showFooter && (
         <img className={style2.shadowmain} src={fullkatty} />
       )}
-    </div>
+    </>
   );
 }
