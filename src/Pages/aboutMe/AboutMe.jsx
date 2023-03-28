@@ -1,4 +1,6 @@
 import layout from "./layout.module.css";
+import workstyles from "./workstyles.module.css";
+import contactstyles from "./contactstyles.module.css";
 
 export default function AboutMe({ textSelector }) {
   return (
@@ -70,121 +72,123 @@ export default function AboutMe({ textSelector }) {
 
       {textSelector === "mitt arbeid" && (
         <div className={layout.opening}>
-          <p className={layout.paraskill}>
+          <p className={workstyles.paraskill}>
             På Github siden min, finner du mange eksempler på oppgaver og
             prosjekter jeg har jobbet med på Kodehode, og utenom i den siste
             tiden.
           </p>
-          <p className={layout.paraskill}>
+          <p className={workstyles.paraskill}>
             Her skal jeg laget en mer oversiktlig liste over hva slags koding
             jeg har drevet med, mine programmeringsferdigheter, og andre
             erfaringer.
           </p>
-          <div className={layout.card} id={layout.project1}>
+          <div className={workstyles.card} id={workstyles.project1}>
             <h1>Prosjekter som har blitt kodet i React/Vite</h1>
             <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
-            <p className={layout.label}>Juleoppgave</p>
+            <p className={workstyles.label}>Juleoppgave</p>
             <a
-              className={layout.secondlink}
+              className={workstyles.secondlink}
               href="https://github.com/Kodehodekatty/JulCountdown"
             >
               link to repository{" "}
             </a>
             <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
-            <p className={layout.label}>Pokedex v.2</p>{" "}
+            <p className={workstyles.label}>Pokedex v.2</p>{" "}
             <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
-            <p className={layout.label}>Portfolio</p>{" "}
+            <p className={workstyles.label}>Portfolio</p>{" "}
             <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
               {" "}
             </a>
-            <p className={layout.label}>React Routes og Kalkulator</p>{" "}
+            <p className={workstyles.label}>React Routes og Kalkulator</p>{" "}
             <a
-              className={layout.secondlink}
+              className={workstyles.secondlink}
               href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
             >
               link to repository
             </a>
           </div>
-          <div className={layout.card} id={layout.project1}>
+          <div className={workstyles.card} id={workstyles.project1}>
             <h1>Prosjekter som har blitt kodet i Javascript</h1>
             <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
-            <p className={layout.label}>BlackJack</p>{" "}
+            <p className={workstyles.label}>BlackJack</p>{" "}
             <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
-            <p className={layout.label}>Pokedex v.1</p>{" "}
+            <p className={workstyles.label}>Pokedex v.1</p>{" "}
             <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
-            <p className={layout.label}>Space Project</p>{" "}
+            <p className={workstyles.label}>Space Project</p>{" "}
           </div>
-          <section className={layout.bars}>
-            <h1 className={layout.grafisktittel}>Programmering skill bars</h1>
-            <span className={layout.mma}>
-              <p className={layout.skillp}>HTML</p>
-              <div className={layout.skillbox}>
-                <div className={layout.html}>100%</div>
+          <section className={workstyles.bars}>
+            <h1 className={workstyles.grafisktittel}>
+              Programmering skill bars
+            </h1>
+            <span className={workstyles.mma}>
+              <p className={workstyles.skillp}>HTML</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.html}>100%</div>
               </div>
-              <p className={layout.skillp}>CSS</p>
-              <div className={layout.skillbox}>
-                <div className={layout.css}>95%</div>
+              <p className={workstyles.skillp}>CSS</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.css}>95%</div>
               </div>
-              <p className={layout.skillp}>JavaScript</p>
-              <div className={layout.skillbox}>
-                <div className={layout.js}>90%</div>
+              <p className={workstyles.skillp}>JavaScript</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.js}>90%</div>
               </div>
-              <p className={layout.skillp}>REACT</p>
-              <div className={layout.skillbox}>
-                <div className={layout.react}>80%</div>
+              <p className={workstyles.skillp}>REACT</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.react}>80%</div>
               </div>{" "}
             </span>
           </section>
-          <section className={layout.bars}>
-            <h1 className={layout.grafisktittel}>
+          <section className={workstyles.bars}>
+            <h1 className={workstyles.grafisktittel}>
               Andre Programmvare kunnskaper
             </h1>
-            <span className={layout.linefix2}>
-              <p className={layout.skillp}>Figma</p>
-              <div className={layout.skillbox}>
-                <div className={layout.figma}>75%</div>
+            <span className={workstyles.linefix2}>
+              <p className={workstyles.skillp}>Figma</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.figma}>75%</div>
               </div>
 
-              <p className={layout.skillp}>Adobe Creative Suite</p>
-              <div className={layout.skillbox}>
-                <div className={layout.adobe}>89%</div>
+              <p className={workstyles.skillp}>Adobe Creative Suite</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.adobe}>89%</div>
               </div>
 
-              <p className={layout.skillp}>Wordpress</p>
-              <div className={layout.skillbox}>
-                <div className={layout.wordpress}>90%</div>
+              <p className={workstyles.skillp}>Wordpress</p>
+              <div className={workstyles.skillbox}>
+                <div className={workstyles.wordpress}>90%</div>
               </div>
             </span>
           </section>
-          <section className={layout.grafisk}>
-            <h1 className={layout.kreativtittel}>kreative ferdigheter</h1>
-            <div className={layout.kompetanse}>
+          <section className={workstyles.grafisk}>
+            <h1 className={workstyles.kreativtittel}>kreative ferdigheter</h1>
+            <div className={workstyles.kompetanse}>
               <p>Filmproduksjon</p>
               <p>Video Redigering</p>
               <p>Bilde redigering</p>
             </div>
           </section>{" "}
           <h1>Annet</h1>
-          <div className={layout.cardbox}></div>
+          <div className={workstyles.cardbox}></div>
         </div>
       )}
 
       {textSelector === "kontakt" && (
-        <div className={layout.kontaktboks}>
-          <section className={layout.infobox}>
+        <div className={contactstyles.kontaktboks}>
+          <section className={contactstyles.infobox}>
             <h1>Kontakt informasjon</h1>
-            <div className={layout.pinfo}>
+            <div className={contactstyles.pinfo}>
               <h1>Telefon </h1>
               <p>+47 92993977</p>
             </div>
-            <div className={layout.pinfo}>
+            <div className={contactstyles.pinfo}>
               {" "}
               <h1>Adresse</h1>
               <p>Hasselveien 34315 Sandnes, Rogaland.</p>
             </div>
             <a href="https://jobloop.no/kodehode-modellen">
               {" "}
-              <div className={layout.joobloop}>
+              <div className={contactstyles.joobloop}>
                 {" "}
                 <h1>Les mer om Kodehode, Joobloop her </h1>{" "}
               </div>{" "}

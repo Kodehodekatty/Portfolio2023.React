@@ -1,0 +1,190 @@
+@font-face {
+    font-family: aboutme;
+    src: url(/src/fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: aboutme2;
+    src: url(/src/fonts/Comfortaa-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: aboutme3;
+    src: url(/src/fonts/Comfortaa-Bold.ttf);
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px rgb(45, 122, 237);
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 106, 220);
+    border-radius: 5px;
+
+}
+
+.aboutMe {
+
+
+
+    box-sizing: border-box;
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-gap: 10px;
+    justify-items: center;
+    background-image: url("../../images/VSC/aboutmebackground2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
+
+
+}
+
+
+
+.aboutMe>* {
+    grid-row: 1/2;
+    padding-bottom: 2rem;
+    grid-column: 2/10;
+    overflow-y: scroll;
+
+
+}
+
+
+
+blockquote {
+
+    margin: 0 0 0 2rem;
+    font-weight: 600;
+    border-left: 10px solid #ff76dd;
+    padding-left: 1rem;
+    font-size: clamp(.5rem, .3vw + .6rem, 1rem);
+    font-family: aboutme2;
+    line-height: 1rem;
+
+}
+
+.opening {
+    margin: 1rem 4rem auto;
+    width: max(80%, 420px);
+    grid-column: 3/3;
+
+}
+
+
+
+.aboutMe p {
+
+    font-size: clamp(.8rem, .3vw + .6rem, 1rem);
+    text-align: center;
+    max-width: 40rem;
+    margin: 1.6rem auto;
+    font-family: aboutme2;
+    line-height: 1.5;
+
+}
+
+
+
+.aboutMe h3 {
+    padding-top: 6%;
+    font-size: 1.6rem;
+    font-family: aboutme2;
+    text-align: center;
+
+}
+
+
+.aboutMe h2 {
+
+    font-size: 1rem;
+    font-family: aboutme2;
+    text-align: center;
+    border-bottom: 3px solid #ff76dd;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    width: 500px;
+    margin: 0 auto;
+    line-height: 2rem;
+    padding: .5rem;
+}
+
+.aboutMe h1 {
+
+    font-family: aboutme3;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.welcometext {
+
+    font-size: 1.5rem;
+    font-family: aboutme3;
+    margin: 7rem 0;
+    text-align: center;
+    display: block;
+    animation: text-focus-in 0.3s cubic-bezier(.55, .085, .68, .53) both;
+
+}
+
+
+
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(10px);
+        opacity: 0
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+
+@media (max-width: 480px) {
+    .aboutMe {
+        background-image: url("../../images/phone/aboutmephone2.png");
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        background-size: 100% 100%;
+        height: min(940px);
+        width: 100%;
+
+    }
+
+    .opening {
+        height: min(800px);
+
+
+    }
+
+    .aboutMe>* {
+        grid-column: 2/10;
+        width: min(100%, 320px);
+    }
+
+    .aboutMe h2 {
+        margin: 0;
+        width: 100%;
+    }
+
+}

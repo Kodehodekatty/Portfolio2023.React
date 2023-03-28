@@ -1,0 +1,92 @@
+.headerwrapper {
+    grid-column: 2 / 7;
+    grid-row-start: 1;
+
+}
+
+.socialmediabar {
+
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+}
+
+
+.aboutmewrapper {
+    grid-column: 2 / 5;
+    grid-row-start: 2;
+
+
+}
+
+
+.footerbox {
+    grid-column: 2/5;
+    grid-row: 4/4;
+}
+
+.wrapping {
+    max-height: 600px;
+}
+
+
+
+.maincodingbackground {
+
+
+    display: grid;
+    /* grid-template-columns: repeat(6, 30vh); */
+    /* grid-template-columns: minmax(210px, 1fr) minmax(800px, 1fr) minmax(100px, 1fr) minmax(800px, 1fr);
+        
+        repeat(auto-fit, minmax(380px, 1fr) 60vw)
+        
+        
+        */
+    /* 
+        grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr) 70vw);
+        grid-template-rows: minmax(15vh, 10px) minmax(80vh, 100px); */
+    /* grid-template-columns: repeat(6, 30vh); */
+    grid-template-columns: min(200px) 400px 500px;
+    grid-template-rows: 14vh min(20vh) 300px;
+    background-image: url("../../images/VSC/vscbackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+}
+
+@media (max-width: 480px) {
+    .maincodingbackground {
+        background-image: url("../../images/phone/phonebackground.png");
+        background-repeat: no-repeat;
+        display: grid;
+        background-size: cover;
+        min-width: 480px;
+
+        min-height: 1000px;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 120px));
+        grid-template-rows: 5% 72% 140px;
+
+
+    }
+
+    .aboutmewrapper {
+
+        grid-column: 2/5;
+    }
+
+    .headerwrapper {
+
+        grid-column: 2 / 5;
+
+    }
+
+    .footerbox {
+
+        grid-column: 2/5;
+
+
+
+    }
+}

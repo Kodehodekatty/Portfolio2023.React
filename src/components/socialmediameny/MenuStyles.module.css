@@ -181,8 +181,9 @@
 
     .socialbuttonandiconsGrid {
 
-        grid-template-rows: repeat(5, 10%);
+        grid-template-rows: 20px 20px 100px 30px;
         height: 50vh;
+        grid-template-columns: 8px 140px;
 
     }
 
@@ -197,7 +198,7 @@
 
     .btnwrap {
         height: 20px;
-        width: 100px;
+        width: 7.7rem;
         z-index: 1;
         grid-row: 4/4;
     }
@@ -205,7 +206,7 @@
 
     .socialmediagrid {
 
-        grid-row: 4/4;
+        grid-row: 5/5;
         background-color: rgb(4, 57, 94);
         border: 1.5px solid rgb(11, 112, 184);
         z-index: 0;
@@ -213,7 +214,7 @@
         height: 20rem;
         overflow-y: scroll;
         margin: 0;
-        width: 6rem;
+        width: 80%;
 
     }
 

@@ -1,8 +1,7 @@
 // imports
-import Background from "./components/Background";
+import Background from "./components/background/Background";
 import Framework from "./components/Framework/Framework";
 import React, { useState } from "react";
-import { useBodyParts } from "./hooks/useBodyParts";
 
 //imports styles
 import "./styles/App.css";

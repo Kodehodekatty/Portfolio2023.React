@@ -1,0 +1,162 @@
+.kontaktboks {
+
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+
+}
+
+.kontaktpara {
+
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: rgb(106, 104, 240);
+    padding: 0.5rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px #000000;
+
+
+}
+
+.kontaktpara2 {
+    background-color: rgb(231, 29, 207);
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+
+.kontaktpara2:hover {
+    scale: 110%;
+
+}
+
+.infobox {
+    background-image: url("../../images/Rectangle2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: min(600px, 90%);
+    height: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+
+
+
+}
+
+.infobox>h1 {
+    color: white;
+    text-shadow: -1px 1px 0 #3e093d,
+        1px 1px 0 #043d76,
+        1px -1px 0 #232a29,
+        -1px -1px 0 #54095d;
+    font-size: 1.2rem;
+
+}
+
+.pinfo {
+
+    margin: 3rem auto;
+    font-family: aboutme2;
+    line-height: 4px;
+    width: max(50%);
+    height: max(20%);
+    background-color: rgba(209, 209, 209, 0.511);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .8rem;
+    border: 5px solid rgba(248, 241, 241, 0.712);
+}
+
+
+
+
+.pinfo>h1 {
+
+    font-size: 1rem;
+    height: 2px;
+    margin-top: 10px;
+
+
+}
+
+.kontakttittel {
+
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0.7px 0.3px 1.5px #000000;
+
+}
+
+.pinfo a {
+
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 1px 1px #000000;
+
+
+}
+
+
+
+.joobloop {
+
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1.5px solid whitesmoke;
+    margin: 0 auto;
+    width: 300px;
+    font-family: aboutme2;
+    font-size: .7rem;
+    border-radius: 20px;
+    background-image: url("../../images/btnRectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    text-shadow: -1px 1px 0 #3e093d,
+        1px 1px 0 #043d76,
+        1px -1px 0 #232a29,
+        -1px -1px 0 #221a23;
+    padding: 2%;
+    text-align: center;
+    transform: translate(0, -0.2rem);
+    transition: all 800ms ease;
+    height: 10%;
+
+
+}
+
+.joobloop h1:hover {
+    filter: brightness(120%);
+    scale: 80%;
+    cursor: pointer;
+    transition: all 800ms ease;
+}
+
+.joobloop h1 {
+    transform: translate(0, -0.2rem);
+    backface-visibility: hidden;
+    transition: all 800ms ease;
+}
+
+.joobloop:active {
+
+    filter: brightness(170%);
+
+}
+
+.lesmer {
+    margin: 5px auto;
+    font-family: aboutme3;
+    font-weight: 600;
+
+}

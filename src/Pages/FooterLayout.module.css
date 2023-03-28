@@ -33,11 +33,11 @@
 @media (max-width: 480px) {
     .footerbackground {
 
-        background-image: url("../images/phone/phonefooter.png");
+        background-image: url("../images/phone/footer2.png");
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: 10vh;
+        height: 11vh;
     }
 
 

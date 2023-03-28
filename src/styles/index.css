@@ -13,7 +13,7 @@
 
         display: inline-grid;
         position: relative;
-        grid-template-rows: 10px 388px 0px;
+        grid-template-rows: 10px 540px;
         grid-template-columns: repeat(3, 20px);
 
 
