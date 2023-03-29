@@ -1,18 +1,18 @@
-import Navlayout from "./NavLayout.module.css";
+import HeaderStyles from "./HeaderStyles.module.css";
 
-export default function FaceNav({ setTextSelector }) {
+export default function Header({ setTextSelector }) {
   return (
-    <div className={Navlayout.FaceNavWrap}>
-      <ul className={Navlayout.list}>
-        <li className={Navlayout.navigation}>
+    <div className={HeaderStyles.FaceNavWrap}>
+      <ul className={HeaderStyles.list}>
+        <li className={HeaderStyles.navigation}>
           <button onClick={() => setTextSelector("om meg")}>Om meg</button>
         </li>
-        <li className={Navlayout.navigation}>
+        <li className={HeaderStyles.navigation}>
           <button onClick={() => setTextSelector("mitt arbeid")}>
             Mitt Arbeid
           </button>
         </li>
-        <li className={Navlayout.navigation}>
+        <li className={HeaderStyles.navigation}>
           <button onClick={() => setTextSelector("kontakt")}>Kontakt</button>
         </li>
       </ul>

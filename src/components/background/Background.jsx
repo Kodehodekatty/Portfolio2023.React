@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 
 import styles from "./BackgroundStyles.module.css";
 import AboutMe from "../../Pages/aboutMe/AboutMe";
-import FaceNav from "../../Pages/FaceNav";
+import Header from "../../Pages/HeaderMenu/Header";
 import Navbar from "../socialmediameny/Navbar";
-import Footer from "../../Pages/Footer";
+import Footer from "../../Pages/Footer/Footer";
 
 export default function Background({
   showHeader,
@@ -19,7 +19,7 @@ export default function Background({
       {showHeader && !showBody && !showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav
+            <Header
               setTextSelector={(text) => {
                 setTextSelector(text);
                 onNavigated(text);
@@ -34,7 +34,7 @@ export default function Background({
       {showHeader && showBody && !showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav
+            <Header
               setTextSelector={(text) => {
                 setTextSelector(text);
                 onNavigated(text);
@@ -86,7 +86,7 @@ export default function Background({
       {showHeader && !showBody && showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav
+            <Header
               setTextSelector={(text) => {
                 setTextSelector(text);
                 onNavigated(text);
@@ -104,7 +104,7 @@ export default function Background({
       {showHeader && showBody && showFooter && (
         <div className={styles.maincodingbackground}>
           <div className={styles.headerwrapper}>
-            <FaceNav
+            <Header
               setTextSelector={(text) => {
                 setTextSelector(text);
                 onNavigated(text);

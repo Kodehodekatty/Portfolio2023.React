@@ -47,13 +47,18 @@
 
 .socialbuttonandiconsGrid {
 
-    grid-template-rows: repeat(10, 10%);
+    grid-template-rows: minmax(20%, 40px) minmax(10%, 100px);
     grid-template-columns: 20px 140px;
     display: grid;
     height: 100vh;
+    overflow: hidden;
+
+    font-size: .8rem;
 
 
 }
+
+
 
 .socialmediagrid>ul {
     padding-top: 1rem;
@@ -62,7 +67,6 @@
 
 .MenuNav {
 
-    font-size: 0.7em;
     position: relative;
     overflow: hidden;
     height: min(100vh);
@@ -72,8 +76,6 @@
 .socialclick>li {
 
     text-align: left;
-    border: none;
-    font-size: 0.8rem;
     cursor: pointer;
     width: 1rem;
     height: 4rem;
@@ -81,21 +83,19 @@
 }
 
 .socialclick>p {
-    font-size: 2.5vh;
+
     text-indent: 10px;
     color: white;
     background-image: url(../images/arrow.png);
-    background-repeat: no-repeat;
-    background-size: 8px;
-    justify-content: space-around;
-    width: max(30%);
+    width: max(40%);
+    margin: 14% auto;
+    font-size: 1em;
 }
 
 .btnwrap {
-    grid-row: 4/4;
+    grid-row: 3/3;
     grid-column: 1/1;
-    border: none;
-    position: relative;
+
 }
 
 .btnwrap>button {
@@ -106,9 +106,7 @@
     cursor: pointer;
     color: whitesmoke;
     padding: .5rem;
-    box-sizing: border-box;
-    width: min(200px);
-    height: 28px;
+    width: 13.8rem;
 }
 
 
@@ -117,14 +115,11 @@
 
     background-color: rgb(73, 73, 74);
 
-
-
 }
 
 .btnText>img {
 
     height: 12px;
-
 }
 
 
@@ -132,7 +127,6 @@
 
     text-align: left;
     font-size: .8rem;
-    width: min(100px);
     animation: bounce .4s ease infinite alternate;
 
 }
@@ -152,21 +146,20 @@
 
     background-color: rgb(4, 57, 94);
     border: 1.5px solid rgb(11, 112, 184);
-    text-align: center;
 
 
 }
 
 .socialmediagrid {
-    grid-row: 4/4;
+    grid-row: 3/3;
     grid-column: 2/2;
     font-family: aboutme;
     list-style-type: none;
+
     color: whitesmoke;
     padding-top: 2rem;
     padding-left: 2px;
-
-
+    margin: 0;
 
 }
 
@@ -182,8 +175,9 @@
     .socialbuttonandiconsGrid {
 
         grid-template-rows: 20px 20px 100px 30px;
-        height: 50vh;
-        grid-template-columns: 8px 140px;
+        height: 30rem;
+
+        grid-template-columns: 0 150px;
 
     }
 
@@ -206,24 +200,20 @@
 
     .socialmediagrid {
 
-        grid-row: 5/5;
+        grid-row: 4/4;
         background-color: rgb(4, 57, 94);
         border: 1.5px solid rgb(11, 112, 184);
-        z-index: 0;
-
         height: 20rem;
         overflow-y: scroll;
-        margin: 0;
         width: 80%;
-
     }
 
     .socialclick>p {
 
-        text-indent: 0px;
-        width: 60px;
-        font-size: .9rem;
-        padding: 10%;
+        width: 80px;
+        font-size: .8rem;
+        margin: 20% 10% 10% 0;
+        height: 25px;
 
     }
 

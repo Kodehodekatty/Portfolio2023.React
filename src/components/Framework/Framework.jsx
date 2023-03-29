@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-
 import styled from "styled-components";
 import style2 from "./FrameworkStyles.module.css";
 import { ShowImage } from "./ShowImage/ShowImage";
@@ -28,11 +27,6 @@ export default function Framework({
 }) {
   return (
     <div className={style2.kattywrapandbuttons}>
-      <ShowImage
-        showHeader={showHeader}
-        showFooter={showFooter}
-        showBody={showBody}
-      />{" "}
       <div className={style2.btnGroup}>
         <Button
           className={style2.btn1}
@@ -53,6 +47,11 @@ export default function Framework({
           {!showFooter ? footer : ""}
         </Button>
       </div>
+      <ShowImage
+        showHeader={showHeader}
+        showFooter={showFooter}
+        showBody={showBody}
+      />{" "}
     </div>
   );
 }

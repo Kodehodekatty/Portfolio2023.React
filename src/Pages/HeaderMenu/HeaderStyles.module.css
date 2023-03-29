@@ -20,12 +20,13 @@
 .FaceNavWrap {
 
     background-position-y: 10%;
-    background-image: url("../images/VSC/headerbackground2.png");
+    background-image: url("../../images/VSC/headerbackground2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: -12px;
     padding: 1px;
-    height: max(280px);
+    height: min(200px);
+
 }
 
 
@@ -58,7 +59,7 @@
     border: 1.5px solid whitesmoke;
     margin: 0;
     border-radius: 20px;
-    background-image: url(/src/images/btnRectangle.png);
+    background-image: url("../../images/btnRectangle.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 7vh;
@@ -85,7 +86,7 @@
 @media (max-width: 480px) {
     .FaceNavWrap {
 
-        background-image: url("../images/phone/phoneheader.png");
+        background-image: url("../../images/phone/phoneheader.png");
         background-repeat: no-repeat;
         background-size: contain;
         padding: 1px;
@@ -93,10 +94,9 @@
     }
 
     .navigation>button {
-
-        width: min(50px);
-        height: min(30px);
-        font-size: .7rem;
+        width: min(100%);
+        height: min(40px);
+        font-size: .6rem;
         margin: 0;
     }
 

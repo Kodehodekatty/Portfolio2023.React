@@ -14,15 +14,6 @@ function App() {
 
   return (
     <div className="main">
-      <Framework
-        showHeader={showHeader}
-        showBody={showBody}
-        showFooter={showFooter}
-        setShowHeader={setShowHeader}
-        setShowBody={setShowBody}
-        setShowFooter={setShowFooter}
-      />
-
       <Background
         onNavigated={(page) => {
           if (page == "om meg") {
@@ -38,6 +29,14 @@ function App() {
         showHeader={showHeader}
         showBody={showBody}
         showFooter={showFooter}
+      />
+      <Framework
+        showHeader={showHeader}
+        showBody={showBody}
+        showFooter={showFooter}
+        setShowHeader={setShowHeader}
+        setShowBody={setShowBody}
+        setShowFooter={setShowFooter}
       />
     </div>
   );

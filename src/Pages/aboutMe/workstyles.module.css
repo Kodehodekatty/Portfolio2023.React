@@ -18,24 +18,45 @@
 
 
 
-::-webkit-scrollbar {
-    width: 10px;
-
+.opening::-webkit-scrollbar {
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 20px rgb(45, 122, 237);
+.opening::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px #4a8ef5e1;
     border-radius: 10px;
 
 }
 
-::-webkit-scrollbar-thumb {
+.opening::-webkit-scrollbar-thumb {
     background: rgb(255, 106, 220);
     border-radius: 5px;
+
+
+}
+
+.opening::-webkit-scrollbar {
+    width: var(--scrollbar-width, 10px);
+    height: var(--scrollbar-height, 200px);
 
 }
 
 
+.opening {
+    margin: 1rem 4rem auto;
+    width: max(90%, 300px);
+    padding: 0 10%;
+    grid-column: 2/10;
+    grid-row: 1/2;
+    height: 90%;
+
+    overflow-x: hidden;
+
+
+
+
+}
 
 
 

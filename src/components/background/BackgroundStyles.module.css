@@ -22,7 +22,8 @@
 
 .footerbox {
     grid-column: 2/5;
-    grid-row: 4/4;
+    grid-row: 5/5;
+    position: relative;
 }
 
 .wrapping {
@@ -46,14 +47,14 @@
         grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr) 70vw);
         grid-template-rows: minmax(15vh, 10px) minmax(80vh, 100px); */
     /* grid-template-columns: repeat(6, 30vh); */
-    grid-template-columns: min(200px) 400px 500px;
-    grid-template-rows: 14vh min(20vh) 300px;
+    grid-template-columns: min(200px) min(200px) min(800px);
+    grid-template-rows: 80px 120px 340px 10px;
     background-image: url("../../images/VSC/vscbackground.png");
     background-repeat: no-repeat;
     background-size: contain;
-
-
-
+    height: min(900px);
+    grid-column: 3/3;
+    width: max(100%);
 }
 
 @media (max-width: 480px) {

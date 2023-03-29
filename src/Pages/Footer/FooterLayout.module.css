@@ -19,10 +19,10 @@
 .footerbackground {
 
 
-    background-image: url("../images/Groupfooter.png");
+    background-image: url("../../images/Groupfooter.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30vh;
+    height: 180px;
     position: relative;
 
 
@@ -33,11 +33,12 @@
 @media (max-width: 480px) {
     .footerbackground {
 
-        background-image: url("../images/phone/footer2.png");
+        background-image: url("../../images/phone/footer2.png");
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: 11vh;
+        height: 100px;
+        width: min(370px);
     }
 
 

@@ -1,13 +1,13 @@
-import layout from "./layout.module.css";
+import aboutmestyles from "./aboutmestyles.module.css";
 import workstyles from "./workstyles.module.css";
 import contactstyles from "./contactstyles.module.css";
 
 export default function AboutMe({ textSelector }) {
   return (
-    <div className={layout.aboutMe}>
+    <div className={aboutmestyles.aboutMe}>
       {textSelector === "landing page" && (
-        <div className={layout.landing}>
-          <span className={layout.welcometext}>
+        <div className={aboutmestyles.landing}>
+          <span className={aboutmestyles.welcometext}>
             {" "}
             Hei! Velkommen til siden min!
           </span>
@@ -17,7 +17,7 @@ export default function AboutMe({ textSelector }) {
         <div>
           <h3>Litt kort om hvem jeg er</h3>
 
-          <h2 className={layout.myname}>
+          <h2 className={aboutmestyles.myname}>
             Navnet mitt er Kathrine, 29 år, og er deltaker i Kodehode, JoobLoop
             i Stavanger.
           </h2>
@@ -71,7 +71,7 @@ export default function AboutMe({ textSelector }) {
       )}
 
       {textSelector === "mitt arbeid" && (
-        <div className={layout.opening}>
+        <div className={workstyles.opening}>
           <p className={workstyles.paraskill}>
             På Github siden min, finner du mange eksempler på oppgaver og
             prosjekter jeg har jobbet med på Kodehode, og utenom i den siste
