@@ -1,5 +1,6 @@
+import React, { FunctionComponent } from "react";
 import FooterLayout from "./FooterLayout.module.css";
 
-export default function Footer() {
+export const Footer: FunctionComponent = () => {
   return <div className={FooterLayout.footerbackground}></div>;
-}
+};

@@ -1,5 +1,6 @@
+import React, { useState, FunctionComponent } from "react";
 import MenuStyles from "./MenuStyles.module.css";
-import { useState } from "react";
+
 import github from "../../images/icons/github.png";
 import gmail from "../../images/icons/gmail.png";
 import cv from "../../images/icons/CV.png";
@@ -7,7 +8,7 @@ import linkedin from "../../images/icons/Linkedin.png";
 import arrow from "../../images/icons/arrow.png";
 import arrowdown from "../../images/icons/arrowdown.png";
 
-const List = () => {
+const List: FunctionComponent = (open) => {
   return (
     <ul className={MenuStyles.socialmediagrid}>
       <a href="https://github.com/Kodehodekatty?tab=repositories">
@@ -45,8 +46,13 @@ const List = () => {
   );
 };
 
-export default function Navbar() {
-  const [open, setOpen] = useState(false);
+type TNavbar = {
+  open: boolean;
+  setOpen: boolean;
+};
+
+export const Navbar: FunctionComponent<TNavbar> = () => {
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <div className={MenuStyles.socialbuttonandiconsGrid}>
@@ -64,4 +70,4 @@ export default function Navbar() {
       {open && <List />}
     </div>
   );
-}
+};

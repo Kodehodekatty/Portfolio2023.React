@@ -1,6 +1,11 @@
 import HeaderStyles from "./HeaderStyles.module.css";
+import React, { FunctionComponent } from "react";
 
-export default function Header({ setTextSelector }) {
+type THeader = {
+  setTextSelector: (text: string) => void;
+};
+
+export const Header: FunctionComponent<THeader> = ({ setTextSelector }) => {
   return (
     <div className={HeaderStyles.FaceNavWrap}>
       <ul className={HeaderStyles.list}>
@@ -18,4 +23,4 @@ export default function Header({ setTextSelector }) {
       </ul>
     </div>
   );
-}
+};

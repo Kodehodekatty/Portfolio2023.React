@@ -1,8 +1,17 @@
+import React, { useState, useRef, useEffect, FunctionComponent } from "react";
+
 import aboutmestyles from "./aboutmestyles.module.css";
 import workstyles from "./workstyles.module.css";
 import contactstyles from "./contactstyles.module.css";
 
-export default function AboutMe({ textSelector }) {
+type TAboutMe = {
+  setTextSelector: string;
+  textSelector: string;
+};
+export const AboutMe: FunctionComponent<TAboutMe> = ({
+  setTextSelector,
+  textSelector,
+}) => {
   return (
     <div className={aboutmestyles.aboutMe}>
       {textSelector === "landing page" && (
@@ -198,4 +207,4 @@ export default function AboutMe({ textSelector }) {
       )}
     </div>
   );
-}
+};

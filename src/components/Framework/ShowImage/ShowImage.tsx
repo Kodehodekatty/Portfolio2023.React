@@ -1,3 +1,5 @@
+import React, { useState, useRef, useEffect, FunctionComponent } from "react";
+
 import shadowbody from "../../../images/secondshadowbody.png";
 import shadowface from "../../../images/faceshadow.png";
 import shadowfooter from "../../../images/shadowfooter.png";
@@ -6,36 +8,47 @@ import faceandbody from "../../../images/faceandbody.png";
 import fullkatty from "../../../images/VSC/fullkatty.png";
 import bodyandfooter from "../../../images/bodyandfootershadow.png";
 import faceandfooter from "../../../images/faceandfooter.png";
-import style2 from "../FrameworkStyles.module.css";
 
-export function ShowImage({ showHeader, showBody, showFooter }) {
+import FrameworkStyles from "../../Framework/FrameworkStyles.module.css";
+
+type TShowImage = {
+  showHeader: boolean;
+  showBody: boolean;
+  showFooter: boolean;
+};
+
+export const ShowImage: FunctionComponent<TShowImage> = ({
+  showHeader,
+  showBody,
+  showFooter,
+}) => {
   return (
     <>
       {/* showing shadow me at the start*/}
       {!showHeader && !showBody && !showFooter && (
-        <img className={style2.shadowmain} src={fullshadow} />
+        <img className={FrameworkStyles.shadowmain} src={fullshadow} />
       )}
       {showHeader && !showBody && !showFooter && (
-        <img className={style2.shadowmain} src={shadowface} />
+        <img className={FrameworkStyles.shadowmain} src={shadowface} />
       )}
       {showHeader && showBody && !showFooter && (
-        <img className={style2.shadowmain} src={faceandbody} />
+        <img className={FrameworkStyles.shadowmain} src={faceandbody} />
       )}
       {!showHeader && showBody && !showFooter && (
-        <img className={style2.shadowmain} src={shadowbody} />
+        <img className={FrameworkStyles.shadowmain} src={shadowbody} />
       )}
       {!showHeader && showBody && showFooter && (
-        <img className={style2.shadowmain} src={bodyandfooter} />
+        <img className={FrameworkStyles.shadowmain} src={bodyandfooter} />
       )}
       {showHeader && !showBody && showFooter && (
-        <img className={style2.shadowmain} src={faceandfooter} />
+        <img className={FrameworkStyles.shadowmain} src={faceandfooter} />
       )}
       {!showHeader && !showBody && showFooter && (
-        <img className={style2.shadowmain} src={shadowfooter} />
+        <img className={FrameworkStyles.shadowmain} src={shadowfooter} />
       )}
       {showHeader && showBody && showFooter && (
-        <img className={style2.shadowmain} src={fullkatty} />
+        <img className={FrameworkStyles.shadowmain} src={fullkatty} />
       )}
     </>
   );
-}
+};

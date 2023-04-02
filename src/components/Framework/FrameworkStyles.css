@@ -1,0 +1,116 @@
+@font-face {
+    font-family: codetext;
+    src: url(/src/fonts/CascadiaCode-jEZzj.ttf);
+}
+
+
+
+
+.shadowmain {
+
+    width: min(350px);
+    position: relative;
+
+}
+
+
+.btnGroup {
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 10px;
+    left: 70%;
+    z-index: 1;
+
+}
+
+.btnGroup>button:hover {
+    scale: 130%;
+
+}
+
+.btnGroup>button {
+
+
+    border: 1px solid rgba(255, 255, 255, 0.318);
+    font-family: codetext;
+    animation: bounce .4s ease infinite alternate;
+    width: min(100px);
+    padding: 10%;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.27);
+    margin: 70px 0;
+    float: left;
+
+}
+
+
+
+@keyframes bounce {
+    0% {
+        text-shadow:
+
+            0 1px 3px rgb(79, 79, 79);
+    }
+
+    100% {
+        transform: translateY(-3px);
+        text-shadow: 0 3px 0 rgba(81, 81, 81, 0.8),
+            0 0px 3px rgba(0, 0, 0, .8);
+    }
+}
+
+
+
+.kattywrapandbuttons {
+    position: absolute;
+    display: flex;
+
+    height: min(100px);
+    width: min(7rem);
+
+    flex-direction: column;
+    top: 300px;
+    display: block;
+
+    grid-column: 1/1;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .kattywrapandbuttons {
+        display: inline-block;
+        top: max(500px);
+        grid-column: 1/1;
+    }
+
+
+    .btnGroup {
+        left: 40%;
+        z-index: 1;
+
+    }
+
+    .btnGroup>button {
+
+        position: relative;
+
+        width: 100px;
+        margin: 100px 30px 0;
+        padding: 10%;
+
+
+
+    }
+
+
+
+    .btnGroup>button:hover {
+        scale: 105%;
+    }
+
+
+}
