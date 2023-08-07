@@ -95,6 +95,8 @@
 .btnwrap {
     grid-row: 3/3;
     grid-column: 1/1;
+    top:268px;
+    position:fixed;
 
 }
 
@@ -106,7 +108,8 @@
     cursor: pointer;
     color: whitesmoke;
     padding: .5rem;
-    width: 13.8rem;
+    width: 260px;
+    margin: 0;
 }
 
 

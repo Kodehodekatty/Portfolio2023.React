@@ -50,30 +50,25 @@ export const AboutMe: FunctionComponent<TAboutMe> = ({
           </p>
 
           <p>
-            {" "}
+            {" "} 
             De siste 6 månedene har jeg fått spisset kodekunnskapene mine i
             HTML, CSS, React, JavaScript og Figma.
           </p>
 
           <blockquote>
-            {" "}
+          
             Jeg har funnet et kall i kodingen, og stortrives med å lage
-            nettsider med React. Men det er enda så mye mer koding,rammeverk og
-            programmvarer jeg vil lære for anskaffe høyere digital kompetanse.
+            nettsider med React. 
           </blockquote>
           <p>
-            {" "}
-            Så Det neste steget for meg, er å finne en Frontend praksisplass hos
-            en bedrift for å anskaffe mer programmeringskunnskaper, og personlig
-            utvikling.
+          Akkurat nå er jeg i praksis hos Bouvet, som Frontend utvikler, og jobber med React og Typescript. Sammen med to andre, så har jeg jobbet med et kodeprosjekt, hvor oppgaven er å utvikle en App for å inspisere og sikkerhetskontrollere vindmøller.
           </p>
 
           <p>
-            Min ambisjon for å bli front end utvikler, og drive med utvikling av
-            web- og mobile applikasjoner, er ikke bare fordi jeg elsker å kode,{" "}
-            <b>
-              men fordi jeg også kan ta i bruk mine kreative talenter og
-              kompentanse!
+          Det har vært utrolig spennende å kunne jobbe direkte med andre utviklere og lære koding rett fra selve bransjen! 
+          <p>Bouvet har gitt meg en fantastisk glimt til hvordan det er å jobbe som utvikler, og gitt meg erfaring med Github og presentere ukenlige demoer om prosjektet.</p>
+            <b> {" "}
+            Min praksis tar slutt i September, og nå ser jeg etter nye muligheter for å finne jobb som Frontend-Utvikler.
             </b>
           </p>
         </div>
@@ -92,23 +87,32 @@ export const AboutMe: FunctionComponent<TAboutMe> = ({
             erfaringer.
           </p>
           <div className={workstyles.card} id={workstyles.project1}>
+            <h1>Prosjekter som har blitt kodet i min praksisperiode hos Bouvet</h1>
+            <a href="https://github.com/OptiCorp/TurbinSikker-App.git/"> 
+            <p className={workstyles.label}>TurbinSikker-App</p></a>
+           
+            <a href="https://github.com/OptiCorp/ImageShirtStore.git/">
+            <p className={workstyles.label}>ImageShirtStore</p>
+            </a>
+            </div>
+          <div className={workstyles.card} id={workstyles.project1}>
             <h1>Prosjekter som har blitt kodet i React/Vite</h1>
-            <a href="https://kodehodekatty.github.io/JulCountdown/"> </a>
-            <p className={workstyles.label}>Juleoppgave</p>
+            <a href="https://kodehodekatty.github.io/JulCountdown/"> 
+            <p className={workstyles.label}>Juleoppgave</p></a>
             <a
               className={workstyles.secondlink}
               href="https://github.com/Kodehodekatty/JulCountdown"
             >
               link to repository{" "}
             </a>
-            <a href="https://github.com/Kodehodekatty/React.Pokedex.API"></a>
-            <p className={workstyles.label}>Pokedex v.2</p>{" "}
-            <a href="https://github.com/Kodehodekatty/Portfolio2023.React"></a>
-            <p className={workstyles.label}>Portfolio</p>{" "}
+            <a href="https://github.com/Kodehodekatty/React.Pokedex.API">
+            <p className={workstyles.label}>Pokedex v.2</p>{" "}</a>
+            <a href="https://github.com/Kodehodekatty/Portfolio2023.React">
+            <p className={workstyles.label}>Portfolio</p></a>
             <a href="https://kodehodekatty.github.io/ReactRoutesCalculator/">
-              {" "}
-            </a>
-            <p className={workstyles.label}>React Routes og Kalkulator</p>{" "}
+            
+          
+            <p className={workstyles.label}>React Routes og Kalkulator</p></a>
             <a
               className={workstyles.secondlink}
               href="https://github.com/Kodehodekatty/ReactRoutesCalculator"
@@ -118,12 +122,12 @@ export const AboutMe: FunctionComponent<TAboutMe> = ({
           </div>
           <div className={workstyles.card} id={workstyles.project1}>
             <h1>Prosjekter som har blitt kodet i Javascript</h1>
-            <a href="https://github.com/Kodehodekatty/Blackjack"></a>{" "}
-            <p className={workstyles.label}>BlackJack</p>{" "}
-            <a href=" https://github.com/Kodehodekatty/Pokedex"> </a>
-            <p className={workstyles.label}>Pokedex v.1</p>{" "}
-            <a href="https://github.com/Kodehodekatty/spaceproject"> </a>{" "}
-            <p className={workstyles.label}>Space Project</p>{" "}
+            <a href="https://github.com/Kodehodekatty/Blackjack">
+            <p className={workstyles.label}>BlackJack</p></a>
+            <a href=" https://github.com/Kodehodekatty/Pokedex">
+            <p className={workstyles.label}>Pokedex v.1</p></a>
+            <a href="https://github.com/Kodehodekatty/spaceproject">
+            <p className={workstyles.label}>Space Project</p></a>
           </div>
           <section className={workstyles.bars}>
             <h1 className={workstyles.grafisktittel}>

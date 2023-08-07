@@ -177,7 +177,7 @@
     font-size: clamp(.5rem, 2vw + .2rem, 1rem);
     text-decoration: none;
     background-color: rgb(106, 104, 240);
-    width: 2vw;
+    width: 300px;
     border-radius: 7px;
     box-shadow: 1px 1px #000000;
     padding: 10px;
@@ -257,7 +257,7 @@ a {
 }
 
 .cardbox {
-    margin: 3rem 0;
+    margin: 0 auto;
     width: 600px;
     padding: 2%;
     height: 50vh;

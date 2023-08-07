@@ -22,13 +22,18 @@
     background-image: url("../../images/Groupfooter.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 180px;
+    height: 215px;
+width: 100%;
+
+
     position: relative;
 
 
 
 
 }
+
+
 
 @media (max-width: 480px) {
     .footerbackground {
